@@ -1,0 +1,502 @@
+/* Global styles */
+
+:root {
+  --main-font: 'Product Sans', 'Google Sans', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  --main-color: #1a73e8;      /* Google blue */
+  --accent-color: #34a853;    /* Google green */
+  --warning-color: #fbbc05;   /* Google yellow */
+  --error-color: #ea4335;     /* Google red */
+  --text-primary: #202124;    /* Dark gray for primary text */
+  --text-secondary: #5f6368;  /* Medium gray for secondary text */
+  --bg-light: #ffffff;        /* White background */
+  --bg-light-hover: #f8f9fa;  /* Light gray hover state */
+  --bg-panel: rgba(255, 255, 255, 0.95);  /* Panel background */
+}
+
+body { 
+  margin: 0; 
+  padding: 0; 
+  font-family: var(--main-font);
+  color: var(--text-primary);
+}
+
+/* Rectangular Logo with Buttons Styling */
+.rectangular-logo-container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 8px 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 350px;
+  max-width: 90%;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #202124;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.header-btn {
+  margin-left: 16px;
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.header-btn:hover {
+  background-color: rgba(26, 115, 232, 0.1);
+}
+
+/* Modern Prompt Bar - UPDATED */
+.modern-prompt-bar {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  max-width: 90%;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 8px 0;
+  z-index: 990;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  max-height: 300px; /* Allow for content plus padding */
+}
+
+.prompt-bar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.prompt-bar-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #5f6368;
+}
+
+.prompt-collapse-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #5f6368;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.prompt-collapse-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.prompt-collapse-btn:focus {
+  outline: 2px solid #1a73e8;
+  outline-offset: 2px;
+}
+
+.prompt-examples-container {
+  padding: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.prompt-example {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.prompt-example:hover {
+  background-color: #f1f3f4;
+}
+
+.prompt-example:active {
+  background-color: #e8eaed;
+  transform: scale(0.98);
+}
+
+.prompt-example:focus {
+  outline: 2px solid #1a73e8;
+  outline-offset: 2px;
+  background-color: #f1f3f4;
+}
+
+.prompt-icon {
+  font-size: 20px;
+  margin-right: 12px;
+  color: #1a73e8;
+}
+
+.prompt-text {
+  font-size: 14px;
+  color: #202124;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Collapsed state - UPDATED */
+.modern-prompt-bar.collapsed {
+  max-height: 56px; /* Only show the header */
+}
+
+.modern-prompt-bar.collapsed .prompt-examples-container {
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+/* Hidden state - UPDATED */
+.modern-prompt-bar.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(20px);
+  pointer-events: none;
+}
+
+/* Modified Query Box with expand button */
+.query-box {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  padding: 6px 8px;
+  width: 500px;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+}
+
+.query-box input {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--main-font);
+}
+
+.query-box button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: var(--main-font);
+}
+
+.query-box button:hover {
+  background-color: #1565c0;
+}
+
+.prompt-expand-btn {
+  background: none !important;
+  border: none;
+  cursor: pointer;
+  color: #5f6368 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px !important;
+  margin-left: 4px;
+  border-radius: 50% !important;
+  transition: background-color 0.2s;
+}
+
+.prompt-expand-btn:hover {
+  background-color: #f0f0f0 !important;
+}
+
+.prompt-expand-btn:focus {
+  outline: 2px solid #1a73e8;
+  outline-offset: 2px;
+}
+
+/* Loading indicator */
+.loading-indicator {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--bg-panel);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 2000;
+  text-align: center;
+  font-family: var(--main-font);
+}
+
+/* Badge for dataset type */
+.dataset-type-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+  margin-left: 10px;
+  font-family: var(--main-font);
+}
+
+.type-image {
+  background-color: var(--main-color);
+}
+
+.type-collection {
+  background-color: var(--accent-color);
+}
+
+.type-table {
+  background-color: var(--error-color);
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  font-family: var(--main-font);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  font-family: var(--main-font);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.close-modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-family: var(--main-font);
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Wiki help content styling */
+.modal-content h2 {
+  margin-top: 28px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  font-family: var(--main-font);
+}
+
+.modal-content h3 {
+  margin-top: 20px;
+  color: #444;
+  font-family: var(--main-font);
+}
+
+.modal-content p {
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 15px;
+  font-family: var(--main-font);
+}
+
+.modal-content ul {
+  margin: 15px 0;
+  padding-left: 25px;
+  line-height: 1.5;
+  color: #555;
+  font-family: var(--main-font);
+}
+
+.modal-content li {
+  margin-bottom: 8px;
+  font-family: var(--main-font);
+}
+
+/* Example link style */
+.example-link {
+  color: var(--main-color);
+  border-bottom: 1px dotted var(--main-color);
+  position: relative;
+  padding-right: 14px;
+  font-family: var(--main-font);
+}
+
+.example-link:after {
+  content: " ";
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%231a73e8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+/* Wiki help footer with button */
+.wiki-help-footer {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  font-family: var(--main-font);
+}
+
+.help-btn {
+  padding: 8px 16px;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+  font-family: var(--main-font);
+}
+
+.help-btn:hover {
+  background-color: #1565c0;
+}
+
+/* Animation for prompt bar */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.modern-prompt-bar:not(.hidden):not(.collapsed) {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rectangular-logo-container {
+    min-width: 280px;
+    padding: 6px 12px;
+  }
+  
+  .header-logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+  
+  .logo-text {
+    font-size: 16px;
+  }
+  
+  .header-btn {
+    margin-left: 10px;
+    padding: 4px 8px;
+    font-size: 13px;
+  }
+  
+  .prompt-examples-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .modern-prompt-bar, 
+  .query-box {
+    width: 90%;
+  }
+}

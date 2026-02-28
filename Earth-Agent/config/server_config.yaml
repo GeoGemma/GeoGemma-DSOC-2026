@@ -1,0 +1,81 @@
+# Server Configuration
+# ---------------------------
+# Configuration file for the GIS AI Agent server.
+
+# Server settings
+# --------------
+server:
+  host: "0.0.0.0"  # Listen on all interfaces
+  port: 8080       # Server port
+  debug: true     # Enable debugging
+  
+  # CORS settings - Allow localhost connections
+  cors_origins:    
+    - "http://localhost:3000"
+    - "http://localhost:5173"
+    - "http://127.0.0.1:3000"
+    - "http://127.0.0.1:5173"
+    - "http://localhost:8080"
+  
+  # Rate limiting
+  rate_limits:
+    queries_per_minute: 30
+    tool_calls_per_minute: 100
+    max_concurrent_connections: 50
+  
+  # Security settings
+  security:
+    enable_authentication: false
+    jwt_secret: "development_secret"
+    token_expiration_seconds: 86400  # 24 hours
+    ssl: false
+    allowed_ips: []  # Empty list allows all IPs
+
+# Model configuration
+# -----------------
+model:
+  model_name: "gemini-2.0-flash"
+  temperature: 0.7
+  top_p: 0.95
+  top_k: 40
+  max_tokens: 300
+  timeout: 60
+  prompt: "You are a GIS AI Agent specializing in geospatial analysis, environmental data, and sustainability planning. The user will enter the question and you will answer that question. Your response should n=be in max 300 words "
+
+# Tool settings
+# -----------
+tools:
+  # Enable/disable specific tools
+  climate_analysis: true
+  resilience_planning: true
+  sustainability_assessment: true
+  weather_tools: true
+  visualization: true
+  spatial_query: true
+  
+  # Tool-specific configuration
+  tool_config:
+    max_execution_time: 120
+    cache_results: true 
+    cache_ttl: 3600  # 1 hour
+    max_request_size_mb: 10
+
+# Logging configuration
+# -------------------
+logging:
+  level: "INFO"
+  log_to_file: true
+  log_file: "logs/gis_agent.log"
+  rotate_logs: true
+  max_log_size_mb: 10
+  backup_count: 5
+  log_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+# Data management
+# -------------
+data:
+  cache_dir: "data/cache"
+  temp_dir: "data/temp"
+  retention:
+    temp_files_hours: 24
+    cache_days: 7 

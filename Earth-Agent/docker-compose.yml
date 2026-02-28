@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Alpine-based image
+    image: gis-agent:latest
+    container_name: gis-agent
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./config:/app/config
+    ports:
+      - "8090:8090"
+    environment:
+      - PORT=8090
+      - DEBUG=true
+      - DISABLE_FIREBASE=true
+      # Add other environment variables as needed:
+      # - GEMINI_API_KEY=${GEMINI_API_KEY}
+    command: >
+      python -m src.main --host 0.0.0.0 

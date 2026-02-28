@@ -1,0 +1,68 @@
+.user-profile {
+  background-color: rgb(32, 33, 36);
+  border-radius: 8px;
+  padding: 12px;
+  margin: 10px;
+  border: 1px solid rgba(138, 180, 248, 0.2);
+  box-shadow: 0 2px 10px rgba(209, 182, 182, 0.2);
+  position: absolute;
+  left: 10px;
+  top: 200px;
+  z-index: 100;
+  min-width: 200px;
+}
+
+.user-profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  border: 2px solid rgba(138, 180, 248, 0.6);
+}
+
+.user-details {
+  flex: 1;
+}
+
+.user-name {
+  font-weight: 500;
+  color: rgb(232, 234, 237);
+  font-size: 14px;
+}
+
+.user-email {
+  color: rgb(154, 160, 166);
+  font-size: 12px;
+  margin-top: 2px;
+  word-break: break-all;
+}
+
+.logout-button {
+  width: 100%;
+  padding: 8px 12px;
+  background-color: rgb(48, 49, 52);
+  color: rgb(232, 234, 237);
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.logout-button:hover {
+  background-color: rgb(60, 64, 67);
+}
+
+@media (max-width: 768px) {
+  .user-profile {
+    position: static;
+    margin: 10px auto;
+    max-width: calc(100% - 20px);
+  }
+} 

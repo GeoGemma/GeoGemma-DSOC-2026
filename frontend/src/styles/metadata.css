@@ -1,0 +1,83 @@
+/* src/styles/metadata.css */
+
+/* Metadata section styling */
+.metadata-section {
+    margin-bottom: 1rem;
+  }
+  
+  .metadata-section-header {
+    background-color: rgba(48, 49, 52, 0.7);
+    border-radius: 0.25rem 0.25rem 0 0;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .metadata-section-header:hover {
+    background-color: rgba(60, 64, 67, 0.8);
+  }
+  
+  .metadata-section-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #e8eaed;
+    margin: 0;
+  }
+  
+  .metadata-section-content {
+    background-color: rgba(48, 49, 52, 0.5);
+    border-radius: 0 0 0.25rem 0.25rem;
+    padding: 0.75rem;
+    font-size: 0.75rem;
+  }
+  
+  .metadata-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .metadata-key {
+    color: #bdc1c6;
+  }
+  
+  .metadata-value {
+    color: #e8eaed;
+    text-align: right;
+    max-width: 60%;
+    word-break: break-word;
+  }
+  
+  /* For nested stats */
+  .metadata-stats-container {
+    padding-left: 0.5rem;
+    margin-top: 0.25rem;
+    border-left: 2px solid rgba(138, 180, 248, 0.3);
+  }
+  
+  .metadata-stats-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+  }
+  
+  .metadata-na {
+    color: rgba(188, 188, 188, 0.5);
+    font-style: italic;
+  }
+  
+  /* For expandable JSON */
+  .metadata-json {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 0.7rem;
+    max-height: 120px;
+    overflow-y: auto;
+  }

@@ -1,0 +1,2 @@
+# This file ensures that the cache directory is included in the repository,
+# but the cached files themselves are ignored by git. 

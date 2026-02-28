@@ -1,0 +1,87 @@
+# Example Server Configuration
+# ---------------------------
+# This is an example configuration file for the GIS AI Agent server.
+# Copy this file to server_config.yaml and modify as needed for your environment.
+
+# Server settings
+# --------------
+server:
+  host: "0.0.0.0"  # Listen on all interfaces - consider changing to "127.0.0.1" for local-only access
+  port: 8080       # Server port
+  debug: false     # Set to false in production
+  
+  # CORS settings - restrict in production
+  cors_origins:    
+    - "https://yourdomain.com"  # Replace with your actual domain
+  
+  # Rate limiting
+  rate_limits:
+    queries_per_minute: 30
+    tool_calls_per_minute: 100
+    max_concurrent_connections: 50
+  
+  # Security settings
+  security:
+    enable_authentication: true
+    jwt_secret: "YOUR_SECURE_JWT_SECRET"  # Replace with a secure random string
+    token_expiration_seconds: 86400  # 24 hours
+    ssl: true  # Use SSL in production
+    allowed_ips: []  # Empty list allows all IPs, specify IPs to restrict
+
+# Model configuration
+# -----------------
+model:
+  model_name: "gemini-2.0-flash"  # Model to use
+  temperature: 0.7                # Higher values make output more random
+  top_p: 0.95                     # Nucleus sampling parameter
+  top_k: 40                       # Top-k sampling parameter
+  max_tokens: 4096                # Maximum output tokens
+  timeout: 60                     # Request timeout in seconds
+
+# Tool settings
+# -----------
+tools:
+  # Enable/disable specific tools
+  climate_analysis: true
+  resilience_planning: true
+  sustainability_assessment: true
+  weather_tools: true
+  visualization: true
+  spatial_query: true
+  
+  # Tool-specific configuration
+  tool_config:
+    # Maximum allowed execution time (seconds)
+    max_execution_time: 120
+    
+    # Cache settings
+    cache_results: true 
+    cache_ttl: 3600  # 1 hour
+    
+    # Limits
+    max_request_size_mb: 10  # Maximum file upload size
+
+# Logging configuration
+# -------------------
+logging:
+  level: "INFO"         # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  log_to_file: true
+  log_file: "logs/gis_agent.log"
+  rotate_logs: true
+  max_log_size_mb: 10
+  backup_count: 5
+  log_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+# Data management
+# -------------
+data:
+  # Cache directory - ensure appropriate permissions
+  cache_dir: "data/cache"
+  
+  # Temporary data directory
+  temp_dir: "data/temp"
+  
+  # Data retention policies
+  retention:
+    temp_files_hours: 24
+    cache_days: 7 

@@ -1,0 +1,652 @@
+/* GIS Agent Styles */
+.gisagent-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  color: rgb(var(--color-text));
+  background-color: rgb(var(--color-bg-dark));
+  position: relative;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 0 8px 0 8px;
+}
+
+.gisagent-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 18px 12px 0 12px;
+  border-bottom: 1px solid rgba(var(--color-border), 0.2);
+  background-color: rgba(var(--color-bg-light), 0.08);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  gap: 0;
+}
+
+.gisagent-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(var(--color-primary));
+  letter-spacing: -0.3px;
+}
+
+.gisagent-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.connection-status {
+  font-size: 11px;
+  padding: 2px 10px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  max-width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 8px 0 8px 0;
+}
+
+.connection-status.connected {
+  color: #4caf50;
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.connection-status.disconnected {
+  color: #f44336;
+  background-color: rgba(244, 67, 54, 0.1);
+}
+
+.connection-status.reconnecting {
+  color: #ff9800;
+  background-color: rgba(255, 152, 0, 0.1);
+}
+
+.connection-status.warning {
+  color: #ff9800;
+  background-color: rgba(255, 152, 0, 0.1);
+}
+
+.connection-status::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.connection-status.connected::before {
+  background-color: #4caf50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.connection-status.disconnected::before {
+  background-color: #f44336;
+  box-shadow: 0 0 0 2px rgba(244, 67, 54, 0.2);
+}
+
+.connection-status.reconnecting::before {
+  background-color: #ff9800;
+  box-shadow: 0 0 0 2px rgba(255, 152, 0, 0.2);
+  animation: pulse 1.5s infinite;
+}
+
+.connection-status.warning::before {
+  background-color: #ff9800;
+  box-shadow: 0 0 0 2px rgba(255, 152, 0, 0.2);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.4; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.1); }
+  100% { opacity: 0.4; transform: scale(0.9); }
+}
+
+.clear-history-btn, .retry-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgb(var(--color-text-light));
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.clear-history-btn:hover:not(:disabled), .retry-btn:hover:not(:disabled) {
+  background-color: rgba(var(--color-border), 0.15);
+  color: rgb(var(--color-text));
+  transform: translateY(-1px);
+}
+
+.clear-history-btn:active:not(:disabled), .retry-btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.clear-history-btn:disabled, .retry-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.retry-btn {
+  color: #ff9800;
+}
+
+.retry-btn:hover:not(:disabled) {
+  color: #ff9800;
+  background-color: rgba(255, 152, 0, 0.1);
+}
+
+.gisagent-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 4px 0 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(var(--color-border), 0.5) transparent;
+  background-color: rgb(var(--color-bg-dark));
+  position: relative;
+}
+
+.gisagent-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.gisagent-messages::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.gisagent-messages::-webkit-scrollbar-thumb {
+  background-color: rgba(var(--color-border), 0.5);
+  border-radius: 6px;
+}
+
+.gisagent-message {
+  max-width: 90%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  position: relative;
+  line-height: 1.5;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  word-wrap: break-word;
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 2px;
+  background: rgba(var(--color-border), 0.07);
+}
+
+/* Message avatar styling */
+.message-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 13px;
+}
+
+.avatar-user {
+  background: linear-gradient(135deg, rgba(var(--color-primary), 0.9), rgba(var(--color-primary), 0.7));
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.avatar-assistant-icon {
+  color: rgb(var(--color-primary));
+}
+
+.avatar-system-icon {
+  color: #ff9800;
+}
+
+.message-user {
+  align-self: flex-end;
+  background: linear-gradient(135deg, rgb(var(--color-primary)), rgba(var(--color-primary), 0.85));
+  color: white;
+  border-bottom-right-radius: 4px;
+  margin-left: auto;
+}
+
+.message-user .message-avatar {
+  order: 2;
+}
+
+.message-assistant {
+  align-self: flex-start;
+  background-color: rgba(var(--color-border), 0.15);
+  border-bottom-left-radius: 4px;
+  margin-right: auto;
+  border-left: 3px solid rgba(var(--color-primary), 0.5);
+}
+
+.message-system {
+  align-self: center;
+  background-color: rgba(255, 152, 0, 0.1);
+  border-left: 3px solid #ff9800;
+  color: rgb(var(--color-text));
+  max-width: 95%;
+  padding: 14px 16px;
+  font-style: italic;
+}
+
+.tool-data {
+  font-family: 'Fira Code', 'Menlo', monospace;
+  font-size: 0.85em;
+  background-color: rgba(var(--color-bg-dark), 0.8);
+  border-left: 3px solid rgb(var(--color-primary));
+  padding: 14px;
+  margin-top: 4px;
+  max-width: 95%;
+}
+
+.tool-data pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0;
+  overflow-x: auto;
+  padding: 6px;
+}
+
+.streaming {
+  position: relative;
+}
+
+.streaming::after {
+  content: '▊';
+  display: inline-block;
+  margin-left: 2px;
+  font-weight: bold;
+  animation: blink 1s infinite;
+  color: rgb(var(--color-primary));
+}
+
+/* Code block styling */
+.code-block {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 10px 0;
+  overflow-x: auto;
+  font-family: 'Fira Code', 'Menlo', monospace;
+  font-size: 0.9em;
+  border: 1px solid rgba(var(--color-border), 0.2);
+}
+
+.code-block pre {
+  padding: 12px;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Processing message styling */
+.processing {
+  position: relative;
+  background-color: rgba(var(--color-border), 0.1);
+  border: 1px dashed rgba(var(--color-border), 0.3);
+  animation: processingPulse 2s infinite;
+}
+
+@keyframes processingPulse {
+  0%, 100% { background-color: rgba(var(--color-border), 0.1); }
+  50% { background-color: rgba(var(--color-border), 0.2); }
+}
+
+.processing-status {
+  font-size: 13px;
+  color: rgba(var(--color-text-light), 0.8);
+  margin-top: 10px;
+  font-style: italic;
+  padding-left: 24px;
+  position: relative;
+}
+
+.processing-status::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: rgb(var(--color-primary));
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: pulse 1.5s infinite;
+}
+
+.cancel-request-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(var(--color-bg-dark), 0.8);
+  border: 1px solid rgba(var(--color-border), 0.4);
+  color: rgb(var(--color-text-light));
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.2s;
+}
+
+.cancel-request-btn:hover {
+  background-color: rgba(var(--color-bg-dark), 0.95);
+  color: rgb(var(--color-text));
+  transform: translateY(-1px);
+}
+
+.cancel-request-btn:active {
+  transform: translateY(1px);
+}
+
+/* Connection debug panel */
+.connection-debug-panel {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(var(--color-border), 0.2);
+  font-size: 10px;
+  color: rgba(var(--color-text-light), 0.7);
+  font-family: monospace;
+}
+
+/* Hide debug panel in production, only show for development */
+.connection-debug-panel {
+  display: none;
+}
+
+/* To enable debug panel in development mode */
+.debug-mode .connection-debug-panel {
+  display: flex;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.message-timestamp {
+  font-size: 10px;
+  color: rgba(var(--color-text-light), 0.7);
+  position: absolute;
+  bottom: 4px;
+  right: 8px;
+}
+
+.message-content {
+  margin-bottom: 0;
+  word-wrap: break-word;
+  flex: 1;
+  font-size: 14px;
+  padding: 0;
+}
+
+.message-content pre {
+  white-space: pre-wrap;
+  margin: 0;
+  font-family: inherit;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.typing-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: rgb(var(--color-text-light));
+  padding: 10px;
+  border-radius: 12px;
+  background-color: rgba(var(--color-border), 0.1);
+  width: fit-content;
+}
+
+.typing-indicator span {
+  font-weight: 500;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.gisagent-input-area {
+  display: flex;
+  padding: 10px 4px 10px 4px;
+  gap: 8px;
+  border-top: 1px solid rgba(var(--color-border), 0.2);
+  background: linear-gradient(180deg, rgba(var(--color-bg-dark), 0.5) 0%, rgb(var(--color-bg-dark)) 100%);
+  position: sticky;
+  bottom: 0;
+  z-index: 5;
+  backdrop-filter: blur(10px);
+}
+
+.gisagent-input {
+  flex: 1;
+  border: 1px solid rgba(var(--color-border), 0.4);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  resize: none;
+  background-color: rgba(var(--color-bg-dark), 0.7);
+  color: rgb(var(--color-text));
+  max-height: 90px;
+  min-height: 36px;
+  transition: all 0.3s ease;
+  line-height: 1.4;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  font-family: inherit;
+}
+
+.gisagent-input:focus {
+  outline: none;
+  border-color: rgb(var(--color-primary));
+  box-shadow: 0 0 0 2px rgba(var(--color-primary), 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(var(--color-bg-dark), 0.9);
+}
+
+.gisagent-input:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.gisagent-input:not(:disabled):not(:focus):hover {
+  border-color: rgba(var(--color-primary), 0.5);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.gisagent-input::placeholder {
+  color: rgba(var(--color-text-light), 0.6);
+  font-style: italic;
+}
+
+.gisagent-send-btn {
+  background: linear-gradient(135deg, rgb(var(--color-primary)), rgba(var(--color-primary), 0.85));
+  color: white;
+  border: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  box-shadow: 0 1px 4px rgba(var(--color-primary), 0.15);
+  font-size: 16px;
+}
+
+.gisagent-send-btn:hover:not(:disabled) {
+  transform: translateY(-1px) scale(1.04);
+  box-shadow: 0 2px 8px rgba(var(--color-primary), 0.18);
+}
+
+.gisagent-send-btn:active:not(:disabled) {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 1px 2px rgba(var(--color-primary), 0.10);
+}
+
+.gisagent-send-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
+  background: rgba(var(--color-primary), 0.6);
+}
+
+.empty-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  color: rgb(var(--color-text-light));
+  gap: 20px;
+  padding: 20px;
+}
+
+.empty-chat h4 {
+  margin: 0;
+  font-size: 22px;
+  color: rgb(var(--color-primary));
+  font-weight: 600;
+}
+
+.empty-chat p {
+  margin: 0;
+  font-size: 15px;
+  max-width: 320px;
+  line-height: 1.6;
+  color: rgba(var(--color-text-light), 0.8);
+}
+
+.empty-icon {
+  color: rgb(var(--color-primary));
+  opacity: 0.7;
+  font-size: 36px;
+}
+
+.error-icon {
+  color: #f44336;
+  opacity: 0.7;
+}
+
+.retry-connection-btn {
+  background: linear-gradient(135deg, rgb(var(--color-primary)), rgba(var(--color-primary), 0.85));
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(var(--color-primary), 0.3);
+}
+
+.retry-connection-btn:hover {
+  background-color: rgba(var(--color-primary), 0.85);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(var(--color-primary), 0.4);
+}
+
+.retry-connection-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 3px rgba(var(--color-primary), 0.2);
+}
+
+/* Update section switcher styles in sidebar.css */
+.section-switcher {
+  display: flex;
+  gap: 8px;
+  margin-left: 12px;
+}
+
+.section-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: rgb(var(--color-text));
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.section-btn.active {
+  background-color: rgba(var(--color-primary), 0.15);
+  color: rgb(var(--color-primary));
+  font-weight: 500;
+}
+
+.section-btn:hover:not(.active) {
+  background-color: rgba(var(--color-border), 0.15);
+}
+
+.section-btn:active {
+  transform: scale(0.97);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gisagent-header {
+    padding: 10px 4px 0 4px;
+  }
+  .gisagent-messages {
+    padding: 8px 2px 0 2px;
+    gap: 8px;
+  }
+  .gisagent-message {
+    font-size: 13px;
+    padding: 8px 8px;
+    border-radius: 10px;
+  }
+  .gisagent-input-area {
+    padding: 6px 2px 6px 2px;
+    gap: 4px;
+  }
+  .gisagent-input {
+    font-size: 13px;
+    padding: 7px 8px;
+    min-height: 28px;
+    max-height: 60px;
+  }
+  .gisagent-send-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+} 

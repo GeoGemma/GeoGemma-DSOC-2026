@@ -1,0 +1,369 @@
+/* src/styles/sidebar.css */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #181818; /* Changed from #202123 to #181818 */
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+}
+
+/* Expanded state */
+.sidebar.expanded {
+  width: 260px;
+  border-right: 1px solid #333333;
+}
+
+/* Collapsed state */
+.sidebar.collapsed {
+  width: 60px;
+  border-right: 1px solid #333333;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px;
+  height: 56px; /* Match the header height */
+  box-sizing: border-box;
+  border-bottom: 1px solid #333333;
+}
+
+.sidebar-collapsed-top {
+  height: 56px; /* Match the header height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #333333;
+}
+
+/* Slider control for expanded state */
+.sidebar-slider {
+  width: 26px;
+  height: 26px;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ececf1;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-slider:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Slider control for collapsed state */
+.sidebar-slider-collapsed {
+  width: 26px;
+  height: 26px;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ececf1;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-slider-collapsed:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Tabs for expanded state */
+.sidebar-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 10px;
+  border-bottom: 1px solid #333333;
+}
+
+.sidebar-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  color: #acacbe;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sidebar-tab:hover {
+  background-color: #2a2a2a;
+  color: #ececf1;
+}
+
+.sidebar-tab.active {
+  background-color: #2a2a2a;
+  color: #ececf1;
+}
+
+/* Icons for collapsed state */
+.sidebar-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
+  gap: 16px;
+}
+
+.sidebar-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  color: #acacbe;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sidebar-icon:hover {
+  background-color: #2a2a2a;
+  color: #ececf1;
+}
+
+.sidebar-icon.active {
+  background-color: #2a2a2a;
+  color: #ececf1;
+}
+
+.new-chat-icon {
+  color: #FF6961;
+}
+
+/* Bottom icons for collapsed state */
+.sidebar-icons-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
+  gap: 16px;
+  margin-top: auto;
+  margin-bottom: 16px;
+}
+
+/* New chat button */
+.new-chat-button {
+  margin: 10px;
+  padding: 12px 0;
+  background-color: #FF6961;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.new-chat-button:hover {
+  background-color: #ff867f;
+}
+
+/* Sidebar content */
+.sidebar-content {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat section */
+.chat-section {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chat-section h3 {
+  margin: 10px 0;
+  color: #8e8ea0;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.chat-history {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #ececf1;
+  transition: background-color 0.2s ease;
+}
+
+.chat-item:hover {
+  background-color: #2a2a2a;
+}
+
+.chat-item.active {
+  background-color: #343541;
+}
+
+.chat-item span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+/* Chat messages */
+.chat-messages {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+}
+
+.chat-message {
+  display: flex;
+  gap: 12px;
+  max-width: 100%;
+  animation: slideIn 0.3s ease;
+}
+
+.chat-message-user, .chat-message-system {
+  align-self: flex-start;
+  width: 100%;
+}
+
+.chat-message-system {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.message-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.chat-message-user .message-avatar {
+  background-color: #ff6961;
+  color: white;
+}
+
+.chat-message-system .message-avatar {
+  background-color: #10a37f;
+  color: white;
+}
+
+.message-content {
+  padding-top: 4px;
+  word-wrap: break-word;
+}
+
+.message-content p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ececf1;
+}
+
+/* Empty states */
+.empty-chat, .empty-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: #8e8ea0;
+}
+
+.empty-icon {
+  margin-bottom: 16px;
+  opacity: 0.7;
+}
+
+.empty-chat h4, .empty-section h4 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ececf1;
+}
+
+.empty-chat p, .empty-section p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 200px;
+}
+
+/* Analysis tool controls */
+.sidebar-tools {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: auto;
+}
+
+.sidebar-tool {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  color: #acacbe;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sidebar-tool:hover {
+  background-color: #2a2a2a;
+  color: #ececf1;
+}
+
+/* Animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

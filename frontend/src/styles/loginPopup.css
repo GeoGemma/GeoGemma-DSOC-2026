@@ -1,0 +1,115 @@
+.login-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.login-popup {
+  background-color: rgb(32, 33, 36);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 400px;
+  overflow: hidden;
+  animation: popup-appear 0.3s ease-out;
+  border: 1px solid rgba(138, 180, 248, 0.2);
+}
+
+.login-popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(138, 180, 248, 0.2);
+}
+
+.login-popup-header h2 {
+  margin: 0;
+  color: rgb(232, 234, 237);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  color: rgb(154, 160, 166);
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.close-button:hover {
+  color: rgb(232, 234, 237);
+}
+
+.login-popup-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-popup-content p {
+  color: rgb(154, 160, 166);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.error-message {
+  color: rgb(242, 139, 130);
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgba(242, 139, 130, 0.1);
+  width: 100%;
+}
+
+.google-signin-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgb(60, 64, 67);
+  color: rgb(232, 234, 237);
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+  max-width: 240px;
+  margin-top: 10px;
+}
+
+.google-signin-button:hover {
+  background-color: rgb(80, 85, 90);
+}
+
+.google-signin-button img {
+  width: 18px;
+  height: 18px;
+}
+
+@keyframes popup-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 

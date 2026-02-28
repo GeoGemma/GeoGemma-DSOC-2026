@@ -1,0 +1,407 @@
+/* Updated RightSidebar.css - Google style with icons */
+.right-sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #181818;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.right-sidebar.expanded {
+  width: 380px;
+}
+/* Responsive: shrink sidebar on mobile/tablet */
+@media (max-width: 900px) {
+  .right-sidebar.expanded {
+    width: 100vw;
+    max-width: 300px;
+    min-width: 0;
+  }
+}
+
+.right-sidebar.collapsed {
+  width: 48px; /* Width for icons column */
+}
+
+/* Toggle button container - next to the sidebar */
+.sidebar-toggle-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) translateX(-100%);
+  z-index: 11;
+}
+
+.sidebar-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 56px;
+  background-color: #181818;
+  border: none;
+  border-radius: 4px 0 0 4px; /* Rounded on the left side only */
+  color: #e8eaed;
+  cursor: pointer;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.sidebar-toggle-btn:hover {
+  background-color: #303134;
+}
+
+.right-sidebar-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for collapsed sidebar with icons */
+.sidebar-collapsed-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.sidebar-icon-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 60px; /* Add some space at the top */
+  gap: 16px;
+}
+
+.sidebar-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: transparent;
+  color: #e8eaed;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sidebar-icon-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-icon-btn.active {
+  background-color: rgba(138, 180, 248, 0.1);
+  color: #8ab4f8;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-title {
+  color: #e8eaed;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+  font-family: 'Google Sans', 'Product Sans', 'Roboto', sans-serif;
+}
+
+.sidebar-tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-tab {
+  flex: 1;
+  padding: 12px 0;
+  text-align: center;
+  background: none;
+  border: none;
+  color: #9aa0a6;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.sidebar-tab:hover {
+  color: #e8eaed;
+}
+
+.sidebar-tab.active {
+  color: #8ab4f8;
+}
+
+.sidebar-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #8ab4f8;
+}
+
+.sidebar-content-area {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #181818;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}
+
+.sidebar-content-area::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar-content-area::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-content-area::-webkit-scrollbar-thumb {
+  background-color: rgba(154, 160, 166, 0.3);
+  border-radius: 4px;
+}
+
+.sidebar-content-area::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(154, 160, 166, 0.5);
+}
+
+.content-panel {
+  padding: 16px;
+}
+
+.layers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.layer-item {
+  background-color: #303134;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.layer-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.layer-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.layer-item-title {
+  display: flex;
+  align-items: center;
+}
+
+.layer-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* Layer color classes with Google-like colors */
+.rgb-blue {
+  background-color: #8ab4f8;
+}
+
+.rgb-green {
+  background-color: #81c995;
+}
+
+.rgb-cyan {
+  background-color: #78d9ec;
+}
+
+.rgb-yellow {
+  background-color: #fdd663;
+}
+
+.rgb-red {
+  background-color: #f28b82;
+}
+
+.rgb-gray {
+  background-color: #9aa0a6;
+}
+
+.layer-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #e8eaed;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.layer-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.layer-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.visibility-btn {
+  color: #9aa0a6;
+}
+
+.visibility-btn:hover {
+  background-color: rgba(138, 180, 248, 0.1);
+  color: #8ab4f8;
+}
+
+.delete-btn {
+  color: #9aa0a6;
+}
+
+.delete-btn:hover {
+  background-color: rgba(242, 139, 130, 0.1);
+  color: #f28b82;
+}
+
+.layer-item-body {
+  padding: 12px;
+}
+
+.layer-type {
+  font-size: 11px;
+  font-weight: 600;
+  color: #8ab4f8;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.opacity-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.opacity-label {
+  font-size: 12px;
+  color: #e8eaed;
+  width: 56px;
+}
+
+/* Google-style slider */
+.opacity-slider {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #5f6368;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.opacity-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #8ab4f8;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid #e8eaed;
+}
+
+.opacity-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+.opacity-value {
+  font-size: 12px;
+  color: #e8eaed;
+  width: 40px;
+  text-align: right;
+}
+
+.empty-state {
+  background-color: #303134;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 16px;
+}
+
+.empty-message {
+  text-align: center;
+  padding: 25px 15px;
+}
+
+.primary-message {
+  color: #e8eaed;
+  margin-bottom: 8px;
+}
+
+.secondary-message {
+  color: #9aa0a6;
+  font-size: 12px;
+}
+
+.clear-layers-container {
+  margin-top: 16px;
+}
+
+.clear-layers-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 20px;
+  background-color: rgba(242, 139, 130, 0.1);
+  color: #f28b82;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.clear-layers-btn:hover {
+  background-color: rgba(242, 139, 130, 0.2);
+}
+
+.info-container {
+  background-color: #303134;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 16px;
+}
+
+.info-text {
+  color: #e8eaed;
+  font-size: 14px;
+}

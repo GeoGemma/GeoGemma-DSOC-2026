@@ -1,0 +1,1523 @@
+2025-05-04 19:41:24,314 - root - INFO - GIS AI Agent starting in production mode
+2025-05-04 19:41:24,315 - src.mcp_server.server - INFO - Added climate analysis tool: analyze_climate_trends
+2025-05-04 19:41:24,315 - src.mcp_server.server - INFO - Added climate analysis tool: track_emissions
+2025-05-04 19:41:24,315 - src.mcp_server.server - INFO - Added climate analysis tool: project_climate_scenarios
+2025-05-04 19:41:24,315 - src.mcp_server.server - INFO - Added climate analysis tool: analyze_renewable_energy_potential
+2025-05-04 19:41:24,315 - src.mcp_server.server - INFO - Added resilience planning tool: assess_disaster_risk
+2025-05-04 19:41:24,315 - src.mcp_server.server - INFO - Added resilience planning tool: evaluate_infrastructure_vulnerability
+2025-05-04 19:41:24,315 - src.mcp_server.server - INFO - Added resilience planning tool: design_adaptation_measures
+2025-05-04 19:41:24,315 - src.mcp_server.server - INFO - Added resilience planning tool: assess_community_resilience
+2025-05-04 19:41:24,315 - src.utils.cache - INFO - Cache initialized with directory: /Users/khalil/Documents/Github/GeoGemma/GIS_Agent/data/cache
+2025-05-04 19:41:24,315 - src.utils.tool_executor - INFO - ToolExecutor initialized with 25 tools
+2025-05-04 19:41:24,385 - src.utils.firebase_storage - INFO - Initialized encryption with derived key
+2025-05-04 19:41:24,386 - src.utils.firebase_storage - INFO - Firebase storage initialized with database URL: https://geogemma-f32a4-default-rtdb.firebaseio.com
+2025-05-04 19:41:24,386 - src.utils.cache - INFO - Cache maintenance scheduled with interval: 3600 seconds
+2025-05-04 19:41:24,387 - src.mcp_server.server - INFO - MCP Server 'assess_community_resilience' initialized with 25 tools
+2025-05-04 19:41:24,433 - src.utils.cache - INFO - Cache maintenance scheduled with interval: 3600 seconds
+2025-05-04 19:41:24,433 - __main__ - INFO - Starting GIS AI Agent server at 0.0.0.0:8080
+2025-05-04 19:41:24,433 - src.utils.connection_manager - INFO - Session monitoring started
+2025-05-04 19:41:36,040 - src.utils.connection_manager - INFO - Client connected with session ID: fb74f73a-a273-43a0-95bd-c3daa4c0418d
+2025-05-04 19:41:36,045 - src.mcp_server.server - INFO - Client disconnected: fb74f73a-a273-43a0-95bd-c3daa4c0418d
+2025-05-04 19:41:36,048 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: fb74f73a-a273-43a0-95bd-c3daa4c0418d
+2025-05-04 19:41:36,056 - src.utils.connection_manager - INFO - Client connected with session ID: b2f0aaf2-2f51-4eee-8db3-d9ac10472c06
+2025-05-04 19:41:39,040 - src.mcp_server.server - INFO - Client disconnected: b2f0aaf2-2f51-4eee-8db3-d9ac10472c06
+2025-05-04 19:41:39,041 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: b2f0aaf2-2f51-4eee-8db3-d9ac10472c06
+2025-05-04 19:41:39,042 - src.utils.connection_manager - INFO - Client connected with session ID: 3e6d464f-d50e-4ea9-942f-70a7fbf6515b
+2025-05-04 19:41:42,049 - src.mcp_server.server - INFO - Client disconnected: 3e6d464f-d50e-4ea9-942f-70a7fbf6515b
+2025-05-04 19:41:42,050 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 3e6d464f-d50e-4ea9-942f-70a7fbf6515b
+2025-05-04 19:41:42,057 - src.utils.connection_manager - INFO - Client connected with session ID: b09a3d72-ec5c-4d1f-8576-bf2b37cca996
+2025-05-04 19:41:45,060 - src.utils.connection_manager - INFO - Client connected with session ID: e1033d87-b28c-4949-a561-5a1a7863d0cb
+2025-05-04 19:41:45,061 - src.mcp_server.server - INFO - Client disconnected: b09a3d72-ec5c-4d1f-8576-bf2b37cca996
+2025-05-04 19:41:45,062 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: b09a3d72-ec5c-4d1f-8576-bf2b37cca996
+2025-05-04 19:41:48,059 - src.mcp_server.server - INFO - Client disconnected: e1033d87-b28c-4949-a561-5a1a7863d0cb
+2025-05-04 19:41:48,060 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: e1033d87-b28c-4949-a561-5a1a7863d0cb
+2025-05-04 19:41:48,062 - src.utils.connection_manager - INFO - Client connected with session ID: ec1d0a6e-d0bd-4012-a694-b01304a5fcfb
+2025-05-04 19:41:51,063 - src.mcp_server.server - INFO - Client disconnected: ec1d0a6e-d0bd-4012-a694-b01304a5fcfb
+2025-05-04 19:41:51,064 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: ec1d0a6e-d0bd-4012-a694-b01304a5fcfb
+2025-05-04 19:41:51,067 - src.utils.connection_manager - INFO - Client connected with session ID: b98fd43d-9e75-4cb9-bd2e-7cc7eb8f4bd1
+2025-05-04 19:41:54,067 - src.mcp_server.server - INFO - Client disconnected: b98fd43d-9e75-4cb9-bd2e-7cc7eb8f4bd1
+2025-05-04 19:41:54,068 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: b98fd43d-9e75-4cb9-bd2e-7cc7eb8f4bd1
+2025-05-04 19:41:54,071 - src.utils.connection_manager - INFO - Client connected with session ID: 03fafdf2-d963-418f-8e73-5bbfb66e9571
+2025-05-04 19:41:57,070 - src.mcp_server.server - INFO - Client disconnected: 03fafdf2-d963-418f-8e73-5bbfb66e9571
+2025-05-04 19:41:57,071 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 03fafdf2-d963-418f-8e73-5bbfb66e9571
+2025-05-04 19:41:57,075 - src.utils.connection_manager - INFO - Client connected with session ID: d643d077-2473-45a1-a48e-10766c550e97
+2025-05-04 19:42:00,179 - src.utils.connection_manager - INFO - Client connected with session ID: 9e7ebe01-bfa7-418b-8a06-117f0930aab5
+2025-05-04 19:42:00,184 - src.mcp_server.server - INFO - Client disconnected: d643d077-2473-45a1-a48e-10766c550e97
+2025-05-04 19:42:00,184 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: d643d077-2473-45a1-a48e-10766c550e97
+2025-05-04 19:42:03,508 - src.mcp_server.server - INFO - Client disconnected: 9e7ebe01-bfa7-418b-8a06-117f0930aab5
+2025-05-04 19:42:03,508 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 9e7ebe01-bfa7-418b-8a06-117f0930aab5
+2025-05-04 19:42:03,523 - src.utils.connection_manager - INFO - Client connected with session ID: dc65377d-2347-47d0-aae2-66960dffaf62
+2025-05-04 19:42:06,513 - src.mcp_server.server - INFO - Client disconnected: dc65377d-2347-47d0-aae2-66960dffaf62
+2025-05-04 19:42:06,515 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: dc65377d-2347-47d0-aae2-66960dffaf62
+2025-05-04 19:42:06,519 - src.utils.connection_manager - INFO - Client connected with session ID: 23dd7d7a-b0b8-4138-baa0-d0f494853830
+2025-05-04 19:42:09,524 - src.mcp_server.server - INFO - Client disconnected: 23dd7d7a-b0b8-4138-baa0-d0f494853830
+2025-05-04 19:42:09,525 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 23dd7d7a-b0b8-4138-baa0-d0f494853830
+2025-05-04 19:42:09,526 - src.utils.connection_manager - INFO - Client connected with session ID: 21268899-8753-4a4e-91df-1c0d850b5ed2
+2025-05-04 19:42:12,529 - src.mcp_server.server - INFO - Client disconnected: 21268899-8753-4a4e-91df-1c0d850b5ed2
+2025-05-04 19:42:12,529 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 21268899-8753-4a4e-91df-1c0d850b5ed2
+2025-05-04 19:42:12,533 - src.utils.connection_manager - INFO - Client connected with session ID: 7e52e207-630d-4878-813a-22b523bf6854
+2025-05-04 19:42:16,167 - src.utils.connection_manager - INFO - Client connected with session ID: bc9ad740-5714-4b39-80fe-e0c24deb1442
+2025-05-04 19:42:16,168 - src.mcp_server.server - INFO - Client disconnected: 7e52e207-630d-4878-813a-22b523bf6854
+2025-05-04 19:42:16,168 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 7e52e207-630d-4878-813a-22b523bf6854
+2025-05-04 19:42:16,439 - src.mcp_server.server - INFO - Client disconnected: bc9ad740-5714-4b39-80fe-e0c24deb1442
+2025-05-04 19:42:16,439 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: bc9ad740-5714-4b39-80fe-e0c24deb1442
+2025-05-04 19:42:16,545 - __main__ - INFO - Received signal 2, shutting down gracefully
+2025-05-04 19:42:16,545 - __main__ - INFO - Allowing running tasks to complete
+2025-05-04 19:42:16,549 - __main__ - INFO - Cleaning up resources...
+2025-05-04 19:42:16,554 - __main__ - INFO - Temporary files cleaned up
+2025-05-04 19:42:16,554 - __main__ - INFO - Resource cleanup completed
+2025-05-04 19:42:16,557 - root - CRITICAL - Unhandled exception: Event loop stopped before Future completed.
+2025-05-04 19:42:16,567 - root - CRITICAL - Traceback (most recent call last):
+  File "/Users/khalil/Documents/Github/GeoGemma/GIS_Agent/src/main.py", line 225, in main
+    asyncio.run(async_main(args))
+  File "/Users/khalil/.pyenv/versions/3.10.13/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/Users/khalil/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 647, in run_until_complete
+    raise RuntimeError('Event loop stopped before Future completed.')
+RuntimeError: Event loop stopped before Future completed.
+
+2025-05-04 19:42:20,686 - __main__ - INFO - Received signal 2, shutting down gracefully
+2025-05-04 19:42:20,687 - __main__ - INFO - Allowing running tasks to complete
+2025-05-04 19:46:25,043 - root - INFO - GIS AI Agent starting in production mode
+2025-05-04 19:46:25,044 - src.mcp_server.server - INFO - Added climate analysis tool: analyze_climate_trends
+2025-05-04 19:46:25,044 - src.mcp_server.server - INFO - Added climate analysis tool: track_emissions
+2025-05-04 19:46:25,044 - src.mcp_server.server - INFO - Added climate analysis tool: project_climate_scenarios
+2025-05-04 19:46:25,044 - src.mcp_server.server - INFO - Added climate analysis tool: analyze_renewable_energy_potential
+2025-05-04 19:46:25,045 - src.mcp_server.server - INFO - Added resilience planning tool: assess_disaster_risk
+2025-05-04 19:46:25,045 - src.mcp_server.server - INFO - Added resilience planning tool: evaluate_infrastructure_vulnerability
+2025-05-04 19:46:25,045 - src.mcp_server.server - INFO - Added resilience planning tool: design_adaptation_measures
+2025-05-04 19:46:25,045 - src.mcp_server.server - INFO - Added resilience planning tool: assess_community_resilience
+2025-05-04 19:46:25,045 - src.utils.cache - INFO - Cache initialized with directory: /Users/khalil/Documents/Github/GeoGemma/GIS_Agent/data/cache
+2025-05-04 19:46:25,045 - src.utils.tool_executor - INFO - ToolExecutor initialized with 25 tools
+2025-05-04 19:46:25,181 - src.utils.firebase_storage - INFO - Initialized encryption with derived key
+2025-05-04 19:46:25,181 - src.utils.firebase_storage - INFO - Firebase storage initialized with database URL: https://geogemma-f32a4-default-rtdb.firebaseio.com
+2025-05-04 19:46:25,182 - src.utils.cache - INFO - Cache maintenance scheduled with interval: 3600 seconds
+2025-05-04 19:46:25,182 - src.mcp_server.server - INFO - MCP Server 'assess_community_resilience' initialized with 25 tools
+2025-05-04 19:46:25,182 - src.utils.cache - INFO - Cache maintenance scheduled with interval: 3600 seconds
+2025-05-04 19:46:25,183 - __main__ - INFO - Starting GIS AI Agent server at 0.0.0.0:8080
+2025-05-04 19:46:25,183 - src.utils.connection_manager - INFO - Session monitoring started
+2025-05-04 19:46:28,060 - src.utils.connection_manager - INFO - Client connected with session ID: 7c59136d-2350-455b-ba8e-00e4e63c98de
+2025-05-04 19:46:51,690 - src.mcp_server.server - INFO - Using chat history for session 7c59136d-2350-455b-ba8e-00e4e63c98de with 2 messages
+2025-05-04 19:46:54,094 - src.utils.firebase_storage - ERROR - Firebase put error: 404 - {
+  "error" : "404 Not Found"
+}
+
+2025-05-04 19:46:54,095 - src.utils.firebase_storage - WARNING - Firebase database does not exist - disabling write operations
+2025-05-04 19:46:58,861 - src.mcp_server.server - INFO - Using chat history for session 7c59136d-2350-455b-ba8e-00e4e63c98de with 4 messages
+2025-05-04 19:46:59,508 - src.mcp_server.server - INFO - LLM requested tool call: get_carbon_footprint with args: {'activity_type': 'all', 'area': 'New York City'}
+2025-05-04 19:46:59,510 - src.tools.sustainability_assessment - ERROR - Error calculating carbon footprint: 'coroutine' object has no attribute 'calculate_carbon_footprint'
+2025-05-04 19:46:59,527 - src.utils.tool_executor - INFO - Tool get_carbon_footprint executed in 0.02s
+2025-05-04 19:46:59,528 - src.mcp_server.server - INFO - Tool get_carbon_footprint executed successfully.
+2025-05-04 19:46:59,528 - src.mcp_server.server - WARNING - Tool get_carbon_footprint returned an error: 'coroutine' object has no attribute 'calculate_carbon_footprint'
+2025-05-04 19:47:04,594 - src.gemini.client - INFO - Gemini API call (no tools) completed in 5.06 seconds.
+2025-05-04 19:47:04,601 - src.utils.tool_executor - INFO - Tool analyze_query_with_gemini executed in 5.07s
+2025-05-04 19:47:04,601 - src.mcp_server.server - INFO - Using Gemini fallback analysis for get_carbon_footprint
+2025-05-04 19:48:04,778 - src.mcp_server.server - INFO - Client disconnected: 7c59136d-2350-455b-ba8e-00e4e63c98de
+2025-05-04 19:48:04,806 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 7c59136d-2350-455b-ba8e-00e4e63c98de
+2025-05-04 19:48:14,680 - src.utils.connection_manager - INFO - Client connected with session ID: 7c287b81-2931-4958-b029-8d92c2f0697d
+2025-05-04 19:48:14,682 - src.mcp_server.server - INFO - Client disconnected: 7c287b81-2931-4958-b029-8d92c2f0697d
+2025-05-04 19:48:14,682 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 7c287b81-2931-4958-b029-8d92c2f0697d
+2025-05-04 19:48:14,683 - src.utils.connection_manager - INFO - Client connected with session ID: 57b51b15-8ac4-4647-a4a9-9e9831c8b7e7
+2025-05-04 19:48:17,656 - src.utils.connection_manager - INFO - Client connected with session ID: af06db51-db62-4195-8c6a-236eeca09a15
+2025-05-04 19:48:17,658 - src.mcp_server.server - INFO - Client disconnected: 57b51b15-8ac4-4647-a4a9-9e9831c8b7e7
+2025-05-04 19:48:17,664 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 57b51b15-8ac4-4647-a4a9-9e9831c8b7e7
+2025-05-04 19:48:20,658 - src.mcp_server.server - INFO - Client disconnected: af06db51-db62-4195-8c6a-236eeca09a15
+2025-05-04 19:48:20,658 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: af06db51-db62-4195-8c6a-236eeca09a15
+2025-05-04 19:48:20,661 - src.utils.connection_manager - INFO - Client connected with session ID: 18096084-a96a-48c6-b174-ce470aa95a21
+2025-05-04 19:48:22,252 - src.mcp_server.server - INFO - Using chat history for session 18096084-a96a-48c6-b174-ce470aa95a21 with 2 messages
+2025-05-04 19:48:23,664 - src.mcp_server.server - INFO - Client disconnected: 18096084-a96a-48c6-b174-ce470aa95a21
+2025-05-04 19:48:23,665 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 18096084-a96a-48c6-b174-ce470aa95a21
+2025-05-04 19:48:23,668 - src.utils.connection_manager - INFO - Client connected with session ID: 92ff4aa6-14ca-4139-b24c-a0eaf346ae18
+2025-05-04 19:48:26,670 - src.mcp_server.server - INFO - Client disconnected: 92ff4aa6-14ca-4139-b24c-a0eaf346ae18
+2025-05-04 19:48:26,671 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 92ff4aa6-14ca-4139-b24c-a0eaf346ae18
+2025-05-04 19:48:26,672 - src.utils.connection_manager - INFO - Client connected with session ID: ecd099be-8b6b-473c-ba3e-6eca637af827
+2025-05-04 19:48:29,090 - src.mcp_server.server - INFO - Using chat history for session ecd099be-8b6b-473c-ba3e-6eca637af827 with 2 messages
+2025-05-04 19:48:29,674 - src.utils.connection_manager - INFO - Client connected with session ID: 1462e401-f143-4432-8b4e-54d1d635ec5c
+2025-05-04 19:48:29,689 - src.mcp_server.server - INFO - Client disconnected: ecd099be-8b6b-473c-ba3e-6eca637af827
+2025-05-04 19:48:29,690 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: ecd099be-8b6b-473c-ba3e-6eca637af827
+2025-05-04 19:48:32,677 - src.mcp_server.server - INFO - Client disconnected: 1462e401-f143-4432-8b4e-54d1d635ec5c
+2025-05-04 19:48:32,678 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 1462e401-f143-4432-8b4e-54d1d635ec5c
+2025-05-04 19:48:32,681 - src.utils.connection_manager - INFO - Client connected with session ID: 3566b89c-ce0f-4227-8c8d-a1105d12b7e7
+2025-05-04 19:48:35,683 - src.mcp_server.server - INFO - Client disconnected: 3566b89c-ce0f-4227-8c8d-a1105d12b7e7
+2025-05-04 19:48:35,684 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 3566b89c-ce0f-4227-8c8d-a1105d12b7e7
+2025-05-04 19:48:35,687 - src.utils.connection_manager - INFO - Client connected with session ID: d0fd855a-24a5-426f-8e4b-fed52c3573c1
+2025-05-04 19:48:38,697 - src.mcp_server.server - INFO - Client disconnected: d0fd855a-24a5-426f-8e4b-fed52c3573c1
+2025-05-04 19:48:38,698 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: d0fd855a-24a5-426f-8e4b-fed52c3573c1
+2025-05-04 19:48:38,699 - src.utils.connection_manager - INFO - Client connected with session ID: 48087b3d-393f-452c-890b-8a0d02f0ef7a
+2025-05-04 19:48:41,715 - src.mcp_server.server - INFO - Client disconnected: 48087b3d-393f-452c-890b-8a0d02f0ef7a
+2025-05-04 19:48:41,716 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 48087b3d-393f-452c-890b-8a0d02f0ef7a
+2025-05-04 19:48:41,730 - src.utils.connection_manager - INFO - Client connected with session ID: 16bc8083-4f85-47ef-afdb-41f4123fcc3c
+2025-05-04 19:48:44,710 - src.mcp_server.server - INFO - Client disconnected: 16bc8083-4f85-47ef-afdb-41f4123fcc3c
+2025-05-04 19:48:44,710 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 16bc8083-4f85-47ef-afdb-41f4123fcc3c
+2025-05-04 19:48:44,713 - src.utils.connection_manager - INFO - Client connected with session ID: d523159f-c6d5-445a-a487-eddc34089244
+2025-05-04 19:48:47,717 - src.mcp_server.server - INFO - Client disconnected: d523159f-c6d5-445a-a487-eddc34089244
+2025-05-04 19:48:47,718 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: d523159f-c6d5-445a-a487-eddc34089244
+2025-05-04 19:48:47,720 - src.utils.connection_manager - INFO - Client connected with session ID: 03ad4d6c-2bc0-4346-8a98-d19ecdb8be51
+2025-05-04 19:48:50,721 - src.mcp_server.server - INFO - Client disconnected: 03ad4d6c-2bc0-4346-8a98-d19ecdb8be51
+2025-05-04 19:48:50,721 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 03ad4d6c-2bc0-4346-8a98-d19ecdb8be51
+2025-05-04 19:48:50,723 - src.utils.connection_manager - INFO - Client connected with session ID: 27b5a7d3-bc61-4929-995d-b8aca6c4c91a
+2025-05-04 19:48:53,734 - src.utils.connection_manager - INFO - Client connected with session ID: bd550fa1-b696-4e07-9219-e026b434b242
+2025-05-04 19:48:53,735 - src.mcp_server.server - INFO - Client disconnected: 27b5a7d3-bc61-4929-995d-b8aca6c4c91a
+2025-05-04 19:48:53,735 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 27b5a7d3-bc61-4929-995d-b8aca6c4c91a
+2025-05-04 19:48:56,735 - src.mcp_server.server - INFO - Client disconnected: bd550fa1-b696-4e07-9219-e026b434b242
+2025-05-04 19:48:56,736 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: bd550fa1-b696-4e07-9219-e026b434b242
+2025-05-04 19:48:56,738 - src.utils.connection_manager - INFO - Client connected with session ID: 1c686c95-94f9-48f9-97cc-29eb9683fcaa
+2025-05-04 19:48:59,744 - src.mcp_server.server - INFO - Client disconnected: 1c686c95-94f9-48f9-97cc-29eb9683fcaa
+2025-05-04 19:48:59,745 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 1c686c95-94f9-48f9-97cc-29eb9683fcaa
+2025-05-04 19:48:59,803 - src.utils.connection_manager - INFO - Client connected with session ID: 6a5e8ffa-8f5e-4c71-8bc4-de25f2c6edd9
+2025-05-04 19:49:02,764 - src.mcp_server.server - INFO - Client disconnected: 6a5e8ffa-8f5e-4c71-8bc4-de25f2c6edd9
+2025-05-04 19:49:02,767 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 6a5e8ffa-8f5e-4c71-8bc4-de25f2c6edd9
+2025-05-04 19:49:02,791 - src.utils.connection_manager - INFO - Client connected with session ID: eee00626-fdd6-42d0-96fa-8f63a4cfbe1d
+2025-05-04 19:49:05,779 - src.mcp_server.server - INFO - Client disconnected: eee00626-fdd6-42d0-96fa-8f63a4cfbe1d
+2025-05-04 19:49:05,780 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: eee00626-fdd6-42d0-96fa-8f63a4cfbe1d
+2025-05-04 19:49:05,782 - src.utils.connection_manager - INFO - Client connected with session ID: 2bfb0ace-ac42-416a-9f31-fd6ea2df53bc
+2025-05-04 19:49:08,791 - src.utils.connection_manager - INFO - Client connected with session ID: 032a97a8-494c-4152-b497-f51e73ad6e70
+2025-05-04 19:49:08,802 - src.mcp_server.server - INFO - Client disconnected: 2bfb0ace-ac42-416a-9f31-fd6ea2df53bc
+2025-05-04 19:49:08,803 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2bfb0ace-ac42-416a-9f31-fd6ea2df53bc
+2025-05-04 19:49:11,801 - src.utils.connection_manager - INFO - Client connected with session ID: 24ac1b48-1228-4302-b521-b41419f59228
+2025-05-04 19:49:11,802 - src.mcp_server.server - INFO - Client disconnected: 032a97a8-494c-4152-b497-f51e73ad6e70
+2025-05-04 19:49:11,805 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 032a97a8-494c-4152-b497-f51e73ad6e70
+2025-05-04 19:49:14,809 - src.mcp_server.server - INFO - Client disconnected: 24ac1b48-1228-4302-b521-b41419f59228
+2025-05-04 19:49:14,811 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 24ac1b48-1228-4302-b521-b41419f59228
+2025-05-04 19:49:14,826 - src.utils.connection_manager - INFO - Client connected with session ID: 2c324991-55e8-4bd2-8623-4dd401817a55
+2025-05-04 19:49:16,899 - src.mcp_server.server - INFO - Client disconnected: 2c324991-55e8-4bd2-8623-4dd401817a55
+2025-05-04 19:49:16,900 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2c324991-55e8-4bd2-8623-4dd401817a55
+2025-05-04 19:49:17,005 - __main__ - INFO - Received signal 2, shutting down gracefully
+2025-05-04 19:49:17,005 - __main__ - INFO - Allowing running tasks to complete
+2025-05-04 19:49:17,008 - __main__ - INFO - Cleaning up resources...
+2025-05-04 19:49:17,013 - __main__ - INFO - Temporary files cleaned up
+2025-05-04 19:49:17,013 - __main__ - INFO - Resource cleanup completed
+2025-05-04 19:49:17,016 - root - CRITICAL - Unhandled exception: Event loop stopped before Future completed.
+2025-05-04 19:49:17,034 - root - CRITICAL - Traceback (most recent call last):
+  File "/Users/khalil/Documents/Github/GeoGemma/GIS_Agent/src/main.py", line 225, in main
+    asyncio.run(async_main(args))
+  File "/Users/khalil/.pyenv/versions/3.10.13/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/Users/khalil/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 647, in run_until_complete
+    raise RuntimeError('Event loop stopped before Future completed.')
+RuntimeError: Event loop stopped before Future completed.
+
+2025-05-04 19:49:18,920 - __main__ - INFO - Received signal 2, shutting down gracefully
+2025-05-04 19:49:18,920 - __main__ - INFO - Allowing running tasks to complete
+2025-05-04 19:51:26,777 - root - INFO - GIS AI Agent starting in production mode
+2025-05-04 19:51:26,779 - src.mcp_server.server - INFO - Added climate analysis tool: analyze_climate_trends
+2025-05-04 19:51:26,780 - src.mcp_server.server - INFO - Added climate analysis tool: track_emissions
+2025-05-04 19:51:26,780 - src.mcp_server.server - INFO - Added climate analysis tool: project_climate_scenarios
+2025-05-04 19:51:26,780 - src.mcp_server.server - INFO - Added climate analysis tool: analyze_renewable_energy_potential
+2025-05-04 19:51:26,780 - src.mcp_server.server - INFO - Added resilience planning tool: assess_disaster_risk
+2025-05-04 19:51:26,781 - src.mcp_server.server - INFO - Added resilience planning tool: evaluate_infrastructure_vulnerability
+2025-05-04 19:51:26,781 - src.mcp_server.server - INFO - Added resilience planning tool: design_adaptation_measures
+2025-05-04 19:51:26,781 - src.mcp_server.server - INFO - Added resilience planning tool: assess_community_resilience
+2025-05-04 19:51:26,782 - src.utils.cache - INFO - Cache initialized with directory: /Users/khalil/Documents/Github/GeoGemma/GIS_Agent/data/cache
+2025-05-04 19:51:26,782 - src.utils.tool_executor - INFO - ToolExecutor initialized with 25 tools
+2025-05-04 19:51:26,886 - src.utils.firebase_storage - INFO - Initialized encryption with derived key
+2025-05-04 19:51:26,887 - src.utils.firebase_storage - INFO - Firebase storage initialized with database URL: https://geogemma-f32a4-default-rtdb.firebaseio.com
+2025-05-04 19:51:26,887 - src.utils.cache - INFO - Cache maintenance scheduled with interval: 3600 seconds
+2025-05-04 19:51:26,887 - src.mcp_server.server - INFO - MCP Server 'assess_community_resilience' initialized with 25 tools
+2025-05-04 19:51:26,888 - src.utils.cache - INFO - Cache maintenance scheduled with interval: 3600 seconds
+2025-05-04 19:51:26,888 - __main__ - INFO - Starting GIS AI Agent server at 0.0.0.0:8080
+2025-05-04 19:51:26,888 - src.utils.connection_manager - INFO - Session monitoring started
+2025-05-04 19:51:34,728 - src.utils.connection_manager - INFO - Client connected with session ID: d8436c22-5a35-4c48-870c-93485367451b
+2025-05-04 19:51:34,732 - src.mcp_server.server - INFO - Client disconnected: d8436c22-5a35-4c48-870c-93485367451b
+2025-05-04 19:51:34,733 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: d8436c22-5a35-4c48-870c-93485367451b
+2025-05-04 19:51:34,739 - src.utils.connection_manager - INFO - Client connected with session ID: 16207136-c1c4-4c90-8434-9abd6fde6562
+2025-05-04 19:51:37,734 - src.mcp_server.server - INFO - Client disconnected: 16207136-c1c4-4c90-8434-9abd6fde6562
+2025-05-04 19:51:37,736 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 16207136-c1c4-4c90-8434-9abd6fde6562
+2025-05-04 19:51:37,739 - src.utils.connection_manager - INFO - Client connected with session ID: fecd2f5e-a76c-4f02-8f4c-2063014cff68
+2025-05-04 19:51:40,750 - src.mcp_server.server - INFO - Client disconnected: fecd2f5e-a76c-4f02-8f4c-2063014cff68
+2025-05-04 19:51:40,753 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: fecd2f5e-a76c-4f02-8f4c-2063014cff68
+2025-05-04 19:51:40,755 - src.utils.connection_manager - INFO - Client connected with session ID: 9f8587bc-b616-41bd-87b7-2d3e3f07361a
+2025-05-04 19:51:44,187 - src.utils.connection_manager - INFO - Client connected with session ID: 23280e50-e4f2-4c15-b1eb-857adf4e5869
+2025-05-04 19:51:44,189 - src.mcp_server.server - INFO - Client disconnected: 9f8587bc-b616-41bd-87b7-2d3e3f07361a
+2025-05-04 19:51:44,190 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 9f8587bc-b616-41bd-87b7-2d3e3f07361a
+2025-05-04 19:51:48,161 - src.utils.connection_manager - INFO - Client connected with session ID: 5a2045b8-8a28-4e88-a830-f069c65f5508
+2025-05-04 19:51:48,162 - src.mcp_server.server - INFO - Client disconnected: 23280e50-e4f2-4c15-b1eb-857adf4e5869
+2025-05-04 19:51:48,162 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 23280e50-e4f2-4c15-b1eb-857adf4e5869
+2025-05-04 19:51:51,164 - src.mcp_server.server - INFO - Client disconnected: 5a2045b8-8a28-4e88-a830-f069c65f5508
+2025-05-04 19:51:51,166 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 5a2045b8-8a28-4e88-a830-f069c65f5508
+2025-05-04 19:51:51,170 - src.utils.connection_manager - INFO - Client connected with session ID: e702c3eb-3b18-4dc5-a96d-a50c6405f5ed
+2025-05-04 19:51:54,150 - src.mcp_server.server - INFO - Using chat history for session e702c3eb-3b18-4dc5-a96d-a50c6405f5ed with 2 messages
+2025-05-04 19:51:54,209 - src.utils.connection_manager - INFO - Client connected with session ID: 410df351-8f18-4f32-b5d8-aa010b1ebfd7
+2025-05-04 19:51:55,565 - src.mcp_server.server - INFO - LLM requested tool call: get_current_weather with args: {'location': 'Tokyo'}
+2025-05-04 19:51:56,206 - src.utils.tool_executor - INFO - Tool get_current_weather executed in 0.64s
+2025-05-04 19:51:56,207 - src.mcp_server.server - INFO - Tool get_current_weather executed successfully.
+2025-05-04 19:51:56,208 - src.mcp_server.server - INFO - Requesting analysis of get_current_weather results from Gemini
+2025-05-04 19:51:57,210 - src.mcp_server.server - INFO - Client disconnected: 410df351-8f18-4f32-b5d8-aa010b1ebfd7
+2025-05-04 19:51:57,211 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 410df351-8f18-4f32-b5d8-aa010b1ebfd7
+2025-05-04 19:51:57,212 - src.utils.connection_manager - INFO - Client connected with session ID: 835e448f-d086-4374-9f60-692d6fe5b0f1
+2025-05-04 19:52:00,230 - src.utils.connection_manager - INFO - Client connected with session ID: e99767da-b00f-41bf-bdea-a063fcee711e
+2025-05-04 19:52:00,235 - src.mcp_server.server - INFO - Client disconnected: 835e448f-d086-4374-9f60-692d6fe5b0f1
+2025-05-04 19:52:00,235 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 835e448f-d086-4374-9f60-692d6fe5b0f1
+2025-05-04 19:52:00,496 - src.mcp_server.server - INFO - Generated analysis for get_current_weather results
+2025-05-04 19:52:00,497 - src.mcp_server.server - INFO - Client disconnected: e702c3eb-3b18-4dc5-a96d-a50c6405f5ed
+2025-05-04 19:52:00,497 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: e702c3eb-3b18-4dc5-a96d-a50c6405f5ed
+2025-05-04 19:52:03,238 - src.mcp_server.server - INFO - Client disconnected: e99767da-b00f-41bf-bdea-a063fcee711e
+2025-05-04 19:52:03,240 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: e99767da-b00f-41bf-bdea-a063fcee711e
+2025-05-04 19:52:03,246 - src.utils.connection_manager - INFO - Client connected with session ID: 795a3e3d-8af0-4e11-88e0-e8ca0fb9abd6
+2025-05-04 19:52:06,243 - src.mcp_server.server - INFO - Client disconnected: 795a3e3d-8af0-4e11-88e0-e8ca0fb9abd6
+2025-05-04 19:52:06,245 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 795a3e3d-8af0-4e11-88e0-e8ca0fb9abd6
+2025-05-04 19:52:06,322 - src.utils.connection_manager - INFO - Client connected with session ID: c72f0b21-638e-4439-9aa1-ac281ec9337e
+2025-05-04 19:52:09,246 - src.mcp_server.server - INFO - Client disconnected: c72f0b21-638e-4439-9aa1-ac281ec9337e
+2025-05-04 19:52:09,247 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: c72f0b21-638e-4439-9aa1-ac281ec9337e
+2025-05-04 19:52:09,250 - src.utils.connection_manager - INFO - Client connected with session ID: 2ee87136-7623-437d-a144-326e4c029e3c
+2025-05-04 19:52:13,172 - src.utils.connection_manager - INFO - Client connected with session ID: 8c4f31d2-7ece-4aa3-8e9c-bd6891b611c5
+2025-05-04 19:52:13,172 - src.mcp_server.server - INFO - Client disconnected: 2ee87136-7623-437d-a144-326e4c029e3c
+2025-05-04 19:52:13,173 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2ee87136-7623-437d-a144-326e4c029e3c
+2025-05-04 19:52:16,592 - src.mcp_server.server - INFO - Client disconnected: 8c4f31d2-7ece-4aa3-8e9c-bd6891b611c5
+2025-05-04 19:52:16,595 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 8c4f31d2-7ece-4aa3-8e9c-bd6891b611c5
+2025-05-04 19:52:16,598 - src.utils.connection_manager - INFO - Client connected with session ID: eff16925-eb5f-4763-bdec-89066bc72409
+2025-05-04 19:52:19,604 - src.mcp_server.server - INFO - Client disconnected: eff16925-eb5f-4763-bdec-89066bc72409
+2025-05-04 19:52:19,605 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: eff16925-eb5f-4763-bdec-89066bc72409
+2025-05-04 19:52:19,608 - src.utils.connection_manager - INFO - Client connected with session ID: 34ef7c28-f4a8-4f84-86df-426f5d6c1cac
+2025-05-04 19:52:22,597 - src.mcp_server.server - INFO - Client disconnected: 34ef7c28-f4a8-4f84-86df-426f5d6c1cac
+2025-05-04 19:52:22,598 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 34ef7c28-f4a8-4f84-86df-426f5d6c1cac
+2025-05-04 19:52:22,601 - src.utils.connection_manager - INFO - Client connected with session ID: d5270f19-c0f9-460b-b825-7b0bfd2e89f9
+2025-05-04 19:52:25,607 - src.utils.connection_manager - INFO - Client connected with session ID: 54e9e387-6a70-4d27-a38c-2bb883705a2e
+2025-05-04 19:52:25,609 - src.mcp_server.server - INFO - Client disconnected: d5270f19-c0f9-460b-b825-7b0bfd2e89f9
+2025-05-04 19:52:25,610 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: d5270f19-c0f9-460b-b825-7b0bfd2e89f9
+2025-05-04 19:52:28,611 - src.mcp_server.server - INFO - Client disconnected: 54e9e387-6a70-4d27-a38c-2bb883705a2e
+2025-05-04 19:52:28,615 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 54e9e387-6a70-4d27-a38c-2bb883705a2e
+2025-05-04 19:52:28,638 - src.utils.connection_manager - INFO - Client connected with session ID: 2037879c-403b-4cfc-9661-2b8ca321ed13
+2025-05-04 19:52:31,625 - src.mcp_server.server - INFO - Client disconnected: 2037879c-403b-4cfc-9661-2b8ca321ed13
+2025-05-04 19:52:31,626 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2037879c-403b-4cfc-9661-2b8ca321ed13
+2025-05-04 19:52:31,631 - src.utils.connection_manager - INFO - Client connected with session ID: ba41c734-630b-41fb-bdab-8272429df603
+2025-05-04 19:52:34,625 - src.mcp_server.server - INFO - Client disconnected: ba41c734-630b-41fb-bdab-8272429df603
+2025-05-04 19:52:34,626 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: ba41c734-630b-41fb-bdab-8272429df603
+2025-05-04 19:52:34,628 - src.utils.connection_manager - INFO - Client connected with session ID: 5a0bad28-3519-403b-8782-1cd4546bb1a3
+2025-05-04 19:52:37,631 - src.mcp_server.server - INFO - Client disconnected: 5a0bad28-3519-403b-8782-1cd4546bb1a3
+2025-05-04 19:52:37,633 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 5a0bad28-3519-403b-8782-1cd4546bb1a3
+2025-05-04 19:52:37,638 - src.utils.connection_manager - INFO - Client connected with session ID: 858ba45b-8014-4271-938c-46fafd36ddb4
+2025-05-04 19:52:40,640 - src.mcp_server.server - INFO - Client disconnected: 858ba45b-8014-4271-938c-46fafd36ddb4
+2025-05-04 19:52:40,641 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 858ba45b-8014-4271-938c-46fafd36ddb4
+2025-05-04 19:52:40,643 - src.utils.connection_manager - INFO - Client connected with session ID: 78c751b2-05bf-4553-941e-0eee79ff18e0
+2025-05-04 19:52:44,176 - src.mcp_server.server - INFO - Client disconnected: 78c751b2-05bf-4553-941e-0eee79ff18e0
+2025-05-04 19:52:44,178 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 78c751b2-05bf-4553-941e-0eee79ff18e0
+2025-05-04 19:52:44,180 - src.utils.connection_manager - INFO - Client connected with session ID: 9d3f9cc3-b2c0-45c3-b3ba-62cbc6da8997
+2025-05-04 19:52:48,163 - src.mcp_server.server - INFO - Client disconnected: 9d3f9cc3-b2c0-45c3-b3ba-62cbc6da8997
+2025-05-04 19:52:48,164 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 9d3f9cc3-b2c0-45c3-b3ba-62cbc6da8997
+2025-05-04 19:52:48,167 - src.utils.connection_manager - INFO - Client connected with session ID: ba07d7a1-cbdf-4794-972a-591d58f4817a
+2025-05-04 19:52:52,160 - src.mcp_server.server - INFO - Client disconnected: ba07d7a1-cbdf-4794-972a-591d58f4817a
+2025-05-04 19:52:52,161 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: ba07d7a1-cbdf-4794-972a-591d58f4817a
+2025-05-04 19:52:52,163 - src.utils.connection_manager - INFO - Client connected with session ID: 23c9edd1-4fb9-46f7-ba4f-91a92426059c
+2025-05-04 19:52:56,159 - src.mcp_server.server - INFO - Client disconnected: 23c9edd1-4fb9-46f7-ba4f-91a92426059c
+2025-05-04 19:52:56,160 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 23c9edd1-4fb9-46f7-ba4f-91a92426059c
+2025-05-04 19:52:56,162 - src.utils.connection_manager - INFO - Client connected with session ID: f8ad9a17-4fd9-420b-b231-b3398dc08f8e
+2025-05-04 19:53:00,181 - src.utils.connection_manager - INFO - Client connected with session ID: 3f7ffc3f-e638-4888-9577-f2772a5dae18
+2025-05-04 19:53:00,182 - src.mcp_server.server - INFO - Client disconnected: f8ad9a17-4fd9-420b-b231-b3398dc08f8e
+2025-05-04 19:53:00,182 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: f8ad9a17-4fd9-420b-b231-b3398dc08f8e
+2025-05-04 19:53:03,181 - src.mcp_server.server - INFO - Client disconnected: 3f7ffc3f-e638-4888-9577-f2772a5dae18
+2025-05-04 19:53:03,182 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 3f7ffc3f-e638-4888-9577-f2772a5dae18
+2025-05-04 19:53:03,184 - src.utils.connection_manager - INFO - Client connected with session ID: f6fe37db-e872-4952-bdec-6e98a0c40496
+2025-05-04 19:53:06,192 - src.mcp_server.server - INFO - Client disconnected: f6fe37db-e872-4952-bdec-6e98a0c40496
+2025-05-04 19:53:06,193 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: f6fe37db-e872-4952-bdec-6e98a0c40496
+2025-05-04 19:53:06,205 - src.utils.connection_manager - INFO - Client connected with session ID: 58352b86-2eed-4b0d-98e0-415ecca69acd
+2025-05-04 19:53:10,186 - src.mcp_server.server - INFO - Client disconnected: 58352b86-2eed-4b0d-98e0-415ecca69acd
+2025-05-04 19:53:10,187 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 58352b86-2eed-4b0d-98e0-415ecca69acd
+2025-05-04 19:53:10,189 - src.utils.connection_manager - INFO - Client connected with session ID: f80a4317-6df0-41af-86c9-156530fe3e27
+2025-05-04 19:53:14,158 - src.mcp_server.server - INFO - Client disconnected: f80a4317-6df0-41af-86c9-156530fe3e27
+2025-05-04 19:53:14,159 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: f80a4317-6df0-41af-86c9-156530fe3e27
+2025-05-04 19:53:14,161 - src.utils.connection_manager - INFO - Client connected with session ID: 0fa0e20b-5150-4681-a9de-e224d1e0d1e7
+2025-05-04 19:53:18,159 - src.mcp_server.server - INFO - Client disconnected: 0fa0e20b-5150-4681-a9de-e224d1e0d1e7
+2025-05-04 19:53:18,160 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 0fa0e20b-5150-4681-a9de-e224d1e0d1e7
+2025-05-04 19:53:18,162 - src.utils.connection_manager - INFO - Client connected with session ID: 53a9966b-bef3-48eb-97d5-a37bf6709007
+2025-05-04 19:53:22,160 - src.mcp_server.server - INFO - Client disconnected: 53a9966b-bef3-48eb-97d5-a37bf6709007
+2025-05-04 19:53:22,161 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 53a9966b-bef3-48eb-97d5-a37bf6709007
+2025-05-04 19:53:22,163 - src.utils.connection_manager - INFO - Client connected with session ID: e0d573e4-566c-4512-8612-7259cbd8d700
+2025-05-04 19:53:25,720 - src.mcp_server.server - INFO - Client disconnected: e0d573e4-566c-4512-8612-7259cbd8d700
+2025-05-04 19:53:25,721 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: e0d573e4-566c-4512-8612-7259cbd8d700
+2025-05-04 19:53:25,723 - src.utils.connection_manager - INFO - Client connected with session ID: 908c856c-ea21-4491-a5a7-d52c6fbc278f
+2025-05-04 19:53:28,726 - src.mcp_server.server - INFO - Client disconnected: 908c856c-ea21-4491-a5a7-d52c6fbc278f
+2025-05-04 19:53:28,727 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 908c856c-ea21-4491-a5a7-d52c6fbc278f
+2025-05-04 19:53:28,730 - src.utils.connection_manager - INFO - Client connected with session ID: a0995c7a-f881-4dc5-8a56-4658c69531ed
+2025-05-04 19:53:32,177 - src.utils.connection_manager - INFO - Client connected with session ID: 2a7ce8b3-e02d-49d7-8e50-84a714daac60
+2025-05-04 19:53:32,184 - src.mcp_server.server - INFO - Client disconnected: a0995c7a-f881-4dc5-8a56-4658c69531ed
+2025-05-04 19:53:32,185 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: a0995c7a-f881-4dc5-8a56-4658c69531ed
+2025-05-04 19:53:36,159 - src.mcp_server.server - INFO - Client disconnected: 2a7ce8b3-e02d-49d7-8e50-84a714daac60
+2025-05-04 19:53:36,160 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2a7ce8b3-e02d-49d7-8e50-84a714daac60
+2025-05-04 19:53:36,168 - src.utils.connection_manager - INFO - Client connected with session ID: d17e1bde-abc3-4566-8218-42a3b20ed915
+2025-05-04 19:53:40,163 - src.mcp_server.server - INFO - Client disconnected: d17e1bde-abc3-4566-8218-42a3b20ed915
+2025-05-04 19:53:40,164 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: d17e1bde-abc3-4566-8218-42a3b20ed915
+2025-05-04 19:53:40,167 - src.utils.connection_manager - INFO - Client connected with session ID: b043191c-d9fe-4db4-8b67-f5c4296ee8db
+2025-05-04 19:53:44,162 - src.mcp_server.server - INFO - Client disconnected: b043191c-d9fe-4db4-8b67-f5c4296ee8db
+2025-05-04 19:53:44,162 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: b043191c-d9fe-4db4-8b67-f5c4296ee8db
+2025-05-04 19:53:44,165 - src.utils.connection_manager - INFO - Client connected with session ID: 55c0650e-341f-4f67-b68d-6b02d568508f
+2025-05-04 19:53:48,166 - src.mcp_server.server - INFO - Client disconnected: 55c0650e-341f-4f67-b68d-6b02d568508f
+2025-05-04 19:53:48,168 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 55c0650e-341f-4f67-b68d-6b02d568508f
+2025-05-04 19:53:48,171 - src.utils.connection_manager - INFO - Client connected with session ID: b8d9bf9e-8042-413b-8c4d-ed4b9dadd8e8
+2025-05-04 19:53:52,161 - src.mcp_server.server - INFO - Client disconnected: b8d9bf9e-8042-413b-8c4d-ed4b9dadd8e8
+2025-05-04 19:53:52,162 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: b8d9bf9e-8042-413b-8c4d-ed4b9dadd8e8
+2025-05-04 19:53:52,163 - src.utils.connection_manager - INFO - Client connected with session ID: 4754ffa8-add7-4b73-8bf1-49fd46d7ed2e
+2025-05-04 19:53:56,164 - src.utils.connection_manager - INFO - Client connected with session ID: a1e5d402-fc6b-46c2-8c11-051ddab21f73
+2025-05-04 19:53:56,165 - src.mcp_server.server - INFO - Client disconnected: 4754ffa8-add7-4b73-8bf1-49fd46d7ed2e
+2025-05-04 19:53:56,165 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 4754ffa8-add7-4b73-8bf1-49fd46d7ed2e
+2025-05-04 19:54:00,177 - src.utils.connection_manager - INFO - Client connected with session ID: 54244cde-4d49-4e28-a25c-182210fed277
+2025-05-04 19:54:00,178 - src.mcp_server.server - INFO - Client disconnected: a1e5d402-fc6b-46c2-8c11-051ddab21f73
+2025-05-04 19:54:00,178 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: a1e5d402-fc6b-46c2-8c11-051ddab21f73
+2025-05-04 19:54:04,171 - src.mcp_server.server - INFO - Client disconnected: 54244cde-4d49-4e28-a25c-182210fed277
+2025-05-04 19:54:04,172 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 54244cde-4d49-4e28-a25c-182210fed277
+2025-05-04 19:54:04,174 - src.utils.connection_manager - INFO - Client connected with session ID: 18e32a9f-e708-449e-a0bd-52e7b5572ee6
+2025-05-04 19:54:08,192 - src.utils.connection_manager - INFO - Client connected with session ID: 6d5d1dc5-c7e0-48bf-9a80-9b32d384d5c6
+2025-05-04 19:54:08,194 - src.mcp_server.server - INFO - Client disconnected: 18e32a9f-e708-449e-a0bd-52e7b5572ee6
+2025-05-04 19:54:08,195 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 18e32a9f-e708-449e-a0bd-52e7b5572ee6
+2025-05-04 19:54:12,175 - src.mcp_server.server - INFO - Client disconnected: 6d5d1dc5-c7e0-48bf-9a80-9b32d384d5c6
+2025-05-04 19:54:12,176 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 6d5d1dc5-c7e0-48bf-9a80-9b32d384d5c6
+2025-05-04 19:54:12,191 - src.utils.connection_manager - INFO - Client connected with session ID: 8f30c242-f358-4dc6-90b0-e8fce1946735
+2025-05-04 19:54:16,162 - src.mcp_server.server - INFO - Client disconnected: 8f30c242-f358-4dc6-90b0-e8fce1946735
+2025-05-04 19:54:16,163 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 8f30c242-f358-4dc6-90b0-e8fce1946735
+2025-05-04 19:54:16,167 - src.utils.connection_manager - INFO - Client connected with session ID: 2f525997-a77d-4034-848b-baf0efb96d3f
+2025-05-04 19:54:20,160 - src.mcp_server.server - INFO - Client disconnected: 2f525997-a77d-4034-848b-baf0efb96d3f
+2025-05-04 19:54:20,161 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2f525997-a77d-4034-848b-baf0efb96d3f
+2025-05-04 19:54:20,163 - src.utils.connection_manager - INFO - Client connected with session ID: 288b1d2a-81ed-4523-b6d7-9e3100148309
+2025-05-04 19:54:24,162 - src.utils.connection_manager - INFO - Client connected with session ID: aec5b8a3-58cc-474e-a327-428aa1de68c1
+2025-05-04 19:54:24,163 - src.mcp_server.server - INFO - Client disconnected: 288b1d2a-81ed-4523-b6d7-9e3100148309
+2025-05-04 19:54:24,163 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 288b1d2a-81ed-4523-b6d7-9e3100148309
+2025-05-04 19:54:28,160 - src.mcp_server.server - INFO - Client disconnected: aec5b8a3-58cc-474e-a327-428aa1de68c1
+2025-05-04 19:54:28,161 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: aec5b8a3-58cc-474e-a327-428aa1de68c1
+2025-05-04 19:54:28,164 - src.utils.connection_manager - INFO - Client connected with session ID: 8d10497b-9307-496a-a51b-ac4e67653558
+2025-05-04 19:54:32,163 - src.mcp_server.server - INFO - Client disconnected: 8d10497b-9307-496a-a51b-ac4e67653558
+2025-05-04 19:54:32,164 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 8d10497b-9307-496a-a51b-ac4e67653558
+2025-05-04 19:54:32,165 - src.utils.connection_manager - INFO - Client connected with session ID: e30cc5e1-2457-4955-947d-a7a68f1cb532
+2025-05-04 19:54:36,156 - src.mcp_server.server - INFO - Client disconnected: e30cc5e1-2457-4955-947d-a7a68f1cb532
+2025-05-04 19:54:36,156 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: e30cc5e1-2457-4955-947d-a7a68f1cb532
+2025-05-04 19:54:36,158 - src.utils.connection_manager - INFO - Client connected with session ID: 34ea39b2-45dd-483c-9c46-64805ad7bb12
+2025-05-04 19:54:40,161 - src.mcp_server.server - INFO - Client disconnected: 34ea39b2-45dd-483c-9c46-64805ad7bb12
+2025-05-04 19:54:40,162 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 34ea39b2-45dd-483c-9c46-64805ad7bb12
+2025-05-04 19:54:40,165 - src.utils.connection_manager - INFO - Client connected with session ID: 735a91e4-2038-462a-80f4-7a913e8ffeb3
+2025-05-04 19:54:44,158 - src.mcp_server.server - INFO - Client disconnected: 735a91e4-2038-462a-80f4-7a913e8ffeb3
+2025-05-04 19:54:44,159 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 735a91e4-2038-462a-80f4-7a913e8ffeb3
+2025-05-04 19:54:44,161 - src.utils.connection_manager - INFO - Client connected with session ID: 522fe5b2-b113-424b-9c84-31903ca95f39
+2025-05-04 19:54:48,172 - src.mcp_server.server - INFO - Client disconnected: 522fe5b2-b113-424b-9c84-31903ca95f39
+2025-05-04 19:54:48,173 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 522fe5b2-b113-424b-9c84-31903ca95f39
+2025-05-04 19:54:48,177 - src.utils.connection_manager - INFO - Client connected with session ID: 3e9fb6db-e77d-478d-aef0-0f75e5ea54cd
+2025-05-04 19:54:52,160 - src.mcp_server.server - INFO - Client disconnected: 3e9fb6db-e77d-478d-aef0-0f75e5ea54cd
+2025-05-04 19:54:52,161 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 3e9fb6db-e77d-478d-aef0-0f75e5ea54cd
+2025-05-04 19:54:52,163 - src.utils.connection_manager - INFO - Client connected with session ID: ed80d6bb-7015-49b9-8c91-39ad423e1a79
+2025-05-04 19:54:56,161 - src.mcp_server.server - INFO - Client disconnected: ed80d6bb-7015-49b9-8c91-39ad423e1a79
+2025-05-04 19:54:56,161 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: ed80d6bb-7015-49b9-8c91-39ad423e1a79
+2025-05-04 19:54:56,164 - src.utils.connection_manager - INFO - Client connected with session ID: 663eb0ed-15a2-4705-b93e-9bf190bacc10
+2025-05-04 19:55:00,170 - src.mcp_server.server - INFO - Client disconnected: 663eb0ed-15a2-4705-b93e-9bf190bacc10
+2025-05-04 19:55:00,171 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 663eb0ed-15a2-4705-b93e-9bf190bacc10
+2025-05-04 19:55:00,173 - src.utils.connection_manager - INFO - Client connected with session ID: fd2cf226-a001-4a59-b553-fdc53742fa38
+2025-05-04 19:55:04,167 - src.mcp_server.server - INFO - Client disconnected: fd2cf226-a001-4a59-b553-fdc53742fa38
+2025-05-04 19:55:04,169 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: fd2cf226-a001-4a59-b553-fdc53742fa38
+2025-05-04 19:55:04,179 - src.utils.connection_manager - INFO - Client connected with session ID: 6cc368d9-b82a-474e-98da-0ec5059c74e5
+2025-05-04 19:55:06,178 - src.utils.connection_manager - INFO - Client connected with session ID: 131ff302-dc76-4a82-99fe-fd9a04ff6db8
+2025-05-04 19:55:06,179 - src.mcp_server.server - INFO - Client disconnected: 6cc368d9-b82a-474e-98da-0ec5059c74e5
+2025-05-04 19:55:06,179 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 6cc368d9-b82a-474e-98da-0ec5059c74e5
+2025-05-04 19:55:06,199 - src.utils.connection_manager - INFO - Client connected with session ID: cd7e4588-5128-4196-8d2d-864308114105
+2025-05-04 19:55:06,431 - src.mcp_server.server - INFO - Client disconnected: 131ff302-dc76-4a82-99fe-fd9a04ff6db8
+2025-05-04 19:55:06,431 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 131ff302-dc76-4a82-99fe-fd9a04ff6db8
+2025-05-04 19:55:07,266 - src.utils.firebase_storage - ERROR - Firebase put error: 404 - {
+  "error" : "404 Not Found"
+}
+
+2025-05-04 19:55:07,267 - src.utils.firebase_storage - WARNING - Firebase database does not exist - disabling write operations
+2025-05-04 19:55:10,167 - src.utils.connection_manager - INFO - Client connected with session ID: 0a5bb095-b623-4b18-80a4-0881f05fc991
+2025-05-04 19:55:10,168 - src.mcp_server.server - INFO - Client disconnected: cd7e4588-5128-4196-8d2d-864308114105
+2025-05-04 19:55:10,168 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: cd7e4588-5128-4196-8d2d-864308114105
+2025-05-04 19:55:13,439 - src.mcp_server.server - INFO - Client disconnected: 0a5bb095-b623-4b18-80a4-0881f05fc991
+2025-05-04 19:55:13,440 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 0a5bb095-b623-4b18-80a4-0881f05fc991
+2025-05-04 19:55:13,543 - __main__ - INFO - Received signal 2, shutting down gracefully
+2025-05-04 19:55:13,544 - __main__ - INFO - Allowing running tasks to complete
+2025-05-04 19:55:13,545 - __main__ - INFO - Cleaning up resources...
+2025-05-04 19:55:13,551 - __main__ - INFO - Temporary files cleaned up
+2025-05-04 19:55:13,552 - __main__ - INFO - Resource cleanup completed
+2025-05-04 19:55:13,555 - root - CRITICAL - Unhandled exception: Event loop stopped before Future completed.
+2025-05-04 19:55:13,570 - root - CRITICAL - Traceback (most recent call last):
+  File "/Users/khalil/Documents/Github/GeoGemma/GIS_Agent/src/main.py", line 225, in main
+    asyncio.run(async_main(args))
+  File "/Users/khalil/.pyenv/versions/3.10.13/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/Users/khalil/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 647, in run_until_complete
+    raise RuntimeError('Event loop stopped before Future completed.')
+RuntimeError: Event loop stopped before Future completed.
+
+2025-05-04 19:55:16,772 - __main__ - INFO - Received signal 2, shutting down gracefully
+2025-05-04 19:55:16,772 - __main__ - INFO - Allowing running tasks to complete
+2025-05-04 20:00:55,877 - root - INFO - GIS AI Agent starting in production mode
+2025-05-04 20:00:55,878 - src.mcp_server.server - INFO - Added climate analysis tool: analyze_climate_trends
+2025-05-04 20:00:55,878 - src.mcp_server.server - INFO - Added climate analysis tool: track_emissions
+2025-05-04 20:00:55,878 - src.mcp_server.server - INFO - Added climate analysis tool: project_climate_scenarios
+2025-05-04 20:00:55,878 - src.mcp_server.server - INFO - Added climate analysis tool: analyze_renewable_energy_potential
+2025-05-04 20:00:55,878 - src.mcp_server.server - INFO - Added resilience planning tool: assess_disaster_risk
+2025-05-04 20:00:55,878 - src.mcp_server.server - INFO - Added resilience planning tool: evaluate_infrastructure_vulnerability
+2025-05-04 20:00:55,878 - src.mcp_server.server - INFO - Added resilience planning tool: design_adaptation_measures
+2025-05-04 20:00:55,878 - src.mcp_server.server - INFO - Added resilience planning tool: assess_community_resilience
+2025-05-04 20:00:55,878 - src.utils.cache - INFO - Cache initialized with directory: /Users/khalil/Documents/Github/GeoGemma/GIS_Agent/data/cache
+2025-05-04 20:00:55,878 - src.utils.tool_executor - INFO - ToolExecutor initialized with 25 tools
+2025-05-04 20:00:55,947 - src.utils.firebase_storage - INFO - Initialized encryption with derived key
+2025-05-04 20:00:55,947 - src.utils.firebase_storage - INFO - Firebase storage initialized with database URL: https://geogemma-f32a4-default-rtdb.firebaseio.com
+2025-05-04 20:00:55,948 - src.utils.cache - INFO - Cache maintenance scheduled with interval: 3600 seconds
+2025-05-04 20:00:55,948 - src.mcp_server.server - INFO - MCP Server 'assess_community_resilience' initialized with 25 tools
+2025-05-04 20:00:55,949 - src.utils.cache - INFO - Cache maintenance scheduled with interval: 3600 seconds
+2025-05-04 20:00:55,949 - __main__ - INFO - Starting GIS AI Agent server at 0.0.0.0:8080
+2025-05-04 20:00:55,949 - src.utils.connection_manager - INFO - Session monitoring started
+2025-05-04 20:01:05,633 - src.utils.connection_manager - INFO - Client connected with session ID: de2d7c65-81d4-4400-abfe-97d4e8a07960
+2025-05-04 20:01:05,648 - src.mcp_server.server - INFO - Client disconnected: de2d7c65-81d4-4400-abfe-97d4e8a07960
+2025-05-04 20:01:05,648 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: de2d7c65-81d4-4400-abfe-97d4e8a07960
+2025-05-04 20:01:05,651 - src.utils.connection_manager - INFO - Client connected with session ID: 2025c627-b265-4528-9d0a-e380af12316c
+2025-05-04 20:01:06,573 - src.utils.firebase_storage - ERROR - Firebase put error: 404 - {
+  "error" : "404 Not Found"
+}
+
+2025-05-04 20:01:06,573 - src.utils.firebase_storage - WARNING - Firebase database does not exist - disabling write operations
+2025-05-04 20:01:21,033 - src.mcp_server.server - INFO - Client disconnected: 2025c627-b265-4528-9d0a-e380af12316c
+2025-05-04 20:01:21,034 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2025c627-b265-4528-9d0a-e380af12316c
+2025-05-04 20:01:21,038 - src.utils.connection_manager - INFO - Client connected with session ID: bac7cc55-f917-4923-a3e0-e955e2c80ce6
+2025-05-04 20:01:21,635 - src.mcp_server.server - INFO - Client disconnected: bac7cc55-f917-4923-a3e0-e955e2c80ce6
+2025-05-04 20:01:21,635 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: bac7cc55-f917-4923-a3e0-e955e2c80ce6
+2025-05-04 20:01:21,636 - src.utils.connection_manager - INFO - Client connected with session ID: f2629869-c649-48e2-a238-1bd1afbb809b
+2025-05-04 20:01:26,239 - src.mcp_server.server - INFO - Client disconnected: f2629869-c649-48e2-a238-1bd1afbb809b
+2025-05-04 20:01:26,246 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: f2629869-c649-48e2-a238-1bd1afbb809b
+2025-05-04 20:01:37,410 - src.utils.connection_manager - INFO - Client connected with session ID: 1412ddd0-afd2-4386-96bd-3f47c9a2468e
+2025-05-04 20:01:37,416 - src.mcp_server.server - INFO - Client disconnected: 1412ddd0-afd2-4386-96bd-3f47c9a2468e
+2025-05-04 20:01:37,421 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 1412ddd0-afd2-4386-96bd-3f47c9a2468e
+2025-05-04 20:01:37,427 - src.utils.connection_manager - INFO - Client connected with session ID: 3a1feab5-4ff7-4866-959a-80899cfcccb4
+2025-05-04 20:03:06,187 - src.mcp_server.server - INFO - Client disconnected: 3a1feab5-4ff7-4866-959a-80899cfcccb4
+2025-05-04 20:03:06,188 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 3a1feab5-4ff7-4866-959a-80899cfcccb4
+2025-05-04 20:03:06,192 - src.utils.connection_manager - INFO - Client connected with session ID: b4a78bdc-44dc-4297-9bf7-e6594e202155
+2025-05-04 20:03:06,809 - src.mcp_server.server - INFO - Using chat history for session 3a1feab5-4ff7-4866-959a-80899cfcccb4 with 2 messages
+2025-05-04 20:03:10,514 - src.mcp_server.server - INFO - Client disconnected: b4a78bdc-44dc-4297-9bf7-e6594e202155
+2025-05-04 20:03:10,515 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: b4a78bdc-44dc-4297-9bf7-e6594e202155
+2025-05-04 20:03:10,520 - src.utils.connection_manager - INFO - Client connected with session ID: e13498ce-a977-41bd-bfdb-cd3addd06148
+2025-05-04 20:03:10,776 - src.mcp_server.server - INFO - Using chat history for session b4a78bdc-44dc-4297-9bf7-e6594e202155 with 2 messages
+2025-05-04 20:03:14,498 - src.mcp_server.server - INFO - Client disconnected: e13498ce-a977-41bd-bfdb-cd3addd06148
+2025-05-04 20:03:14,499 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: e13498ce-a977-41bd-bfdb-cd3addd06148
+2025-05-04 20:03:16,600 - src.utils.connection_manager - INFO - Client connected with session ID: 0c46dece-0baf-45e2-af1f-afb28d4044a4
+2025-05-04 20:03:16,625 - src.utils.connection_manager - INFO - Client connected with session ID: c7171117-1f05-4bae-8a80-c32ca6aa0c23
+2025-05-04 20:03:16,885 - src.mcp_server.server - INFO - Client disconnected: 0c46dece-0baf-45e2-af1f-afb28d4044a4
+2025-05-04 20:03:16,886 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 0c46dece-0baf-45e2-af1f-afb28d4044a4
+2025-05-04 20:03:17,243 - src.mcp_server.server - INFO - Using chat history for session new_session with 2 messages
+2025-05-04 20:04:00,404 - src.mcp_server.server - INFO - Client disconnected: c7171117-1f05-4bae-8a80-c32ca6aa0c23
+2025-05-04 20:04:00,424 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: c7171117-1f05-4bae-8a80-c32ca6aa0c23
+2025-05-04 20:04:04,239 - src.utils.connection_manager - INFO - Client connected with session ID: cc8412cd-c38a-46ee-a28d-22e0752e950d
+2025-05-04 20:04:04,245 - src.mcp_server.server - INFO - Client disconnected: cc8412cd-c38a-46ee-a28d-22e0752e950d
+2025-05-04 20:04:04,246 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: cc8412cd-c38a-46ee-a28d-22e0752e950d
+2025-05-04 20:04:04,260 - src.utils.connection_manager - INFO - Client connected with session ID: 4727b5ec-f9c8-4a2d-96f8-93e26602d24e
+2025-05-04 20:04:04,869 - src.mcp_server.server - INFO - Using chat history for session new_session with 4 messages
+2025-05-04 20:04:38,727 - src.mcp_server.server - INFO - Using chat history for session 4727b5ec-f9c8-4a2d-96f8-93e26602d24e with 2 messages
+2025-05-04 20:04:45,258 - src.mcp_server.server - INFO - Using chat history for session 4727b5ec-f9c8-4a2d-96f8-93e26602d24e with 4 messages
+2025-05-04 20:04:45,918 - src.mcp_server.server - INFO - LLM requested tool call: get_carbon_footprint with args: {'activity_type': 'all', 'area': 'New York City'}
+2025-05-04 20:04:45,927 - src.tools.sustainability_assessment - ERROR - Error calculating carbon footprint: 'coroutine' object has no attribute 'calculate_carbon_footprint'
+2025-05-04 20:04:45,939 - src.utils.tool_executor - INFO - Tool get_carbon_footprint executed in 0.01s
+2025-05-04 20:04:45,940 - src.mcp_server.server - INFO - Tool get_carbon_footprint executed successfully.
+2025-05-04 20:04:45,940 - src.mcp_server.server - WARNING - Tool get_carbon_footprint returned an error: 'coroutine' object has no attribute 'calculate_carbon_footprint'
+2025-05-04 20:04:49,585 - src.gemini.client - INFO - Gemini API call (no tools) completed in 3.64 seconds.
+2025-05-04 20:04:49,593 - src.utils.tool_executor - INFO - Tool analyze_query_with_gemini executed in 3.65s
+2025-05-04 20:04:49,593 - src.mcp_server.server - INFO - Using Gemini fallback analysis for get_carbon_footprint
+2025-05-04 20:06:44,253 - src.mcp_server.server - INFO - Client disconnected: 4727b5ec-f9c8-4a2d-96f8-93e26602d24e
+2025-05-04 20:06:44,256 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 4727b5ec-f9c8-4a2d-96f8-93e26602d24e
+2025-05-04 20:06:44,925 - src.utils.connection_manager - INFO - Client connected with session ID: 43a4a825-1b1b-4a6c-9b6a-3725829de093
+2025-05-04 20:06:44,936 - src.mcp_server.server - INFO - Client disconnected: 43a4a825-1b1b-4a6c-9b6a-3725829de093
+2025-05-04 20:06:44,937 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 43a4a825-1b1b-4a6c-9b6a-3725829de093
+2025-05-04 20:06:44,939 - src.utils.connection_manager - INFO - Client connected with session ID: a58c4215-e3ce-439b-a1ea-813370cf999a
+2025-05-04 20:06:45,604 - src.mcp_server.server - INFO - Using chat history for session new_session with 6 messages
+2025-05-04 20:06:47,267 - src.utils.connection_manager - INFO - Client connected with session ID: bb668c8f-3308-46d6-b978-e8b7fed5d983
+2025-05-04 20:06:47,524 - src.mcp_server.server - INFO - Using chat history for session new_session with 8 messages
+2025-05-04 20:10:21,998 - src.mcp_server.server - INFO - Client disconnected: a58c4215-e3ce-439b-a1ea-813370cf999a
+2025-05-04 20:10:22,605 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: a58c4215-e3ce-439b-a1ea-813370cf999a
+2025-05-04 20:10:22,715 - src.mcp_server.server - INFO - Client disconnected: bb668c8f-3308-46d6-b978-e8b7fed5d983
+2025-05-04 20:10:22,717 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: bb668c8f-3308-46d6-b978-e8b7fed5d983
+2025-05-04 20:10:25,839 - src.utils.connection_manager - INFO - Client connected with session ID: 822d20e8-e976-4bda-bf5f-50c25a33c893
+2025-05-04 20:10:25,875 - src.utils.connection_manager - INFO - Client connected with session ID: 3aba34f4-5d09-4aaa-9ec7-381b5611ed4c
+2025-05-04 20:10:26,730 - src.mcp_server.server - INFO - Using chat history for session new_session with 10 messages
+2025-05-04 20:10:26,758 - src.mcp_server.server - INFO - Client disconnected: 822d20e8-e976-4bda-bf5f-50c25a33c893
+2025-05-04 20:10:26,758 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 822d20e8-e976-4bda-bf5f-50c25a33c893
+2025-05-04 20:10:46,316 - src.mcp_server.server - INFO - Using chat history for session 3aba34f4-5d09-4aaa-9ec7-381b5611ed4c with 2 messages
+2025-05-04 20:10:46,894 - src.mcp_server.server - INFO - LLM requested tool call: assess_biodiversity with args: {'area': 'Costa Rica'}
+2025-05-04 20:10:46,900 - src.tools.sustainability_assessment - ERROR - Error assessing biodiversity: 'coroutine' object has no attribute 'assess_biodiversity'
+2025-05-04 20:10:46,900 - src.utils.tool_executor - INFO - Tool assess_biodiversity executed in 0.00s
+2025-05-04 20:10:46,902 - src.mcp_server.server - INFO - Tool assess_biodiversity executed successfully.
+2025-05-04 20:10:46,902 - src.mcp_server.server - WARNING - Tool assess_biodiversity returned an error: 'coroutine' object has no attribute 'assess_biodiversity'
+2025-05-04 20:10:53,424 - src.gemini.client - INFO - Gemini API call (no tools) completed in 6.52 seconds.
+2025-05-04 20:10:53,431 - src.utils.tool_executor - INFO - Tool analyze_query_with_gemini executed in 6.53s
+2025-05-04 20:10:53,432 - src.mcp_server.server - INFO - Using Gemini fallback analysis for assess_biodiversity
+2025-05-04 20:10:55,800 - src.mcp_server.server - INFO - Client disconnected: 3aba34f4-5d09-4aaa-9ec7-381b5611ed4c
+2025-05-04 20:10:55,801 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 3aba34f4-5d09-4aaa-9ec7-381b5611ed4c
+2025-05-04 20:10:56,798 - src.utils.connection_manager - INFO - Client connected with session ID: 2f5fbdca-5587-4b98-b364-acbc9b290401
+2025-05-04 20:10:56,812 - src.utils.connection_manager - INFO - Client connected with session ID: 225b40c6-f533-4457-9a36-526c3088135b
+2025-05-04 20:10:57,396 - src.mcp_server.server - INFO - Client disconnected: 2f5fbdca-5587-4b98-b364-acbc9b290401
+2025-05-04 20:10:57,397 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2f5fbdca-5587-4b98-b364-acbc9b290401
+2025-05-04 20:10:57,400 - src.mcp_server.server - INFO - Using chat history for session new_session with 12 messages
+2025-05-04 20:10:58,813 - src.utils.connection_manager - INFO - Client connected with session ID: 74ad72c0-ce43-4314-a96b-38ef209ed404
+2025-05-04 20:10:59,070 - src.mcp_server.server - INFO - Using chat history for session new_session with 14 messages
+2025-05-04 20:12:25,741 - src.mcp_server.server - INFO - Client disconnected: 225b40c6-f533-4457-9a36-526c3088135b
+2025-05-04 20:12:25,743 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 225b40c6-f533-4457-9a36-526c3088135b
+2025-05-04 20:12:26,517 - src.utils.connection_manager - INFO - Client connected with session ID: 1894066e-17a5-4f25-b03a-ee17e778e46e
+2025-05-04 20:12:26,530 - src.utils.connection_manager - INFO - Client connected with session ID: 9cb5c820-242c-48f7-9eae-06c87f894c7f
+2025-05-04 20:12:27,152 - src.mcp_server.server - INFO - Using chat history for session new_session with 16 messages
+2025-05-04 20:12:27,167 - src.mcp_server.server - INFO - Client disconnected: 1894066e-17a5-4f25-b03a-ee17e778e46e
+2025-05-04 20:12:27,168 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 1894066e-17a5-4f25-b03a-ee17e778e46e
+2025-05-04 20:12:27,841 - src.mcp_server.server - INFO - Client disconnected: 9cb5c820-242c-48f7-9eae-06c87f894c7f
+2025-05-04 20:12:27,842 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 9cb5c820-242c-48f7-9eae-06c87f894c7f
+2025-05-04 20:12:27,974 - src.utils.connection_manager - INFO - Client connected with session ID: 0e33c39d-5bfe-49a6-963f-215d5292aa92
+2025-05-04 20:12:27,988 - src.utils.connection_manager - INFO - Client connected with session ID: 58bfccf3-4e5d-4c27-a553-b021337392d3
+2025-05-04 20:12:28,227 - src.mcp_server.server - INFO - Client disconnected: 0e33c39d-5bfe-49a6-963f-215d5292aa92
+2025-05-04 20:12:28,228 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 0e33c39d-5bfe-49a6-963f-215d5292aa92
+2025-05-04 20:12:28,242 - src.mcp_server.server - INFO - Using chat history for session new_session with 18 messages
+2025-05-04 20:12:28,749 - src.utils.connection_manager - INFO - Client connected with session ID: 8cb8d957-fb9d-40cf-8b3b-c08ff002290d
+2025-05-04 20:12:28,840 - src.mcp_server.server - INFO - Client disconnected: 58bfccf3-4e5d-4c27-a553-b021337392d3
+2025-05-04 20:12:28,841 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 58bfccf3-4e5d-4c27-a553-b021337392d3
+2025-05-04 20:12:29,009 - src.mcp_server.server - INFO - Using chat history for session new_session with 20 messages
+2025-05-04 20:12:29,192 - src.utils.connection_manager - INFO - Client connected with session ID: 941093d2-7550-4360-af62-2ae475e7d1f5
+2025-05-04 20:12:29,206 - src.utils.connection_manager - INFO - Client connected with session ID: bb05f4bb-644b-43d5-a4f8-35762193c804
+2025-05-04 20:12:29,450 - src.mcp_server.server - INFO - Client disconnected: 941093d2-7550-4360-af62-2ae475e7d1f5
+2025-05-04 20:12:29,451 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 941093d2-7550-4360-af62-2ae475e7d1f5
+2025-05-04 20:12:29,464 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 20:12:29,971 - src.mcp_server.server - INFO - Client disconnected: bb05f4bb-644b-43d5-a4f8-35762193c804
+2025-05-04 20:12:29,971 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: bb05f4bb-644b-43d5-a4f8-35762193c804
+2025-05-04 20:12:30,331 - src.utils.connection_manager - INFO - Client connected with session ID: 0e64a657-4a21-48c7-8887-5e1dda2b28e9
+2025-05-04 20:12:30,631 - src.utils.connection_manager - INFO - Client connected with session ID: 39fa2cde-93f1-4944-9bbb-3c35fcb82507
+2025-05-04 20:12:30,648 - src.utils.connection_manager - INFO - Client connected with session ID: c112cd0e-24b1-4bec-91e5-1119174926d1
+2025-05-04 20:12:30,893 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 20:12:30,902 - src.mcp_server.server - INFO - Client disconnected: 39fa2cde-93f1-4944-9bbb-3c35fcb82507
+2025-05-04 20:12:30,902 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 39fa2cde-93f1-4944-9bbb-3c35fcb82507
+2025-05-04 20:12:31,180 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 20:12:31,612 - src.utils.connection_manager - INFO - Client connected with session ID: 5e59327f-f77d-4dfe-8b0e-27361fff4ffa
+2025-05-04 20:12:31,877 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 20:12:32,670 - src.mcp_server.server - INFO - Client disconnected: c112cd0e-24b1-4bec-91e5-1119174926d1
+2025-05-04 20:12:32,671 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: c112cd0e-24b1-4bec-91e5-1119174926d1
+2025-05-04 20:12:32,982 - src.utils.connection_manager - INFO - Client connected with session ID: b667fc3e-3b58-44dc-84e2-f81b69d1da65
+2025-05-04 20:12:33,262 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 20:12:33,298 - src.utils.connection_manager - INFO - Client connected with session ID: 197a9ef6-cec4-49fe-b3ab-c7ba557ab037
+2025-05-04 20:12:33,313 - src.utils.connection_manager - INFO - Client connected with session ID: 11c7c630-190b-4338-a328-20bfdcb25410
+2025-05-04 20:12:33,551 - src.mcp_server.server - INFO - Client disconnected: 197a9ef6-cec4-49fe-b3ab-c7ba557ab037
+2025-05-04 20:12:33,551 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 197a9ef6-cec4-49fe-b3ab-c7ba557ab037
+2025-05-04 20:12:33,566 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 20:12:34,418 - src.mcp_server.server - INFO - Client disconnected: 11c7c630-190b-4338-a328-20bfdcb25410
+2025-05-04 20:12:34,419 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 11c7c630-190b-4338-a328-20bfdcb25410
+2025-05-04 20:12:35,157 - src.utils.connection_manager - INFO - Client connected with session ID: 65f21669-1a83-4f3b-868d-01299745b0ae
+2025-05-04 20:12:35,172 - src.utils.connection_manager - INFO - Client connected with session ID: d5e29bd2-7f2c-4cdb-896c-454ee52bc463
+2025-05-04 20:12:35,412 - src.mcp_server.server - INFO - Client disconnected: 65f21669-1a83-4f3b-868d-01299745b0ae
+2025-05-04 20:12:35,413 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 65f21669-1a83-4f3b-868d-01299745b0ae
+2025-05-04 20:12:35,416 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 20:12:35,684 - src.utils.connection_manager - INFO - Client connected with session ID: 83e368b8-bb64-487d-b26e-56843f92b800
+2025-05-04 20:12:35,940 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 20:12:36,587 - src.mcp_server.server - INFO - Client disconnected: d5e29bd2-7f2c-4cdb-896c-454ee52bc463
+2025-05-04 20:12:36,587 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: d5e29bd2-7f2c-4cdb-896c-454ee52bc463
+2025-05-04 20:12:37,212 - src.utils.connection_manager - INFO - Client connected with session ID: 00e95b20-6ce0-4cad-9e5a-b0f760f672fe
+2025-05-04 20:12:37,225 - src.utils.connection_manager - INFO - Client connected with session ID: 7c4b87f3-41d7-4a66-bd56-87ccc4992b65
+2025-05-04 20:12:37,425 - src.utils.connection_manager - INFO - Client connected with session ID: f97e19e0-7b9f-4477-b2fd-f759e5b87a10
+2025-05-04 20:12:37,468 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 20:12:37,476 - src.mcp_server.server - INFO - Client disconnected: 00e95b20-6ce0-4cad-9e5a-b0f760f672fe
+2025-05-04 20:12:37,477 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 00e95b20-6ce0-4cad-9e5a-b0f760f672fe
+2025-05-04 20:12:37,684 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 20:12:39,599 - src.utils.connection_manager - INFO - Client connected with session ID: f828916f-464c-4870-8354-20badb856ddd
+2025-05-04 20:12:39,880 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 20:12:54,832 - src.mcp_server.server - INFO - Client disconnected: 7c4b87f3-41d7-4a66-bd56-87ccc4992b65
+2025-05-04 20:12:54,834 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 7c4b87f3-41d7-4a66-bd56-87ccc4992b65
+2025-05-04 20:12:55,423 - src.utils.connection_manager - INFO - Client connected with session ID: 7ab850fd-9c2a-4ee6-b201-fc10592300be
+2025-05-04 20:12:55,438 - src.utils.connection_manager - INFO - Client connected with session ID: c4e8183f-41ec-445a-a403-4d5ce4329c05
+2025-05-04 20:12:56,092 - src.mcp_server.server - INFO - Client disconnected: 7ab850fd-9c2a-4ee6-b201-fc10592300be
+2025-05-04 20:12:56,093 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 7ab850fd-9c2a-4ee6-b201-fc10592300be
+2025-05-04 20:12:56,096 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 20:12:57,855 - src.utils.connection_manager - INFO - Client connected with session ID: f19bf283-dd43-485c-b99d-0b468ea97cf8
+2025-05-04 20:12:58,124 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 20:13:02,895 - src.mcp_server.server - INFO - Client disconnected: 74ad72c0-ce43-4314-a96b-38ef209ed404
+2025-05-04 20:13:02,897 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 74ad72c0-ce43-4314-a96b-38ef209ed404
+2025-05-04 20:13:02,897 - src.mcp_server.server - INFO - Client disconnected: 8cb8d957-fb9d-40cf-8b3b-c08ff002290d
+2025-05-04 20:13:02,898 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 8cb8d957-fb9d-40cf-8b3b-c08ff002290d
+2025-05-04 20:13:02,898 - src.mcp_server.server - INFO - Client disconnected: 0e64a657-4a21-48c7-8887-5e1dda2b28e9
+2025-05-04 20:13:02,898 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 0e64a657-4a21-48c7-8887-5e1dda2b28e9
+2025-05-04 20:13:02,899 - src.mcp_server.server - INFO - Client disconnected: 5e59327f-f77d-4dfe-8b0e-27361fff4ffa
+2025-05-04 20:13:02,899 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 5e59327f-f77d-4dfe-8b0e-27361fff4ffa
+2025-05-04 20:13:02,899 - src.mcp_server.server - INFO - Client disconnected: b667fc3e-3b58-44dc-84e2-f81b69d1da65
+2025-05-04 20:13:02,899 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: b667fc3e-3b58-44dc-84e2-f81b69d1da65
+2025-05-04 20:13:02,899 - src.mcp_server.server - INFO - Client disconnected: 83e368b8-bb64-487d-b26e-56843f92b800
+2025-05-04 20:13:02,900 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 83e368b8-bb64-487d-b26e-56843f92b800
+2025-05-04 20:13:02,900 - src.mcp_server.server - INFO - Client disconnected: f97e19e0-7b9f-4477-b2fd-f759e5b87a10
+2025-05-04 20:13:02,900 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: f97e19e0-7b9f-4477-b2fd-f759e5b87a10
+2025-05-04 20:13:02,901 - src.mcp_server.server - INFO - Client disconnected: f828916f-464c-4870-8354-20badb856ddd
+2025-05-04 20:13:02,902 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: f828916f-464c-4870-8354-20badb856ddd
+2025-05-04 20:13:02,902 - src.mcp_server.server - INFO - Client disconnected: c4e8183f-41ec-445a-a403-4d5ce4329c05
+2025-05-04 20:13:02,902 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: c4e8183f-41ec-445a-a403-4d5ce4329c05
+2025-05-04 20:13:02,902 - src.mcp_server.server - INFO - Client disconnected: f19bf283-dd43-485c-b99d-0b468ea97cf8
+2025-05-04 20:13:02,902 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: f19bf283-dd43-485c-b99d-0b468ea97cf8
+2025-05-04 20:13:18,450 - src.utils.connection_manager - INFO - Client connected with session ID: 7f0c136b-3ec8-4d2d-80fc-454afcd82ec2
+2025-05-04 20:13:18,452 - src.mcp_server.server - INFO - Client disconnected: 7f0c136b-3ec8-4d2d-80fc-454afcd82ec2
+2025-05-04 20:13:18,452 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 7f0c136b-3ec8-4d2d-80fc-454afcd82ec2
+2025-05-04 20:13:18,455 - src.utils.connection_manager - INFO - Client connected with session ID: 63aff33d-0950-41e9-8754-1502ffbd703e
+2025-05-04 20:13:19,051 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 20:13:26,221 - src.mcp_server.server - INFO - Client disconnected: 63aff33d-0950-41e9-8754-1502ffbd703e
+2025-05-04 20:13:26,222 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 63aff33d-0950-41e9-8754-1502ffbd703e
+2025-05-04 20:13:26,324 - __main__ - INFO - Received signal 2, shutting down gracefully
+2025-05-04 20:13:26,324 - __main__ - INFO - Allowing running tasks to complete
+2025-05-04 20:13:26,326 - __main__ - INFO - Cleaning up resources...
+2025-05-04 20:13:26,333 - __main__ - INFO - Temporary files cleaned up
+2025-05-04 20:13:26,333 - __main__ - INFO - Resource cleanup completed
+2025-05-04 20:13:26,335 - root - CRITICAL - Unhandled exception: Event loop stopped before Future completed.
+2025-05-04 20:13:26,354 - root - CRITICAL - Traceback (most recent call last):
+  File "/Users/khalil/Documents/Github/GeoGemma/GIS_Agent/src/main.py", line 225, in main
+    asyncio.run(async_main(args))
+  File "/Users/khalil/.pyenv/versions/3.10.13/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/Users/khalil/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 647, in run_until_complete
+    raise RuntimeError('Event loop stopped before Future completed.')
+RuntimeError: Event loop stopped before Future completed.
+
+2025-05-04 20:13:28,877 - __main__ - INFO - Received signal 2, shutting down gracefully
+2025-05-04 20:13:28,878 - __main__ - INFO - Allowing running tasks to complete
+2025-05-04 23:28:24,033 - root - INFO - GIS AI Agent starting in production mode
+2025-05-04 23:28:24,034 - src.mcp_server.server - INFO - Added climate analysis tool: analyze_climate_trends
+2025-05-04 23:28:24,034 - src.mcp_server.server - INFO - Added climate analysis tool: track_emissions
+2025-05-04 23:28:24,034 - src.mcp_server.server - INFO - Added climate analysis tool: project_climate_scenarios
+2025-05-04 23:28:24,034 - src.mcp_server.server - INFO - Added climate analysis tool: analyze_renewable_energy_potential
+2025-05-04 23:28:24,034 - src.mcp_server.server - INFO - Added resilience planning tool: assess_disaster_risk
+2025-05-04 23:28:24,034 - src.mcp_server.server - INFO - Added resilience planning tool: evaluate_infrastructure_vulnerability
+2025-05-04 23:28:24,034 - src.mcp_server.server - INFO - Added resilience planning tool: design_adaptation_measures
+2025-05-04 23:28:24,034 - src.mcp_server.server - INFO - Added resilience planning tool: assess_community_resilience
+2025-05-04 23:28:24,034 - src.utils.cache - INFO - Cache initialized with directory: /Users/khalil/Documents/Github/GeoGemma/GIS_Agent/data/cache
+2025-05-04 23:28:24,034 - src.utils.tool_executor - INFO - ToolExecutor initialized with 25 tools
+2025-05-04 23:28:24,105 - src.utils.firebase_storage - INFO - Initialized encryption with derived key
+2025-05-04 23:28:24,105 - src.utils.firebase_storage - INFO - Firebase storage initialized with database URL: https://geogemma-f32a4-default-rtdb.firebaseio.com
+2025-05-04 23:28:24,106 - src.utils.cache - INFO - Cache maintenance scheduled with interval: 3600 seconds
+2025-05-04 23:28:24,106 - src.mcp_server.server - INFO - MCP Server 'assess_community_resilience' initialized with 25 tools
+2025-05-04 23:28:24,106 - src.utils.cache - INFO - Cache maintenance scheduled with interval: 3600 seconds
+2025-05-04 23:28:24,106 - __main__ - INFO - Starting GIS AI Agent server at 0.0.0.0:8080
+2025-05-04 23:28:24,107 - src.utils.connection_manager - INFO - Session monitoring started
+2025-05-04 23:28:31,835 - src.utils.connection_manager - INFO - Client connected with session ID: 821c2f36-74ce-490b-83a1-21755057ea61
+2025-05-04 23:28:31,850 - src.utils.connection_manager - INFO - Client connected with session ID: 8cff9af3-e530-419a-b831-e5c1d928027c
+2025-05-04 23:28:32,656 - src.mcp_server.server - INFO - Using chat history for session new_session with 2 messages
+2025-05-04 23:28:32,703 - src.mcp_server.server - INFO - Client disconnected: 821c2f36-74ce-490b-83a1-21755057ea61
+2025-05-04 23:28:32,703 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 821c2f36-74ce-490b-83a1-21755057ea61
+2025-05-04 23:28:34,575 - src.utils.firebase_storage - ERROR - Firebase put error: 404 - {
+  "error" : "404 Not Found"
+}
+
+2025-05-04 23:28:34,576 - src.utils.firebase_storage - WARNING - Firebase database does not exist - disabling write operations
+2025-05-04 23:28:42,548 - src.mcp_server.server - INFO - Client disconnected: 8cff9af3-e530-419a-b831-e5c1d928027c
+2025-05-04 23:28:42,549 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 8cff9af3-e530-419a-b831-e5c1d928027c
+2025-05-04 23:28:42,649 - __main__ - INFO - Received signal 2, shutting down gracefully
+2025-05-04 23:28:42,649 - __main__ - INFO - Allowing running tasks to complete
+2025-05-04 23:28:42,652 - __main__ - INFO - Cleaning up resources...
+2025-05-04 23:28:42,653 - __main__ - INFO - Temporary files cleaned up
+2025-05-04 23:28:42,653 - __main__ - INFO - Resource cleanup completed
+2025-05-04 23:28:42,655 - root - CRITICAL - Unhandled exception: Event loop stopped before Future completed.
+2025-05-04 23:28:42,663 - root - CRITICAL - Traceback (most recent call last):
+  File "/Users/khalil/Documents/Github/GeoGemma/GIS_Agent/src/main.py", line 225, in main
+    asyncio.run(async_main(args))
+  File "/Users/khalil/.pyenv/versions/3.10.13/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/Users/khalil/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 647, in run_until_complete
+    raise RuntimeError('Event loop stopped before Future completed.')
+RuntimeError: Event loop stopped before Future completed.
+
+2025-05-04 23:28:46,997 - __main__ - INFO - Received signal 2, shutting down gracefully
+2025-05-04 23:28:46,998 - __main__ - INFO - Allowing running tasks to complete
+2025-05-04 23:32:03,061 - root - INFO - GIS AI Agent starting in production mode
+2025-05-04 23:32:03,062 - src.mcp_server.server - INFO - Added climate analysis tool: analyze_climate_trends
+2025-05-04 23:32:03,062 - src.mcp_server.server - INFO - Added climate analysis tool: track_emissions
+2025-05-04 23:32:03,062 - src.mcp_server.server - INFO - Added climate analysis tool: project_climate_scenarios
+2025-05-04 23:32:03,062 - src.mcp_server.server - INFO - Added climate analysis tool: analyze_renewable_energy_potential
+2025-05-04 23:32:03,062 - src.mcp_server.server - INFO - Added resilience planning tool: assess_disaster_risk
+2025-05-04 23:32:03,062 - src.mcp_server.server - INFO - Added resilience planning tool: evaluate_infrastructure_vulnerability
+2025-05-04 23:32:03,062 - src.mcp_server.server - INFO - Added resilience planning tool: design_adaptation_measures
+2025-05-04 23:32:03,062 - src.mcp_server.server - INFO - Added resilience planning tool: assess_community_resilience
+2025-05-04 23:32:03,062 - src.utils.cache - INFO - Cache initialized with directory: /Users/khalil/Documents/Github/GeoGemma/GIS_Agent/data/cache
+2025-05-04 23:32:03,063 - src.utils.tool_executor - INFO - ToolExecutor initialized with 25 tools
+2025-05-04 23:32:03,131 - src.utils.firebase_storage - INFO - Initialized encryption with derived key
+2025-05-04 23:32:03,131 - src.utils.firebase_storage - INFO - Firebase storage initialized with database URL: https://geogemma-f32a4-default-rtdb.firebaseio.com
+2025-05-04 23:32:03,132 - src.utils.cache - INFO - Cache maintenance scheduled with interval: 3600 seconds
+2025-05-04 23:32:03,132 - src.mcp_server.server - INFO - MCP Server 'assess_community_resilience' initialized with 25 tools
+2025-05-04 23:32:03,133 - src.utils.cache - INFO - Cache maintenance scheduled with interval: 3600 seconds
+2025-05-04 23:32:03,133 - __main__ - INFO - Starting GIS AI Agent server at 0.0.0.0:8080
+2025-05-04 23:32:03,133 - src.utils.connection_manager - INFO - Session monitoring started
+2025-05-04 23:32:07,269 - src.utils.connection_manager - INFO - Client connected with session ID: 92a2e999-b53b-4309-b685-8a5dcee08d13
+2025-05-04 23:32:07,902 - src.mcp_server.server - INFO - Using chat history for session 8cff9af3-e530-419a-b831-e5c1d928027c with 2 messages
+2025-05-04 23:32:09,587 - src.mcp_server.server - INFO - Client disconnected: 92a2e999-b53b-4309-b685-8a5dcee08d13
+2025-05-04 23:32:09,592 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 92a2e999-b53b-4309-b685-8a5dcee08d13
+2025-05-04 23:32:13,538 - src.utils.connection_manager - INFO - Client connected with session ID: 8f218058-05c0-4f0d-9a1d-604fee8a62e5
+2025-05-04 23:32:13,558 - src.utils.connection_manager - INFO - Client connected with session ID: 894459c5-57ef-460a-88f5-c21511a6955d
+2025-05-04 23:32:13,817 - src.mcp_server.server - INFO - Client disconnected: 8f218058-05c0-4f0d-9a1d-604fee8a62e5
+2025-05-04 23:32:13,817 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 8f218058-05c0-4f0d-9a1d-604fee8a62e5
+2025-05-04 23:32:14,151 - src.mcp_server.server - INFO - Using chat history for session new_session with 2 messages
+2025-05-04 23:32:15,019 - src.utils.firebase_storage - ERROR - Firebase put error: 404 - {
+  "error" : "404 Not Found"
+}
+
+2025-05-04 23:32:15,020 - src.utils.firebase_storage - WARNING - Firebase database does not exist - disabling write operations
+2025-05-04 23:32:20,269 - src.mcp_server.server - INFO - Client disconnected: 894459c5-57ef-460a-88f5-c21511a6955d
+2025-05-04 23:32:20,270 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 894459c5-57ef-460a-88f5-c21511a6955d
+2025-05-04 23:32:21,061 - src.utils.connection_manager - INFO - Client connected with session ID: 51bbb514-be38-449c-b9f4-982a2838311d
+2025-05-04 23:32:21,074 - src.utils.connection_manager - INFO - Client connected with session ID: 71b54bd8-b811-48db-8de1-883236e1377f
+2025-05-04 23:32:21,344 - src.mcp_server.server - INFO - Using chat history for session new_session with 4 messages
+2025-05-04 23:32:21,357 - src.mcp_server.server - INFO - Client disconnected: 51bbb514-be38-449c-b9f4-982a2838311d
+2025-05-04 23:32:21,358 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 51bbb514-be38-449c-b9f4-982a2838311d
+2025-05-04 23:32:23,289 - src.utils.connection_manager - INFO - Client connected with session ID: b618874a-8cec-468d-87a6-8e06554b703c
+2025-05-04 23:32:23,542 - src.mcp_server.server - INFO - Using chat history for session new_session with 6 messages
+2025-05-04 23:33:21,205 - src.mcp_server.server - INFO - Client disconnected: 71b54bd8-b811-48db-8de1-883236e1377f
+2025-05-04 23:33:21,209 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 71b54bd8-b811-48db-8de1-883236e1377f
+2025-05-04 23:33:21,221 - src.utils.connection_manager - INFO - Client connected with session ID: e1354472-7e88-4c3b-ab85-f09d42c4002b
+2025-05-04 23:33:21,913 - src.mcp_server.server - INFO - Using chat history for session 71b54bd8-b811-48db-8de1-883236e1377f with 2 messages
+2025-05-04 23:35:03,887 - src.mcp_server.server - INFO - Client disconnected: e1354472-7e88-4c3b-ab85-f09d42c4002b
+2025-05-04 23:35:03,890 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: e1354472-7e88-4c3b-ab85-f09d42c4002b
+2025-05-04 23:35:04,655 - src.utils.connection_manager - INFO - Client connected with session ID: 4957737a-1471-42dc-95e3-73f541a31752
+2025-05-04 23:35:04,673 - src.utils.connection_manager - INFO - Client connected with session ID: 5ab05b6f-e2a0-4b09-ad55-ffee948bf657
+2025-05-04 23:35:05,473 - src.mcp_server.server - INFO - Client disconnected: 4957737a-1471-42dc-95e3-73f541a31752
+2025-05-04 23:35:05,473 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 4957737a-1471-42dc-95e3-73f541a31752
+2025-05-04 23:35:05,480 - src.mcp_server.server - INFO - Using chat history for session new_session with 8 messages
+2025-05-04 23:35:06,917 - src.utils.connection_manager - INFO - Client connected with session ID: 580e112a-02be-4187-860a-ce3645560f5c
+2025-05-04 23:35:07,185 - src.mcp_server.server - INFO - Using chat history for session 71b54bd8-b811-48db-8de1-883236e1377f with 4 messages
+2025-05-04 23:36:43,516 - src.mcp_server.server - INFO - Client disconnected: 5ab05b6f-e2a0-4b09-ad55-ffee948bf657
+2025-05-04 23:36:43,518 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 5ab05b6f-e2a0-4b09-ad55-ffee948bf657
+2025-05-04 23:36:44,272 - src.utils.connection_manager - INFO - Client connected with session ID: 8c084fba-8359-4159-b8cf-a65960fa53cb
+2025-05-04 23:36:44,277 - src.mcp_server.server - INFO - Client disconnected: 8c084fba-8359-4159-b8cf-a65960fa53cb
+2025-05-04 23:36:44,278 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 8c084fba-8359-4159-b8cf-a65960fa53cb
+2025-05-04 23:36:44,282 - src.utils.connection_manager - INFO - Client connected with session ID: e6f6a168-506b-449f-a98e-e5a0e661827b
+2025-05-04 23:36:44,872 - src.mcp_server.server - INFO - Using chat history for session new_session with 10 messages
+2025-05-04 23:36:45,644 - src.mcp_server.server - INFO - Client disconnected: e6f6a168-506b-449f-a98e-e5a0e661827b
+2025-05-04 23:36:45,645 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: e6f6a168-506b-449f-a98e-e5a0e661827b
+2025-05-04 23:36:46,270 - src.utils.connection_manager - INFO - Client connected with session ID: e597fc3f-2d40-482c-823e-dc4d4e35ce0d
+2025-05-04 23:36:46,283 - src.utils.connection_manager - INFO - Client connected with session ID: 84e054d8-5780-4e88-8582-36d12a445236
+2025-05-04 23:36:46,516 - src.mcp_server.server - INFO - Client disconnected: e597fc3f-2d40-482c-823e-dc4d4e35ce0d
+2025-05-04 23:36:46,517 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: e597fc3f-2d40-482c-823e-dc4d4e35ce0d
+2025-05-04 23:36:46,524 - src.utils.connection_manager - INFO - Client connected with session ID: 5cdabdf9-85d2-4395-a822-2ebeeea40914
+2025-05-04 23:36:46,774 - src.mcp_server.server - INFO - Using chat history for session new_session with 12 messages
+2025-05-04 23:36:46,844 - src.mcp_server.server - INFO - Using chat history for session new_session with 13 messages
+2025-05-04 23:36:47,511 - src.mcp_server.server - INFO - Client disconnected: 84e054d8-5780-4e88-8582-36d12a445236
+2025-05-04 23:36:47,511 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 84e054d8-5780-4e88-8582-36d12a445236
+2025-05-04 23:36:48,161 - src.utils.connection_manager - INFO - Client connected with session ID: 1f47d04e-6e15-43b8-a512-c9aa51d071c4
+2025-05-04 23:36:48,175 - src.utils.connection_manager - INFO - Client connected with session ID: e92ff0d6-a7b9-4ff5-a561-9f80f3f50886
+2025-05-04 23:36:48,406 - src.mcp_server.server - INFO - Client disconnected: 1f47d04e-6e15-43b8-a512-c9aa51d071c4
+2025-05-04 23:36:48,407 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 1f47d04e-6e15-43b8-a512-c9aa51d071c4
+2025-05-04 23:36:48,433 - src.mcp_server.server - INFO - Using chat history for session new_session with 16 messages
+2025-05-04 23:36:48,552 - src.utils.connection_manager - INFO - Client connected with session ID: 065ac171-fb5d-474b-98b7-482963cd8738
+2025-05-04 23:36:48,798 - src.mcp_server.server - INFO - Using chat history for session new_session with 17 messages
+2025-05-04 23:36:50,523 - src.utils.connection_manager - INFO - Client connected with session ID: 414cd9cc-738b-4611-b9fa-54b31328af8f
+2025-05-04 23:36:50,805 - src.mcp_server.server - INFO - Using chat history for session new_session with 20 messages
+2025-05-04 23:40:47,392 - src.mcp_server.server - INFO - Client disconnected: e92ff0d6-a7b9-4ff5-a561-9f80f3f50886
+2025-05-04 23:40:47,416 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: e92ff0d6-a7b9-4ff5-a561-9f80f3f50886
+2025-05-04 23:40:47,498 - src.utils.connection_manager - INFO - Client connected with session ID: f7f9ea54-8f1d-4224-97d5-8b747cd90f18
+2025-05-04 23:40:47,501 - src.mcp_server.server - INFO - Client disconnected: f7f9ea54-8f1d-4224-97d5-8b747cd90f18
+2025-05-04 23:40:47,501 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: f7f9ea54-8f1d-4224-97d5-8b747cd90f18
+2025-05-04 23:40:47,504 - src.utils.connection_manager - INFO - Client connected with session ID: c39abc72-ab5c-4861-b1f6-185de48e0802
+2025-05-04 23:40:48,495 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 23:40:51,201 - src.utils.connection_manager - INFO - Client connected with session ID: 3a3280d3-acf0-4cc3-8e71-57239eb70b59
+2025-05-04 23:40:51,481 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 23:44:22,464 - src.mcp_server.server - INFO - Client disconnected: b618874a-8cec-468d-87a6-8e06554b703c
+2025-05-04 23:44:22,468 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: b618874a-8cec-468d-87a6-8e06554b703c
+2025-05-04 23:44:22,471 - src.mcp_server.server - INFO - Client disconnected: 580e112a-02be-4187-860a-ce3645560f5c
+2025-05-04 23:44:22,472 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 580e112a-02be-4187-860a-ce3645560f5c
+2025-05-04 23:44:22,472 - src.mcp_server.server - INFO - Client disconnected: 5cdabdf9-85d2-4395-a822-2ebeeea40914
+2025-05-04 23:44:22,472 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 5cdabdf9-85d2-4395-a822-2ebeeea40914
+2025-05-04 23:44:22,472 - src.mcp_server.server - INFO - Client disconnected: 065ac171-fb5d-474b-98b7-482963cd8738
+2025-05-04 23:44:22,472 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 065ac171-fb5d-474b-98b7-482963cd8738
+2025-05-04 23:44:22,472 - src.mcp_server.server - INFO - Client disconnected: 414cd9cc-738b-4611-b9fa-54b31328af8f
+2025-05-04 23:44:22,472 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 414cd9cc-738b-4611-b9fa-54b31328af8f
+2025-05-04 23:44:22,473 - src.mcp_server.server - INFO - Client disconnected: c39abc72-ab5c-4861-b1f6-185de48e0802
+2025-05-04 23:44:22,473 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: c39abc72-ab5c-4861-b1f6-185de48e0802
+2025-05-04 23:44:22,474 - src.mcp_server.server - INFO - Client disconnected: 3a3280d3-acf0-4cc3-8e71-57239eb70b59
+2025-05-04 23:44:22,474 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 3a3280d3-acf0-4cc3-8e71-57239eb70b59
+2025-05-04 23:44:26,518 - src.utils.connection_manager - INFO - Client connected with session ID: 2b549a74-a3be-4af3-8a27-57ccafdf8355
+2025-05-04 23:44:26,537 - src.utils.connection_manager - INFO - Client connected with session ID: 671ead6f-08b9-4389-8037-ef40f9efc4f8
+2025-05-04 23:44:27,639 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 23:44:27,648 - src.mcp_server.server - INFO - Client disconnected: 2b549a74-a3be-4af3-8a27-57ccafdf8355
+2025-05-04 23:44:27,649 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2b549a74-a3be-4af3-8a27-57ccafdf8355
+2025-05-04 23:44:30,443 - src.mcp_server.server - INFO - Client disconnected: 671ead6f-08b9-4389-8037-ef40f9efc4f8
+2025-05-04 23:44:30,444 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 671ead6f-08b9-4389-8037-ef40f9efc4f8
+2025-05-04 23:44:31,101 - src.utils.connection_manager - INFO - Client connected with session ID: 22358fe2-48be-4325-a1eb-8359e89646ed
+2025-05-04 23:44:31,115 - src.utils.connection_manager - INFO - Client connected with session ID: 913a5075-d3bc-4cec-8d59-23ba199efac4
+2025-05-04 23:44:31,350 - src.mcp_server.server - INFO - Client disconnected: 22358fe2-48be-4325-a1eb-8359e89646ed
+2025-05-04 23:44:31,352 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 22358fe2-48be-4325-a1eb-8359e89646ed
+2025-05-04 23:44:31,364 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 23:44:35,262 - src.mcp_server.server - INFO - Client disconnected: 913a5075-d3bc-4cec-8d59-23ba199efac4
+2025-05-04 23:44:35,267 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 913a5075-d3bc-4cec-8d59-23ba199efac4
+2025-05-04 23:44:35,940 - src.utils.connection_manager - INFO - Client connected with session ID: 7045995d-ec50-459a-9bdc-c4ae26460eff
+2025-05-04 23:44:35,945 - src.mcp_server.server - INFO - Client disconnected: 7045995d-ec50-459a-9bdc-c4ae26460eff
+2025-05-04 23:44:35,946 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 7045995d-ec50-459a-9bdc-c4ae26460eff
+2025-05-04 23:44:35,953 - src.utils.connection_manager - INFO - Client connected with session ID: 82e37cf0-9e2b-425e-9474-c32630c4b4f0
+2025-05-04 23:44:36,235 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 23:44:39,812 - src.mcp_server.server - INFO - Client disconnected: 82e37cf0-9e2b-425e-9474-c32630c4b4f0
+2025-05-04 23:44:39,813 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 82e37cf0-9e2b-425e-9474-c32630c4b4f0
+2025-05-04 23:44:50,560 - src.utils.connection_manager - INFO - Client connected with session ID: 869f59ca-5248-4982-9235-87dedd984e88
+2025-05-04 23:44:50,563 - src.mcp_server.server - INFO - Client disconnected: 869f59ca-5248-4982-9235-87dedd984e88
+2025-05-04 23:44:50,564 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 869f59ca-5248-4982-9235-87dedd984e88
+2025-05-04 23:44:50,572 - src.utils.connection_manager - INFO - Client connected with session ID: 5754b777-f65e-48dc-b081-4f08ffeb2f9e
+2025-05-04 23:44:50,853 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 23:45:07,096 - src.mcp_server.server - INFO - Client disconnected: 5754b777-f65e-48dc-b081-4f08ffeb2f9e
+2025-05-04 23:45:07,098 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 5754b777-f65e-48dc-b081-4f08ffeb2f9e
+2025-05-04 23:45:07,704 - src.utils.connection_manager - INFO - Client connected with session ID: dac65780-755e-4277-b7c6-fa8637c7b036
+2025-05-04 23:45:07,718 - src.utils.connection_manager - INFO - Client connected with session ID: f938ac77-5264-46b1-957d-e78f3c21dbff
+2025-05-04 23:45:08,301 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 23:45:08,313 - src.mcp_server.server - INFO - Client disconnected: dac65780-755e-4277-b7c6-fa8637c7b036
+2025-05-04 23:45:08,314 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: dac65780-755e-4277-b7c6-fa8637c7b036
+2025-05-04 23:45:12,203 - src.utils.connection_manager - INFO - Client connected with session ID: 465ca764-ea97-490a-beb0-64175f11ff08
+2025-05-04 23:45:12,463 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 23:46:16,311 - src.mcp_server.server - INFO - Client disconnected: f938ac77-5264-46b1-957d-e78f3c21dbff
+2025-05-04 23:46:16,313 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: f938ac77-5264-46b1-957d-e78f3c21dbff
+2025-05-04 23:46:21,329 - src.utils.connection_manager - INFO - Client connected with session ID: 7713100a-166b-42a3-b351-5bd49702e585
+2025-05-04 23:46:21,990 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 23:47:03,419 - src.mcp_server.server - INFO - Client disconnected: 7713100a-166b-42a3-b351-5bd49702e585
+2025-05-04 23:47:03,420 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 7713100a-166b-42a3-b351-5bd49702e585
+2025-05-04 23:47:03,421 - src.mcp_server.server - INFO - Client disconnected: 465ca764-ea97-490a-beb0-64175f11ff08
+2025-05-04 23:47:03,421 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 465ca764-ea97-490a-beb0-64175f11ff08
+2025-05-04 23:47:12,846 - src.utils.connection_manager - INFO - Client connected with session ID: 2127f39f-eca3-465e-b5be-876fb820cf6f
+2025-05-04 23:47:12,854 - src.mcp_server.server - INFO - Client disconnected: 2127f39f-eca3-465e-b5be-876fb820cf6f
+2025-05-04 23:47:12,854 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2127f39f-eca3-465e-b5be-876fb820cf6f
+2025-05-04 23:47:12,863 - src.utils.connection_manager - INFO - Client connected with session ID: 2295bb37-203e-4f70-93c9-d4e9af298df0
+2025-05-04 23:47:13,857 - src.mcp_server.server - INFO - Client disconnected: 2295bb37-203e-4f70-93c9-d4e9af298df0
+2025-05-04 23:47:13,858 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2295bb37-203e-4f70-93c9-d4e9af298df0
+2025-05-04 23:47:13,860 - src.utils.connection_manager - INFO - Client connected with session ID: 516e4297-4c1f-4566-8563-b1efe839cbf5
+2025-05-04 23:47:14,872 - src.mcp_server.server - INFO - Client disconnected: 516e4297-4c1f-4566-8563-b1efe839cbf5
+2025-05-04 23:47:14,874 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 516e4297-4c1f-4566-8563-b1efe839cbf5
+2025-05-04 23:47:14,877 - src.utils.connection_manager - INFO - Client connected with session ID: faceb9e4-4350-4f9a-8288-fa9a08c2bf7b
+2025-05-04 23:47:15,894 - src.mcp_server.server - INFO - Client disconnected: faceb9e4-4350-4f9a-8288-fa9a08c2bf7b
+2025-05-04 23:47:15,895 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: faceb9e4-4350-4f9a-8288-fa9a08c2bf7b
+2025-05-04 23:47:15,896 - src.utils.connection_manager - INFO - Client connected with session ID: 25de18d0-e109-4261-b60f-e2a584a4b094
+2025-05-04 23:47:16,401 - src.mcp_server.server - INFO - Client disconnected: 25de18d0-e109-4261-b60f-e2a584a4b094
+2025-05-04 23:47:16,402 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 25de18d0-e109-4261-b60f-e2a584a4b094
+2025-05-04 23:47:16,905 - src.utils.connection_manager - INFO - Client connected with session ID: cea3d50c-8731-4b28-82d9-ac96a19a64ba
+2025-05-04 23:47:17,058 - src.utils.connection_manager - INFO - Client connected with session ID: cce19a98-1232-436e-9f30-aff0ca4c770d
+2025-05-04 23:47:17,072 - src.utils.connection_manager - INFO - Client connected with session ID: edcebbfe-ae6b-44e1-9b90-33be6c435aa2
+2025-05-04 23:47:17,640 - src.mcp_server.server - INFO - Client disconnected: cce19a98-1232-436e-9f30-aff0ca4c770d
+2025-05-04 23:47:17,641 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: cce19a98-1232-436e-9f30-aff0ca4c770d
+2025-05-04 23:47:18,083 - src.utils.connection_manager - INFO - Client connected with session ID: 21fc9119-daf8-4417-ac41-f48d5d197ba5
+2025-05-04 23:47:18,083 - src.mcp_server.server - INFO - Client disconnected: edcebbfe-ae6b-44e1-9b90-33be6c435aa2
+2025-05-04 23:47:18,083 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: edcebbfe-ae6b-44e1-9b90-33be6c435aa2
+2025-05-04 23:47:18,533 - src.mcp_server.server - INFO - Client disconnected: 21fc9119-daf8-4417-ac41-f48d5d197ba5
+2025-05-04 23:47:18,534 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 21fc9119-daf8-4417-ac41-f48d5d197ba5
+2025-05-04 23:47:18,536 - src.utils.connection_manager - INFO - Client connected with session ID: fb29872d-1aa4-4d23-bb96-cd2391758d87
+2025-05-04 23:47:18,917 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 23:47:19,095 - src.mcp_server.server - INFO - Client disconnected: fb29872d-1aa4-4d23-bb96-cd2391758d87
+2025-05-04 23:47:19,096 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: fb29872d-1aa4-4d23-bb96-cd2391758d87
+2025-05-04 23:47:19,099 - src.utils.connection_manager - INFO - Client connected with session ID: c12a5d6c-d8bf-4b8f-8001-602872f43fcb
+2025-05-04 23:47:19,542 - src.mcp_server.server - INFO - Client disconnected: c12a5d6c-d8bf-4b8f-8001-602872f43fcb
+2025-05-04 23:47:19,543 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: c12a5d6c-d8bf-4b8f-8001-602872f43fcb
+2025-05-04 23:47:19,544 - src.utils.connection_manager - INFO - Client connected with session ID: 7e1c63a2-511f-4fae-beb8-adec339b2e45
+2025-05-04 23:47:20,560 - src.mcp_server.server - INFO - Client disconnected: 7e1c63a2-511f-4fae-beb8-adec339b2e45
+2025-05-04 23:47:20,561 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 7e1c63a2-511f-4fae-beb8-adec339b2e45
+2025-05-04 23:47:20,562 - src.utils.connection_manager - INFO - Client connected with session ID: 4e84eb05-49cf-4975-9510-1aa2d11b433a
+2025-05-04 23:47:21,554 - src.mcp_server.server - INFO - Client disconnected: 4e84eb05-49cf-4975-9510-1aa2d11b433a
+2025-05-04 23:47:21,554 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 4e84eb05-49cf-4975-9510-1aa2d11b433a
+2025-05-04 23:47:21,557 - src.utils.connection_manager - INFO - Client connected with session ID: 9ffd2fd5-b170-4c55-ac2c-0deca87d64b1
+2025-05-04 23:47:22,566 - src.mcp_server.server - INFO - Client disconnected: 9ffd2fd5-b170-4c55-ac2c-0deca87d64b1
+2025-05-04 23:47:22,572 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 9ffd2fd5-b170-4c55-ac2c-0deca87d64b1
+2025-05-04 23:47:22,575 - src.utils.connection_manager - INFO - Client connected with session ID: e12ac519-9d2e-4e99-bcd2-6300678624c2
+2025-05-04 23:47:23,577 - src.utils.connection_manager - INFO - Client connected with session ID: b4948699-1922-4a17-b53a-9109a2939f0a
+2025-05-04 23:47:23,577 - src.mcp_server.server - INFO - Client disconnected: e12ac519-9d2e-4e99-bcd2-6300678624c2
+2025-05-04 23:47:23,577 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: e12ac519-9d2e-4e99-bcd2-6300678624c2
+2025-05-04 23:47:24,564 - src.mcp_server.server - INFO - Client disconnected: b4948699-1922-4a17-b53a-9109a2939f0a
+2025-05-04 23:47:24,564 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: b4948699-1922-4a17-b53a-9109a2939f0a
+2025-05-04 23:47:24,566 - src.utils.connection_manager - INFO - Client connected with session ID: 9f23e08b-f4dd-4190-9d5c-3a8c3831d1dc
+2025-05-04 23:47:25,574 - src.mcp_server.server - INFO - Client disconnected: 9f23e08b-f4dd-4190-9d5c-3a8c3831d1dc
+2025-05-04 23:47:25,575 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 9f23e08b-f4dd-4190-9d5c-3a8c3831d1dc
+2025-05-04 23:47:25,576 - src.utils.connection_manager - INFO - Client connected with session ID: c5088fd8-ba32-40c9-8346-014e693b5c04
+2025-05-04 23:47:26,210 - src.mcp_server.server - INFO - Client disconnected: c5088fd8-ba32-40c9-8346-014e693b5c04
+2025-05-04 23:47:26,211 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: c5088fd8-ba32-40c9-8346-014e693b5c04
+2025-05-04 23:47:26,580 - src.utils.connection_manager - INFO - Client connected with session ID: d17d3f0a-91dc-449c-9828-2334c9721d65
+2025-05-04 23:47:26,822 - src.utils.connection_manager - INFO - Client connected with session ID: 8e8584b9-3964-47a2-ab8a-a9335dc4e130
+2025-05-04 23:47:26,824 - src.mcp_server.server - INFO - Client disconnected: 8e8584b9-3964-47a2-ab8a-a9335dc4e130
+2025-05-04 23:47:26,824 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 8e8584b9-3964-47a2-ab8a-a9335dc4e130
+2025-05-04 23:47:26,838 - src.utils.connection_manager - INFO - Client connected with session ID: c798e7ce-5b24-4541-ae6c-f530aa49692b
+2025-05-04 23:47:27,830 - src.mcp_server.server - INFO - Client disconnected: c798e7ce-5b24-4541-ae6c-f530aa49692b
+2025-05-04 23:47:27,831 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: c798e7ce-5b24-4541-ae6c-f530aa49692b
+2025-05-04 23:47:27,832 - src.utils.connection_manager - INFO - Client connected with session ID: 555679ec-999c-477f-bc72-8f88fc6a3e21
+2025-05-04 23:47:28,093 - src.mcp_server.server - INFO - Client disconnected: 555679ec-999c-477f-bc72-8f88fc6a3e21
+2025-05-04 23:47:28,094 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 555679ec-999c-477f-bc72-8f88fc6a3e21
+2025-05-04 23:47:28,587 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 23:47:28,841 - src.utils.connection_manager - INFO - Client connected with session ID: 1314c70f-7427-42ab-8938-db631427ca01
+2025-05-04 23:47:29,095 - src.utils.connection_manager - INFO - Client connected with session ID: 636714bb-d57f-438f-b989-510ae214d8b2
+2025-05-04 23:47:29,109 - src.utils.connection_manager - INFO - Client connected with session ID: 0dd70dbc-e5b4-443f-998f-3b5a487d3616
+2025-05-04 23:47:29,585 - src.mcp_server.server - INFO - Client disconnected: 636714bb-d57f-438f-b989-510ae214d8b2
+2025-05-04 23:47:29,585 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 636714bb-d57f-438f-b989-510ae214d8b2
+2025-05-04 23:47:29,843 - src.mcp_server.server - INFO - Client disconnected: 0dd70dbc-e5b4-443f-998f-3b5a487d3616
+2025-05-04 23:47:29,844 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 0dd70dbc-e5b4-443f-998f-3b5a487d3616
+2025-05-04 23:47:30,104 - src.utils.connection_manager - INFO - Client connected with session ID: d7a0c959-670c-4207-ab13-028431fee3b9
+2025-05-04 23:47:30,472 - src.utils.connection_manager - INFO - Client connected with session ID: 4add9207-5404-46e9-9f42-6cbbd79f263d
+2025-05-04 23:47:30,485 - src.utils.connection_manager - INFO - Client connected with session ID: 22079aea-a4a3-4df3-b353-755f0342cd6e
+2025-05-04 23:47:30,732 - src.mcp_server.server - INFO - Client disconnected: 4add9207-5404-46e9-9f42-6cbbd79f263d
+2025-05-04 23:47:30,733 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 4add9207-5404-46e9-9f42-6cbbd79f263d
+2025-05-04 23:47:30,848 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 23:47:31,483 - src.mcp_server.server - INFO - Client disconnected: 22079aea-a4a3-4df3-b353-755f0342cd6e
+2025-05-04 23:47:31,483 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 22079aea-a4a3-4df3-b353-755f0342cd6e
+2025-05-04 23:47:31,486 - src.utils.connection_manager - INFO - Client connected with session ID: c4355b81-2f13-4323-9dad-6919d52dfd1e
+2025-05-04 23:47:31,856 - src.mcp_server.server - INFO - Client disconnected: c4355b81-2f13-4323-9dad-6919d52dfd1e
+2025-05-04 23:47:31,857 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: c4355b81-2f13-4323-9dad-6919d52dfd1e
+2025-05-04 23:47:32,110 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 23:47:32,489 - src.utils.connection_manager - INFO - Client connected with session ID: 53959790-1cdf-434d-9fc1-426439bd18e2
+2025-05-04 23:47:33,284 - src.utils.connection_manager - INFO - Client connected with session ID: 7740bf9a-3e4e-4225-9cce-f5dbf2ca7ee8
+2025-05-04 23:47:33,299 - src.utils.connection_manager - INFO - Client connected with session ID: 356fc4ef-4d7c-49fd-a26f-07985d62fece
+2025-05-04 23:47:33,543 - src.mcp_server.server - INFO - Client disconnected: 7740bf9a-3e4e-4225-9cce-f5dbf2ca7ee8
+2025-05-04 23:47:33,544 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 7740bf9a-3e4e-4225-9cce-f5dbf2ca7ee8
+2025-05-04 23:47:34,292 - src.mcp_server.server - INFO - Client disconnected: 356fc4ef-4d7c-49fd-a26f-07985d62fece
+2025-05-04 23:47:34,293 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 356fc4ef-4d7c-49fd-a26f-07985d62fece
+2025-05-04 23:47:34,294 - src.utils.connection_manager - INFO - Client connected with session ID: 91375314-a0ec-4c14-bbc5-8926be5db9cb
+2025-05-04 23:47:34,495 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 23:47:35,300 - src.mcp_server.server - INFO - Client disconnected: 91375314-a0ec-4c14-bbc5-8926be5db9cb
+2025-05-04 23:47:35,300 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 91375314-a0ec-4c14-bbc5-8926be5db9cb
+2025-05-04 23:47:35,301 - src.utils.connection_manager - INFO - Client connected with session ID: 97e7d3d1-c8d3-4017-8e2b-9340a0550f46
+2025-05-04 23:47:36,304 - src.mcp_server.server - INFO - Client disconnected: 97e7d3d1-c8d3-4017-8e2b-9340a0550f46
+2025-05-04 23:47:36,305 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 97e7d3d1-c8d3-4017-8e2b-9340a0550f46
+2025-05-04 23:47:36,308 - src.utils.connection_manager - INFO - Client connected with session ID: 5f8570f1-2238-48f6-9230-52517b9d5928
+2025-05-04 23:47:37,309 - src.mcp_server.server - INFO - Client disconnected: 5f8570f1-2238-48f6-9230-52517b9d5928
+2025-05-04 23:47:37,310 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 5f8570f1-2238-48f6-9230-52517b9d5928
+2025-05-04 23:47:37,313 - src.utils.connection_manager - INFO - Client connected with session ID: 4e4bb250-a302-4bd7-8c5d-83bb13d5ac67
+2025-05-04 23:47:38,317 - src.mcp_server.server - INFO - Client disconnected: 4e4bb250-a302-4bd7-8c5d-83bb13d5ac67
+2025-05-04 23:47:38,318 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 4e4bb250-a302-4bd7-8c5d-83bb13d5ac67
+2025-05-04 23:47:38,319 - src.utils.connection_manager - INFO - Client connected with session ID: d5eedfd5-0a9b-4e0f-a574-9184399e17a2
+2025-05-04 23:47:39,320 - src.mcp_server.server - INFO - Client disconnected: d5eedfd5-0a9b-4e0f-a574-9184399e17a2
+2025-05-04 23:47:39,320 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: d5eedfd5-0a9b-4e0f-a574-9184399e17a2
+2025-05-04 23:47:39,323 - src.utils.connection_manager - INFO - Client connected with session ID: 0f382e55-02ff-44c8-a2ef-834a6f37b629
+2025-05-04 23:47:40,324 - src.mcp_server.server - INFO - Client disconnected: 0f382e55-02ff-44c8-a2ef-834a6f37b629
+2025-05-04 23:47:40,325 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 0f382e55-02ff-44c8-a2ef-834a6f37b629
+2025-05-04 23:47:40,335 - src.utils.connection_manager - INFO - Client connected with session ID: 7c1307de-11fa-402d-beb8-8297855ffa07
+2025-05-04 23:47:41,330 - src.mcp_server.server - INFO - Client disconnected: 7c1307de-11fa-402d-beb8-8297855ffa07
+2025-05-04 23:47:41,331 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 7c1307de-11fa-402d-beb8-8297855ffa07
+2025-05-04 23:47:41,334 - src.utils.connection_manager - INFO - Client connected with session ID: 31aa4dee-3e32-493c-88d1-d0207a999213
+2025-05-04 23:47:42,337 - src.mcp_server.server - INFO - Client disconnected: 31aa4dee-3e32-493c-88d1-d0207a999213
+2025-05-04 23:47:42,338 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 31aa4dee-3e32-493c-88d1-d0207a999213
+2025-05-04 23:47:42,339 - src.utils.connection_manager - INFO - Client connected with session ID: 81d66ace-2070-4639-8bf3-a6fc56a2631e
+2025-05-04 23:47:43,345 - src.mcp_server.server - INFO - Client disconnected: 81d66ace-2070-4639-8bf3-a6fc56a2631e
+2025-05-04 23:47:43,347 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 81d66ace-2070-4639-8bf3-a6fc56a2631e
+2025-05-04 23:47:43,349 - src.utils.connection_manager - INFO - Client connected with session ID: 330280a8-ab53-4349-8822-86dc4f992c01
+2025-05-04 23:47:44,351 - src.mcp_server.server - INFO - Client disconnected: 330280a8-ab53-4349-8822-86dc4f992c01
+2025-05-04 23:47:44,352 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 330280a8-ab53-4349-8822-86dc4f992c01
+2025-05-04 23:47:44,357 - src.utils.connection_manager - INFO - Client connected with session ID: dfb51500-54b2-4b06-83de-dda7ab4e7c52
+2025-05-04 23:47:45,361 - src.mcp_server.server - INFO - Client disconnected: dfb51500-54b2-4b06-83de-dda7ab4e7c52
+2025-05-04 23:47:45,362 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: dfb51500-54b2-4b06-83de-dda7ab4e7c52
+2025-05-04 23:47:45,363 - src.utils.connection_manager - INFO - Client connected with session ID: 5fec1953-312e-48e8-9373-d56ff00af6f9
+2025-05-04 23:47:46,365 - src.mcp_server.server - INFO - Client disconnected: 5fec1953-312e-48e8-9373-d56ff00af6f9
+2025-05-04 23:47:46,366 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 5fec1953-312e-48e8-9373-d56ff00af6f9
+2025-05-04 23:47:46,373 - src.utils.connection_manager - INFO - Client connected with session ID: 7a82b7fa-d49d-4cb2-a91c-fad2055e5304
+2025-05-04 23:47:47,367 - src.mcp_server.server - INFO - Client disconnected: 7a82b7fa-d49d-4cb2-a91c-fad2055e5304
+2025-05-04 23:47:47,368 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 7a82b7fa-d49d-4cb2-a91c-fad2055e5304
+2025-05-04 23:47:47,376 - src.utils.connection_manager - INFO - Client connected with session ID: 86f1f0e2-a513-4c79-8ca0-a293228407d4
+2025-05-04 23:47:48,374 - src.utils.connection_manager - INFO - Client connected with session ID: 9736eb23-44b6-4a33-88a1-1a81626af94e
+2025-05-04 23:47:48,375 - src.mcp_server.server - INFO - Client disconnected: 86f1f0e2-a513-4c79-8ca0-a293228407d4
+2025-05-04 23:47:48,375 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 86f1f0e2-a513-4c79-8ca0-a293228407d4
+2025-05-04 23:47:49,386 - src.utils.connection_manager - INFO - Client connected with session ID: d4308361-427a-4f27-b72d-8f3e0df22723
+2025-05-04 23:47:49,388 - src.mcp_server.server - INFO - Client disconnected: 9736eb23-44b6-4a33-88a1-1a81626af94e
+2025-05-04 23:47:49,388 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 9736eb23-44b6-4a33-88a1-1a81626af94e
+2025-05-04 23:47:50,389 - src.mcp_server.server - INFO - Client disconnected: d4308361-427a-4f27-b72d-8f3e0df22723
+2025-05-04 23:47:50,390 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: d4308361-427a-4f27-b72d-8f3e0df22723
+2025-05-04 23:47:50,391 - src.utils.connection_manager - INFO - Client connected with session ID: bbd47b1e-c432-4a7f-abb5-7ba520cf7894
+2025-05-04 23:47:51,398 - src.mcp_server.server - INFO - Client disconnected: bbd47b1e-c432-4a7f-abb5-7ba520cf7894
+2025-05-04 23:47:51,400 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: bbd47b1e-c432-4a7f-abb5-7ba520cf7894
+2025-05-04 23:47:51,405 - src.utils.connection_manager - INFO - Client connected with session ID: 94d50939-af95-437e-b599-237df35df415
+2025-05-04 23:47:52,393 - src.mcp_server.server - INFO - Client disconnected: 94d50939-af95-437e-b599-237df35df415
+2025-05-04 23:47:52,394 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 94d50939-af95-437e-b599-237df35df415
+2025-05-04 23:47:52,396 - src.utils.connection_manager - INFO - Client connected with session ID: 00a75c8a-5a26-408e-878c-93cbab8d532e
+2025-05-04 23:47:53,395 - src.mcp_server.server - INFO - Client disconnected: 00a75c8a-5a26-408e-878c-93cbab8d532e
+2025-05-04 23:47:53,396 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 00a75c8a-5a26-408e-878c-93cbab8d532e
+2025-05-04 23:47:53,402 - src.utils.connection_manager - INFO - Client connected with session ID: abd22b49-1141-4583-bbd5-9e339e21ab8a
+2025-05-04 23:47:54,556 - src.utils.connection_manager - INFO - Client connected with session ID: c2fda1a9-55f9-4832-844a-0fc9b27c719d
+2025-05-04 23:47:54,573 - src.mcp_server.server - INFO - Client disconnected: abd22b49-1141-4583-bbd5-9e339e21ab8a
+2025-05-04 23:47:54,574 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: abd22b49-1141-4583-bbd5-9e339e21ab8a
+2025-05-04 23:47:55,676 - src.utils.connection_manager - INFO - Client connected with session ID: 5da09f51-7a2c-461a-a0ee-6d260aadf75a
+2025-05-04 23:47:55,677 - src.mcp_server.server - INFO - Client disconnected: c2fda1a9-55f9-4832-844a-0fc9b27c719d
+2025-05-04 23:47:55,677 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: c2fda1a9-55f9-4832-844a-0fc9b27c719d
+2025-05-04 23:47:56,659 - src.mcp_server.server - INFO - Client disconnected: 5da09f51-7a2c-461a-a0ee-6d260aadf75a
+2025-05-04 23:47:56,664 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 5da09f51-7a2c-461a-a0ee-6d260aadf75a
+2025-05-04 23:47:56,748 - src.utils.connection_manager - INFO - Client connected with session ID: b30dfce7-4a57-4df2-95a9-4386a5e0946c
+2025-05-04 23:47:57,462 - src.mcp_server.server - INFO - Client disconnected: b30dfce7-4a57-4df2-95a9-4386a5e0946c
+2025-05-04 23:47:57,463 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: b30dfce7-4a57-4df2-95a9-4386a5e0946c
+2025-05-04 23:47:57,665 - src.utils.connection_manager - INFO - Client connected with session ID: 26066d06-d6a8-4399-b8b1-ff0cbc16acc4
+2025-05-04 23:47:58,029 - src.utils.connection_manager - INFO - Client connected with session ID: eebb8330-53c6-4ecc-8b1e-cf857d7a6b3e
+2025-05-04 23:47:58,043 - src.utils.connection_manager - INFO - Client connected with session ID: 6a23d2c3-1e39-4a90-8e74-2993dee491b6
+2025-05-04 23:47:58,290 - src.mcp_server.server - INFO - Client disconnected: eebb8330-53c6-4ecc-8b1e-cf857d7a6b3e
+2025-05-04 23:47:58,290 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: eebb8330-53c6-4ecc-8b1e-cf857d7a6b3e
+2025-05-04 23:47:59,042 - src.mcp_server.server - INFO - Client disconnected: 6a23d2c3-1e39-4a90-8e74-2993dee491b6
+2025-05-04 23:47:59,042 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 6a23d2c3-1e39-4a90-8e74-2993dee491b6
+2025-05-04 23:47:59,044 - src.utils.connection_manager - INFO - Client connected with session ID: b670796c-0d94-414c-91ef-406c115dabdf
+2025-05-04 23:47:59,675 - src.mcp_server.server - INFO - Using chat history for session new_session with 21 messages
+2025-05-04 23:48:00,046 - src.mcp_server.server - INFO - Client disconnected: b670796c-0d94-414c-91ef-406c115dabdf
+2025-05-04 23:48:00,047 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: b670796c-0d94-414c-91ef-406c115dabdf
+2025-05-04 23:48:00,048 - src.utils.connection_manager - INFO - Client connected with session ID: 67fad680-b992-43b0-b08a-1cae88d7c22b
+2025-05-04 23:48:01,193 - src.utils.connection_manager - INFO - Client connected with session ID: e526cd6a-74a9-46f4-940a-4723dd1af48b
+2025-05-04 23:48:01,206 - src.mcp_server.server - INFO - Client disconnected: 67fad680-b992-43b0-b08a-1cae88d7c22b
+2025-05-04 23:48:01,207 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 67fad680-b992-43b0-b08a-1cae88d7c22b
+2025-05-04 23:48:02,206 - src.mcp_server.server - INFO - Client disconnected: e526cd6a-74a9-46f4-940a-4723dd1af48b
+2025-05-04 23:48:02,207 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: e526cd6a-74a9-46f4-940a-4723dd1af48b
+2025-05-04 23:48:02,209 - src.utils.connection_manager - INFO - Client connected with session ID: a190e353-1ef3-4092-b249-5d4620b1b0ed
+2025-05-04 23:48:04,216 - src.utils.connection_manager - INFO - Client connected with session ID: 09c64712-809f-4f11-9f9d-34b9754f17ea
+2025-05-04 23:48:04,217 - src.mcp_server.server - INFO - Client disconnected: a190e353-1ef3-4092-b249-5d4620b1b0ed
+2025-05-04 23:48:04,217 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: a190e353-1ef3-4092-b249-5d4620b1b0ed
+2025-05-04 23:48:04,618 - src.mcp_server.server - INFO - Client disconnected: d7a0c959-670c-4207-ab13-028431fee3b9
+2025-05-04 23:48:04,619 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: d7a0c959-670c-4207-ab13-028431fee3b9
+2025-05-04 23:48:04,619 - src.mcp_server.server - INFO - Client disconnected: 26066d06-d6a8-4399-b8b1-ff0cbc16acc4
+2025-05-04 23:48:04,619 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 26066d06-d6a8-4399-b8b1-ff0cbc16acc4
+2025-05-04 23:48:04,619 - src.mcp_server.server - INFO - Client disconnected: d17d3f0a-91dc-449c-9828-2334c9721d65
+2025-05-04 23:48:04,619 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: d17d3f0a-91dc-449c-9828-2334c9721d65
+2025-05-04 23:48:04,619 - src.mcp_server.server - INFO - Client disconnected: 1314c70f-7427-42ab-8938-db631427ca01
+2025-05-04 23:48:04,619 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 1314c70f-7427-42ab-8938-db631427ca01
+2025-05-04 23:48:04,619 - src.mcp_server.server - INFO - Client disconnected: 53959790-1cdf-434d-9fc1-426439bd18e2
+2025-05-04 23:48:04,620 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 53959790-1cdf-434d-9fc1-426439bd18e2
+2025-05-04 23:48:04,620 - src.mcp_server.server - INFO - Client disconnected: 09c64712-809f-4f11-9f9d-34b9754f17ea
+2025-05-04 23:48:04,620 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 09c64712-809f-4f11-9f9d-34b9754f17ea
+2025-05-04 23:48:04,620 - src.mcp_server.server - INFO - Client disconnected: cea3d50c-8731-4b28-82d9-ac96a19a64ba
+2025-05-04 23:48:04,620 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: cea3d50c-8731-4b28-82d9-ac96a19a64ba
+2025-05-04 23:48:04,723 - __main__ - INFO - Received signal 2, shutting down gracefully
+2025-05-04 23:48:04,723 - __main__ - INFO - Allowing running tasks to complete
+2025-05-04 23:48:04,727 - __main__ - INFO - Cleaning up resources...
+2025-05-04 23:48:04,737 - __main__ - INFO - Temporary files cleaned up
+2025-05-04 23:48:04,737 - __main__ - INFO - Resource cleanup completed
+2025-05-04 23:48:04,739 - root - CRITICAL - Unhandled exception: Event loop stopped before Future completed.
+2025-05-04 23:48:04,758 - root - CRITICAL - Traceback (most recent call last):
+  File "/Users/khalil/Documents/Github/GeoGemma/GIS_Agent/src/main.py", line 225, in main
+    asyncio.run(async_main(args))
+  File "/Users/khalil/.pyenv/versions/3.10.13/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/Users/khalil/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 647, in run_until_complete
+    raise RuntimeError('Event loop stopped before Future completed.')
+RuntimeError: Event loop stopped before Future completed.
+
+2025-05-04 23:51:12,436 - __main__ - INFO - Received signal 2, shutting down gracefully
+2025-05-04 23:51:12,442 - __main__ - INFO - Allowing running tasks to complete
+2025-05-04 23:55:06,711 - root - INFO - GIS AI Agent starting in production mode
+2025-05-04 23:55:06,712 - src.mcp_server.server - INFO - Added climate analysis tool: analyze_climate_trends
+2025-05-04 23:55:06,712 - src.mcp_server.server - INFO - Added climate analysis tool: track_emissions
+2025-05-04 23:55:06,712 - src.mcp_server.server - INFO - Added climate analysis tool: project_climate_scenarios
+2025-05-04 23:55:06,712 - src.mcp_server.server - INFO - Added climate analysis tool: analyze_renewable_energy_potential
+2025-05-04 23:55:06,712 - src.mcp_server.server - INFO - Added resilience planning tool: assess_disaster_risk
+2025-05-04 23:55:06,712 - src.mcp_server.server - INFO - Added resilience planning tool: evaluate_infrastructure_vulnerability
+2025-05-04 23:55:06,712 - src.mcp_server.server - INFO - Added resilience planning tool: design_adaptation_measures
+2025-05-04 23:55:06,712 - src.mcp_server.server - INFO - Added resilience planning tool: assess_community_resilience
+2025-05-04 23:55:06,712 - src.utils.cache - INFO - Cache initialized with directory: /Users/khalil/Documents/Github/GeoGemma/GIS_Agent/data/cache
+2025-05-04 23:55:06,712 - src.utils.tool_executor - INFO - ToolExecutor initialized with 25 tools
+2025-05-04 23:55:06,783 - src.utils.firebase_storage - INFO - Initialized encryption with derived key
+2025-05-04 23:55:06,783 - src.utils.firebase_storage - INFO - Firebase storage initialized with database URL: https://geogemma-f32a4-default-rtdb.firebaseio.com
+2025-05-04 23:55:06,784 - src.utils.cache - INFO - Cache maintenance scheduled with interval: 3600 seconds
+2025-05-04 23:55:06,784 - src.mcp_server.server - INFO - MCP Server 'assess_community_resilience' initialized with 25 tools
+2025-05-04 23:55:06,784 - src.utils.cache - INFO - Cache maintenance scheduled with interval: 3600 seconds
+2025-05-04 23:55:06,784 - __main__ - INFO - Starting GIS AI Agent server at 0.0.0.0:8080
+2025-05-04 23:55:06,784 - src.utils.connection_manager - INFO - Session monitoring started
+2025-05-04 23:55:09,467 - src.utils.connection_manager - INFO - Client connected with session ID: 838dd6fa-3e5e-4d63-a68d-7f8977fc62a9
+2025-05-04 23:55:11,505 - src.mcp_server.server - INFO - Using chat history for session new_session with 2 messages
+2025-05-04 23:55:13,484 - src.utils.firebase_storage - ERROR - Firebase put error: 404 - {
+  "error" : "404 Not Found"
+}
+
+2025-05-04 23:55:13,484 - src.utils.firebase_storage - WARNING - Firebase database does not exist - disabling write operations
+2025-05-04 23:55:28,582 - src.mcp_server.server - INFO - Using chat history for session 838dd6fa-3e5e-4d63-a68d-7f8977fc62a9 with 2 messages
+2025-05-04 23:55:33,243 - src.mcp_server.server - INFO - Using chat history for session 838dd6fa-3e5e-4d63-a68d-7f8977fc62a9 with 4 messages
+2025-05-04 23:55:33,859 - src.mcp_server.server - INFO - LLM requested tool call: get_carbon_footprint with args: {'activity_type': 'all', 'area': 'New York City'}
+2025-05-04 23:55:33,874 - src.tools.sustainability_assessment - ERROR - Error calculating carbon footprint: 'coroutine' object has no attribute 'calculate_carbon_footprint'
+2025-05-04 23:55:33,879 - src.utils.tool_executor - INFO - Tool get_carbon_footprint executed in 0.00s
+2025-05-04 23:55:33,879 - src.mcp_server.server - INFO - Tool get_carbon_footprint executed successfully.
+2025-05-04 23:55:33,879 - src.mcp_server.server - WARNING - Tool get_carbon_footprint returned an error: 'coroutine' object has no attribute 'calculate_carbon_footprint'
+2025-05-04 23:55:37,936 - src.gemini.client - INFO - Gemini API call (no tools) completed in 4.06 seconds.
+2025-05-04 23:55:37,942 - src.utils.tool_executor - INFO - Tool analyze_query_with_gemini executed in 4.06s
+2025-05-04 23:55:37,942 - src.mcp_server.server - INFO - Using Gemini fallback analysis for get_carbon_footprint
+2025-05-04 23:56:03,150 - src.mcp_server.server - INFO - Client disconnected: 838dd6fa-3e5e-4d63-a68d-7f8977fc62a9
+2025-05-04 23:56:03,151 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 838dd6fa-3e5e-4d63-a68d-7f8977fc62a9
+2025-05-04 23:56:07,452 - src.utils.connection_manager - INFO - Client connected with session ID: 859a2da1-8c56-4aee-b335-6616f752fc8f
+2025-05-04 23:56:09,463 - src.mcp_server.server - INFO - Using chat history for session new_session with 4 messages
+2025-05-04 23:56:11,142 - src.utils.connection_manager - INFO - Client connected with session ID: 4636c708-61a2-429b-8fc1-063d938b58a8
+2025-05-04 23:56:13,150 - src.mcp_server.server - INFO - Using chat history for session new_session with 6 messages
+2025-05-04 23:56:16,580 - src.mcp_server.server - INFO - Using chat history for session 4636c708-61a2-429b-8fc1-063d938b58a8 with 2 messages
+2025-05-04 23:56:22,158 - src.mcp_server.server - INFO - Using chat history for session 4636c708-61a2-429b-8fc1-063d938b58a8 with 4 messages
+2025-05-04 23:56:22,746 - src.mcp_server.server - INFO - LLM requested tool call: get_carbon_footprint with args: {'activity_type': 'all', 'area': 'New York City'}
+2025-05-04 23:56:22,747 - src.utils.tool_executor - INFO - Using cached result for tool: get_carbon_footprint
+2025-05-04 23:56:22,747 - src.mcp_server.server - INFO - Tool get_carbon_footprint executed successfully.
+2025-05-04 23:56:22,747 - src.mcp_server.server - WARNING - Tool get_carbon_footprint returned an error: 'coroutine' object has no attribute 'calculate_carbon_footprint'
+2025-05-04 23:56:27,114 - src.gemini.client - INFO - Gemini API call (no tools) completed in 4.37 seconds.
+2025-05-04 23:56:27,118 - src.utils.tool_executor - INFO - Tool analyze_query_with_gemini executed in 4.37s
+2025-05-04 23:56:27,119 - src.mcp_server.server - INFO - Using Gemini fallback analysis for get_carbon_footprint
+2025-05-04 23:57:12,877 - src.mcp_server.server - INFO - Client disconnected: 4636c708-61a2-429b-8fc1-063d938b58a8
+2025-05-04 23:57:12,881 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 4636c708-61a2-429b-8fc1-063d938b58a8
+2025-05-04 23:57:13,913 - src.utils.connection_manager - INFO - Client connected with session ID: 2c4543e6-645a-4025-8c50-8f25915220b5
+2025-05-04 23:57:15,948 - src.mcp_server.server - INFO - Using chat history for session new_session with 8 messages
+2025-05-04 23:57:16,812 - src.utils.connection_manager - INFO - Client connected with session ID: 37ba5dc5-a05e-46fd-b836-132a95ad2c64
+2025-05-04 23:57:16,825 - src.utils.connection_manager - INFO - Client connected with session ID: 57c71f3a-25f7-4785-932c-6f09020136c1
+2025-05-04 23:57:16,844 - src.mcp_server.server - INFO - LLM requested tool call: get_current_weather with args: {'location': 'London, UK'}
+2025-05-04 23:57:17,062 - src.mcp_server.server - INFO - Client disconnected: 37ba5dc5-a05e-46fd-b836-132a95ad2c64
+2025-05-04 23:57:17,064 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 37ba5dc5-a05e-46fd-b836-132a95ad2c64
+2025-05-04 23:57:17,499 - src.utils.tool_executor - INFO - Tool get_current_weather executed in 0.65s
+2025-05-04 23:57:17,502 - src.mcp_server.server - INFO - Tool get_current_weather executed successfully.
+2025-05-04 23:57:17,502 - src.mcp_server.server - INFO - Requesting analysis of get_current_weather results from Gemini
+2025-05-04 23:57:17,877 - src.mcp_server.server - INFO - Client disconnected: 57c71f3a-25f7-4785-932c-6f09020136c1
+2025-05-04 23:57:17,877 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 57c71f3a-25f7-4785-932c-6f09020136c1
+2025-05-04 23:57:17,880 - src.utils.connection_manager - INFO - Client connected with session ID: fbb92e0a-1d3e-4baa-8ff3-a7cd20cceb2c
+2025-05-04 23:57:18,893 - src.utils.connection_manager - INFO - Client connected with session ID: 97706f34-05fc-4f7f-9d3b-b11e515b7942
+2025-05-04 23:57:18,894 - src.mcp_server.server - INFO - Client disconnected: fbb92e0a-1d3e-4baa-8ff3-a7cd20cceb2c
+2025-05-04 23:57:18,895 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: fbb92e0a-1d3e-4baa-8ff3-a7cd20cceb2c
+2025-05-04 23:57:19,896 - src.mcp_server.server - INFO - Client disconnected: 97706f34-05fc-4f7f-9d3b-b11e515b7942
+2025-05-04 23:57:19,897 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 97706f34-05fc-4f7f-9d3b-b11e515b7942
+2025-05-04 23:57:19,900 - src.utils.connection_manager - INFO - Client connected with session ID: 439bc909-c0db-48a1-bd54-9dfb15fde32d
+2025-05-04 23:57:20,172 - src.mcp_server.server - INFO - Client disconnected: 439bc909-c0db-48a1-bd54-9dfb15fde32d
+2025-05-04 23:57:20,172 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 439bc909-c0db-48a1-bd54-9dfb15fde32d
+2025-05-04 23:57:20,906 - src.utils.connection_manager - INFO - Client connected with session ID: 15aa99a3-bc2a-4c39-b6ae-a568eaa65526
+2025-05-04 23:57:21,203 - src.utils.connection_manager - INFO - Client connected with session ID: 14fd3f4c-8d9c-4805-bd01-e8df4ef1851f
+2025-05-04 23:57:21,215 - src.utils.connection_manager - INFO - Client connected with session ID: 76e87d7f-d684-48b7-8fdc-d1f6e68725c7
+2025-05-04 23:57:21,447 - src.mcp_server.server - INFO - Client disconnected: 14fd3f4c-8d9c-4805-bd01-e8df4ef1851f
+2025-05-04 23:57:21,448 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 14fd3f4c-8d9c-4805-bd01-e8df4ef1851f
+2025-05-04 23:57:22,105 - src.mcp_server.server - INFO - Generated analysis for get_current_weather results
+2025-05-04 23:57:22,294 - src.mcp_server.server - INFO - Client disconnected: 76e87d7f-d684-48b7-8fdc-d1f6e68725c7
+2025-05-04 23:57:22,295 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 76e87d7f-d684-48b7-8fdc-d1f6e68725c7
+2025-05-04 23:57:22,296 - src.utils.connection_manager - INFO - Client connected with session ID: e2b80b8d-73cf-4820-b624-eb1dc20a069e
+2025-05-04 23:57:22,914 - src.mcp_server.server - INFO - Using chat history for session new_session with 14 messages
+2025-05-04 23:57:23,230 - src.mcp_server.server - INFO - Client disconnected: e2b80b8d-73cf-4820-b624-eb1dc20a069e
+2025-05-04 23:57:23,230 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: e2b80b8d-73cf-4820-b624-eb1dc20a069e
+2025-05-04 23:57:23,233 - src.utils.connection_manager - INFO - Client connected with session ID: d2f3898a-5bbd-4f74-9341-dffa3d3d57c1
+2025-05-04 23:57:24,236 - src.mcp_server.server - INFO - Client disconnected: d2f3898a-5bbd-4f74-9341-dffa3d3d57c1
+2025-05-04 23:57:24,237 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: d2f3898a-5bbd-4f74-9341-dffa3d3d57c1
+2025-05-04 23:57:24,239 - src.utils.connection_manager - INFO - Client connected with session ID: d47c5072-d292-4cd5-9167-bf1922c67d05
+2025-05-04 23:57:25,243 - src.mcp_server.server - INFO - Client disconnected: d47c5072-d292-4cd5-9167-bf1922c67d05
+2025-05-04 23:57:25,243 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: d47c5072-d292-4cd5-9167-bf1922c67d05
+2025-05-04 23:57:25,245 - src.utils.connection_manager - INFO - Client connected with session ID: 1303fc52-3c41-4a6e-8c19-e7212ad06d2c
+2025-05-04 23:57:26,251 - src.mcp_server.server - INFO - Client disconnected: 1303fc52-3c41-4a6e-8c19-e7212ad06d2c
+2025-05-04 23:57:26,252 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 1303fc52-3c41-4a6e-8c19-e7212ad06d2c
+2025-05-04 23:57:26,254 - src.utils.connection_manager - INFO - Client connected with session ID: bf131e0e-0d79-4221-86b8-99037d413f9e
+2025-05-04 23:57:27,259 - src.mcp_server.server - INFO - Client disconnected: bf131e0e-0d79-4221-86b8-99037d413f9e
+2025-05-04 23:57:27,259 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: bf131e0e-0d79-4221-86b8-99037d413f9e
+2025-05-04 23:57:27,261 - src.utils.connection_manager - INFO - Client connected with session ID: 4d5ed4be-f5a8-4439-b3a8-5ca4d58d1d64
+2025-05-04 23:57:28,268 - src.mcp_server.server - INFO - Client disconnected: 4d5ed4be-f5a8-4439-b3a8-5ca4d58d1d64
+2025-05-04 23:57:28,269 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 4d5ed4be-f5a8-4439-b3a8-5ca4d58d1d64
+2025-05-04 23:57:28,274 - src.utils.connection_manager - INFO - Client connected with session ID: 8626b24b-0093-48b9-afa6-1950c911fe16
+2025-05-04 23:57:29,276 - src.mcp_server.server - INFO - Client disconnected: 8626b24b-0093-48b9-afa6-1950c911fe16
+2025-05-04 23:57:29,277 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 8626b24b-0093-48b9-afa6-1950c911fe16
+2025-05-04 23:57:29,280 - src.utils.connection_manager - INFO - Client connected with session ID: 2259b3b8-7b95-4cce-8c5d-a763985009fc
+2025-05-04 23:57:30,286 - src.mcp_server.server - INFO - Client disconnected: 2259b3b8-7b95-4cce-8c5d-a763985009fc
+2025-05-04 23:57:30,286 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2259b3b8-7b95-4cce-8c5d-a763985009fc
+2025-05-04 23:57:30,288 - src.utils.connection_manager - INFO - Client connected with session ID: a0a96132-5fc8-49c2-8741-1b3e80019fe2
+2025-05-04 23:57:31,294 - src.mcp_server.server - INFO - Client disconnected: a0a96132-5fc8-49c2-8741-1b3e80019fe2
+2025-05-04 23:57:31,295 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: a0a96132-5fc8-49c2-8741-1b3e80019fe2
+2025-05-04 23:57:31,297 - src.utils.connection_manager - INFO - Client connected with session ID: a43e8a20-da7d-4de4-b37e-d5a946bcf571
+2025-05-04 23:57:32,304 - src.mcp_server.server - INFO - Client disconnected: a43e8a20-da7d-4de4-b37e-d5a946bcf571
+2025-05-04 23:57:32,304 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: a43e8a20-da7d-4de4-b37e-d5a946bcf571
+2025-05-04 23:57:32,306 - src.utils.connection_manager - INFO - Client connected with session ID: 91a29c48-4f8b-4c70-a579-b5785f208263
+2025-05-04 23:57:33,312 - src.mcp_server.server - INFO - Client disconnected: 91a29c48-4f8b-4c70-a579-b5785f208263
+2025-05-04 23:57:33,312 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 91a29c48-4f8b-4c70-a579-b5785f208263
+2025-05-04 23:57:33,315 - src.utils.connection_manager - INFO - Client connected with session ID: 082d6564-a85a-4ceb-a05a-1652407c049a
+2025-05-04 23:57:34,317 - src.mcp_server.server - INFO - Client disconnected: 082d6564-a85a-4ceb-a05a-1652407c049a
+2025-05-04 23:57:34,317 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 082d6564-a85a-4ceb-a05a-1652407c049a
+2025-05-04 23:57:34,320 - src.utils.connection_manager - INFO - Client connected with session ID: f416e604-4a59-42e1-bccc-ea07b554f50b
+2025-05-04 23:57:35,331 - src.mcp_server.server - INFO - Client disconnected: f416e604-4a59-42e1-bccc-ea07b554f50b
+2025-05-04 23:57:35,332 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: f416e604-4a59-42e1-bccc-ea07b554f50b
+2025-05-04 23:57:35,333 - src.utils.connection_manager - INFO - Client connected with session ID: 7c317464-5f7f-4430-8191-e4f668980b13
+2025-05-04 23:57:36,333 - src.mcp_server.server - INFO - Client disconnected: 7c317464-5f7f-4430-8191-e4f668980b13
+2025-05-04 23:57:36,334 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 7c317464-5f7f-4430-8191-e4f668980b13
+2025-05-04 23:57:36,337 - src.utils.connection_manager - INFO - Client connected with session ID: 5f5727ae-3718-4f29-868f-891d4193e39e
+2025-05-04 23:57:37,342 - src.mcp_server.server - INFO - Client disconnected: 5f5727ae-3718-4f29-868f-891d4193e39e
+2025-05-04 23:57:37,343 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 5f5727ae-3718-4f29-868f-891d4193e39e
+2025-05-04 23:57:37,344 - src.utils.connection_manager - INFO - Client connected with session ID: 6db59a38-dc88-41ef-a274-5244a97fae2b
+2025-05-04 23:57:38,350 - src.mcp_server.server - INFO - Client disconnected: 6db59a38-dc88-41ef-a274-5244a97fae2b
+2025-05-04 23:57:38,350 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 6db59a38-dc88-41ef-a274-5244a97fae2b
+2025-05-04 23:57:38,360 - src.utils.connection_manager - INFO - Client connected with session ID: 254858af-b04e-4951-bb3b-899fb5435ad6
+2025-05-04 23:57:39,357 - src.mcp_server.server - INFO - Client disconnected: 254858af-b04e-4951-bb3b-899fb5435ad6
+2025-05-04 23:57:39,357 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 254858af-b04e-4951-bb3b-899fb5435ad6
+2025-05-04 23:57:39,360 - src.utils.connection_manager - INFO - Client connected with session ID: cf5ed8e2-1b93-4cb1-bca5-4392f792738f
+2025-05-04 23:57:40,419 - src.mcp_server.server - INFO - Client disconnected: cf5ed8e2-1b93-4cb1-bca5-4392f792738f
+2025-05-04 23:57:40,419 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: cf5ed8e2-1b93-4cb1-bca5-4392f792738f
+2025-05-04 23:57:40,428 - src.utils.connection_manager - INFO - Client connected with session ID: 0028c6d5-8fac-4168-9c86-fe545d59f6f7
+2025-05-04 23:57:41,372 - src.mcp_server.server - INFO - Client disconnected: 0028c6d5-8fac-4168-9c86-fe545d59f6f7
+2025-05-04 23:57:41,373 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 0028c6d5-8fac-4168-9c86-fe545d59f6f7
+2025-05-04 23:57:41,376 - src.utils.connection_manager - INFO - Client connected with session ID: f20af325-46a0-4ce1-a273-6dec4479d0ec
+2025-05-04 23:57:42,378 - src.mcp_server.server - INFO - Client disconnected: f20af325-46a0-4ce1-a273-6dec4479d0ec
+2025-05-04 23:57:42,379 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: f20af325-46a0-4ce1-a273-6dec4479d0ec
+2025-05-04 23:57:42,382 - src.utils.connection_manager - INFO - Client connected with session ID: 4fe20519-d59d-4694-a4ed-3e49ae5dd7f7
+2025-05-04 23:57:43,389 - src.mcp_server.server - INFO - Client disconnected: 4fe20519-d59d-4694-a4ed-3e49ae5dd7f7
+2025-05-04 23:57:43,390 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 4fe20519-d59d-4694-a4ed-3e49ae5dd7f7
+2025-05-04 23:57:43,393 - src.utils.connection_manager - INFO - Client connected with session ID: 8caf61e5-56fb-44ac-8ce8-16fb2478a002
+2025-05-04 23:57:44,395 - src.mcp_server.server - INFO - Client disconnected: 8caf61e5-56fb-44ac-8ce8-16fb2478a002
+2025-05-04 23:57:44,396 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 8caf61e5-56fb-44ac-8ce8-16fb2478a002
+2025-05-04 23:57:44,399 - src.utils.connection_manager - INFO - Client connected with session ID: 1f6058db-0d6c-4cda-9153-65a6480ea4fb
+2025-05-04 23:57:45,408 - src.mcp_server.server - INFO - Client disconnected: 1f6058db-0d6c-4cda-9153-65a6480ea4fb
+2025-05-04 23:57:45,409 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 1f6058db-0d6c-4cda-9153-65a6480ea4fb
+2025-05-04 23:57:45,410 - src.utils.connection_manager - INFO - Client connected with session ID: 51d62132-970c-4b44-9587-03b7c5d1be75
+2025-05-04 23:57:46,420 - src.utils.connection_manager - INFO - Client connected with session ID: b824de64-6947-459a-a7a7-f0b82f0803d1
+2025-05-04 23:57:46,420 - src.mcp_server.server - INFO - Client disconnected: 51d62132-970c-4b44-9587-03b7c5d1be75
+2025-05-04 23:57:46,421 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 51d62132-970c-4b44-9587-03b7c5d1be75
+2025-05-04 23:57:47,423 - src.mcp_server.server - INFO - Client disconnected: b824de64-6947-459a-a7a7-f0b82f0803d1
+2025-05-04 23:57:47,423 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: b824de64-6947-459a-a7a7-f0b82f0803d1
+2025-05-04 23:57:47,426 - src.utils.connection_manager - INFO - Client connected with session ID: 66b7e591-da00-4f28-9bd0-f31509967cab
+2025-05-04 23:57:48,434 - src.mcp_server.server - INFO - Client disconnected: 66b7e591-da00-4f28-9bd0-f31509967cab
+2025-05-04 23:57:48,435 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 66b7e591-da00-4f28-9bd0-f31509967cab
+2025-05-04 23:57:48,438 - src.utils.connection_manager - INFO - Client connected with session ID: 2f833643-9a33-4e87-9e6f-790292ac96fd
+2025-05-04 23:57:49,439 - src.mcp_server.server - INFO - Client disconnected: 2f833643-9a33-4e87-9e6f-790292ac96fd
+2025-05-04 23:57:49,440 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2f833643-9a33-4e87-9e6f-790292ac96fd
+2025-05-04 23:57:49,445 - src.utils.connection_manager - INFO - Client connected with session ID: b135b7c2-2c1c-4ac7-904c-44f18036048e
+2025-05-04 23:57:50,449 - src.mcp_server.server - INFO - Client disconnected: b135b7c2-2c1c-4ac7-904c-44f18036048e
+2025-05-04 23:57:50,449 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: b135b7c2-2c1c-4ac7-904c-44f18036048e
+2025-05-04 23:57:50,452 - src.utils.connection_manager - INFO - Client connected with session ID: 65eac63b-483c-4539-8b5d-62c394b53908
+2025-05-04 23:57:51,454 - src.mcp_server.server - INFO - Client disconnected: 65eac63b-483c-4539-8b5d-62c394b53908
+2025-05-04 23:57:51,454 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 65eac63b-483c-4539-8b5d-62c394b53908
+2025-05-04 23:57:51,456 - src.utils.connection_manager - INFO - Client connected with session ID: 7f2a79cf-33a1-4d93-81a4-6f7c6f754e6a
+2025-05-04 23:57:52,468 - src.utils.connection_manager - INFO - Client connected with session ID: 2218b87f-45a6-4229-91d0-df7cd1a665aa
+2025-05-04 23:57:52,468 - src.mcp_server.server - INFO - Client disconnected: 7f2a79cf-33a1-4d93-81a4-6f7c6f754e6a
+2025-05-04 23:57:52,469 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 7f2a79cf-33a1-4d93-81a4-6f7c6f754e6a
+2025-05-04 23:57:53,468 - src.mcp_server.server - INFO - Client disconnected: 2218b87f-45a6-4229-91d0-df7cd1a665aa
+2025-05-04 23:57:53,469 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2218b87f-45a6-4229-91d0-df7cd1a665aa
+2025-05-04 23:57:53,471 - src.utils.connection_manager - INFO - Client connected with session ID: 3cb8def1-80ae-49a4-a147-2adbf61dc3cd
+2025-05-04 23:57:54,477 - src.utils.connection_manager - INFO - Client connected with session ID: 7c66201d-f7f2-4065-a7b8-d1505aeba02d
+2025-05-04 23:57:54,478 - src.mcp_server.server - INFO - Client disconnected: 3cb8def1-80ae-49a4-a147-2adbf61dc3cd
+2025-05-04 23:57:54,478 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 3cb8def1-80ae-49a4-a147-2adbf61dc3cd
+2025-05-04 23:57:55,482 - src.mcp_server.server - INFO - Client disconnected: 7c66201d-f7f2-4065-a7b8-d1505aeba02d
+2025-05-04 23:57:55,482 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 7c66201d-f7f2-4065-a7b8-d1505aeba02d
+2025-05-04 23:57:55,486 - src.utils.connection_manager - INFO - Client connected with session ID: f567c1de-52c5-4179-a68b-fe7fc771a79b
+2025-05-04 23:57:56,506 - src.mcp_server.server - INFO - Client disconnected: f567c1de-52c5-4179-a68b-fe7fc771a79b
+2025-05-04 23:57:56,507 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: f567c1de-52c5-4179-a68b-fe7fc771a79b
+2025-05-04 23:57:56,508 - src.utils.connection_manager - INFO - Client connected with session ID: bc6daf8e-4edd-4120-a436-cd3fd446401c
+2025-05-04 23:57:57,507 - src.mcp_server.server - INFO - Client disconnected: bc6daf8e-4edd-4120-a436-cd3fd446401c
+2025-05-04 23:57:57,507 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: bc6daf8e-4edd-4120-a436-cd3fd446401c
+2025-05-04 23:57:57,511 - src.utils.connection_manager - INFO - Client connected with session ID: 06199c43-c0fd-43e5-a56b-e08afa454a7f
+2025-05-04 23:57:58,516 - src.mcp_server.server - INFO - Client disconnected: 06199c43-c0fd-43e5-a56b-e08afa454a7f
+2025-05-04 23:57:58,517 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 06199c43-c0fd-43e5-a56b-e08afa454a7f
+2025-05-04 23:57:58,519 - src.utils.connection_manager - INFO - Client connected with session ID: 068b311f-7130-44f9-8c68-ce3a569ca847
+2025-05-04 23:57:59,524 - src.mcp_server.server - INFO - Client disconnected: 068b311f-7130-44f9-8c68-ce3a569ca847
+2025-05-04 23:57:59,525 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 068b311f-7130-44f9-8c68-ce3a569ca847
+2025-05-04 23:57:59,527 - src.utils.connection_manager - INFO - Client connected with session ID: 69033a18-be13-4b59-b455-f85fb231eca8
+2025-05-04 23:58:00,537 - src.utils.connection_manager - INFO - Client connected with session ID: 1aff6466-df0a-4676-9d17-2ecaa57b4a25
+2025-05-04 23:58:00,546 - src.mcp_server.server - INFO - Client disconnected: 69033a18-be13-4b59-b455-f85fb231eca8
+2025-05-04 23:58:00,546 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 69033a18-be13-4b59-b455-f85fb231eca8
+2025-05-04 23:58:01,537 - src.mcp_server.server - INFO - Client disconnected: 1aff6466-df0a-4676-9d17-2ecaa57b4a25
+2025-05-04 23:58:01,537 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 1aff6466-df0a-4676-9d17-2ecaa57b4a25
+2025-05-04 23:58:01,540 - src.utils.connection_manager - INFO - Client connected with session ID: 0f9bbe90-0d36-4165-982e-aef3839757d8
+2025-05-04 23:58:02,547 - src.mcp_server.server - INFO - Client disconnected: 0f9bbe90-0d36-4165-982e-aef3839757d8
+2025-05-04 23:58:02,548 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 0f9bbe90-0d36-4165-982e-aef3839757d8
+2025-05-04 23:58:02,549 - src.utils.connection_manager - INFO - Client connected with session ID: 9ac68f69-a5c5-4105-a239-965e678b1039
+2025-05-04 23:58:03,550 - src.mcp_server.server - INFO - Client disconnected: 9ac68f69-a5c5-4105-a239-965e678b1039
+2025-05-04 23:58:03,551 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 9ac68f69-a5c5-4105-a239-965e678b1039
+2025-05-04 23:58:03,553 - src.utils.connection_manager - INFO - Client connected with session ID: d83e88a1-747c-4065-8d15-50a988946fdb
+2025-05-04 23:58:03,614 - src.mcp_server.server - INFO - Client disconnected: 859a2da1-8c56-4aee-b335-6616f752fc8f
+2025-05-04 23:58:03,615 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 859a2da1-8c56-4aee-b335-6616f752fc8f
+2025-05-04 23:58:03,616 - src.mcp_server.server - INFO - Client disconnected: 2c4543e6-645a-4025-8c50-8f25915220b5
+2025-05-04 23:58:03,616 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2c4543e6-645a-4025-8c50-8f25915220b5
+2025-05-04 23:58:03,616 - src.mcp_server.server - INFO - Client disconnected: 15aa99a3-bc2a-4c39-b6ae-a568eaa65526
+2025-05-04 23:58:03,616 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 15aa99a3-bc2a-4c39-b6ae-a568eaa65526
+2025-05-04 23:58:03,806 - src.mcp_server.server - INFO - Client disconnected: d83e88a1-747c-4065-8d15-50a988946fdb
+2025-05-04 23:58:03,806 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: d83e88a1-747c-4065-8d15-50a988946fdb
+2025-05-04 23:58:06,754 - src.utils.connection_manager - INFO - Client connected with session ID: 82384356-bc9e-4ca1-91ae-a1ee9544a762
+2025-05-04 23:58:06,784 - src.utils.connection_manager - INFO - Client connected with session ID: e78d29ef-51b9-4e22-82af-68b90bbf1e9c
+2025-05-04 23:58:07,045 - src.mcp_server.server - INFO - Client disconnected: 82384356-bc9e-4ca1-91ae-a1ee9544a762
+2025-05-04 23:58:07,046 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 82384356-bc9e-4ca1-91ae-a1ee9544a762
+2025-05-04 23:58:07,791 - src.mcp_server.server - INFO - Client disconnected: e78d29ef-51b9-4e22-82af-68b90bbf1e9c
+2025-05-04 23:58:07,791 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: e78d29ef-51b9-4e22-82af-68b90bbf1e9c
+2025-05-04 23:58:07,794 - src.utils.connection_manager - INFO - Client connected with session ID: 086f5885-a179-473b-a7f2-91ecfd680bc7
+2025-05-04 23:58:08,800 - src.mcp_server.server - INFO - Client disconnected: 086f5885-a179-473b-a7f2-91ecfd680bc7
+2025-05-04 23:58:08,801 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 086f5885-a179-473b-a7f2-91ecfd680bc7
+2025-05-04 23:58:08,803 - src.utils.connection_manager - INFO - Client connected with session ID: 8dac4fd5-9429-4943-92c0-2ae451b19ed7
+2025-05-04 23:58:09,811 - src.mcp_server.server - INFO - Client disconnected: 8dac4fd5-9429-4943-92c0-2ae451b19ed7
+2025-05-04 23:58:09,812 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 8dac4fd5-9429-4943-92c0-2ae451b19ed7
+2025-05-04 23:58:09,815 - src.utils.connection_manager - INFO - Client connected with session ID: 8b043d7b-3ff1-43e0-a35a-91fe74f5eff0
+2025-05-04 23:58:10,823 - src.mcp_server.server - INFO - Client disconnected: 8b043d7b-3ff1-43e0-a35a-91fe74f5eff0
+2025-05-04 23:58:10,823 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 8b043d7b-3ff1-43e0-a35a-91fe74f5eff0
+2025-05-04 23:58:10,825 - src.utils.connection_manager - INFO - Client connected with session ID: 22d43d7e-f3d8-42c0-a872-ca62e8b17a2f
+2025-05-04 23:58:11,827 - src.mcp_server.server - INFO - Client disconnected: 22d43d7e-f3d8-42c0-a872-ca62e8b17a2f
+2025-05-04 23:58:11,828 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 22d43d7e-f3d8-42c0-a872-ca62e8b17a2f
+2025-05-04 23:58:11,830 - src.utils.connection_manager - INFO - Client connected with session ID: 667a7793-6de9-417f-855b-654799794006
+2025-05-04 23:58:12,835 - src.mcp_server.server - INFO - Client disconnected: 667a7793-6de9-417f-855b-654799794006
+2025-05-04 23:58:12,835 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 667a7793-6de9-417f-855b-654799794006
+2025-05-04 23:58:12,838 - src.utils.connection_manager - INFO - Client connected with session ID: 046efcac-aca7-41e9-a5a2-fc3d0a5826fa
+2025-05-04 23:58:13,843 - src.mcp_server.server - INFO - Client disconnected: 046efcac-aca7-41e9-a5a2-fc3d0a5826fa
+2025-05-04 23:58:13,843 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 046efcac-aca7-41e9-a5a2-fc3d0a5826fa
+2025-05-04 23:58:13,846 - src.utils.connection_manager - INFO - Client connected with session ID: d1bb7f6f-4dc4-4c56-9a98-45e0773cddf4
+2025-05-04 23:58:14,851 - src.mcp_server.server - INFO - Client disconnected: d1bb7f6f-4dc4-4c56-9a98-45e0773cddf4
+2025-05-04 23:58:14,852 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: d1bb7f6f-4dc4-4c56-9a98-45e0773cddf4
+2025-05-04 23:58:14,854 - src.utils.connection_manager - INFO - Client connected with session ID: 620f1aa8-f5fb-4229-ad02-35e6dee64813
+2025-05-04 23:58:15,860 - src.mcp_server.server - INFO - Client disconnected: 620f1aa8-f5fb-4229-ad02-35e6dee64813
+2025-05-04 23:58:15,862 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 620f1aa8-f5fb-4229-ad02-35e6dee64813
+2025-05-04 23:58:15,864 - src.utils.connection_manager - INFO - Client connected with session ID: 2018fc92-8eb7-4b62-bc47-ac1d4ed45200
+2025-05-04 23:58:16,869 - src.mcp_server.server - INFO - Client disconnected: 2018fc92-8eb7-4b62-bc47-ac1d4ed45200
+2025-05-04 23:58:16,870 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2018fc92-8eb7-4b62-bc47-ac1d4ed45200
+2025-05-04 23:58:16,873 - src.utils.connection_manager - INFO - Client connected with session ID: 6a8b1ab4-aeee-4b04-aff6-ae1b399c315b
+2025-05-04 23:58:17,879 - src.mcp_server.server - INFO - Client disconnected: 6a8b1ab4-aeee-4b04-aff6-ae1b399c315b
+2025-05-04 23:58:17,879 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 6a8b1ab4-aeee-4b04-aff6-ae1b399c315b
+2025-05-04 23:58:17,881 - src.utils.connection_manager - INFO - Client connected with session ID: 6ae87f8a-aa74-43be-9170-a1fa9d82c5f4
+2025-05-04 23:58:18,885 - src.mcp_server.server - INFO - Client disconnected: 6ae87f8a-aa74-43be-9170-a1fa9d82c5f4
+2025-05-04 23:58:18,886 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 6ae87f8a-aa74-43be-9170-a1fa9d82c5f4
+2025-05-04 23:58:18,889 - src.utils.connection_manager - INFO - Client connected with session ID: c1379946-f62c-4780-aa71-187dd5b58ddb
+2025-05-04 23:58:19,895 - src.mcp_server.server - INFO - Client disconnected: c1379946-f62c-4780-aa71-187dd5b58ddb
+2025-05-04 23:58:19,896 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: c1379946-f62c-4780-aa71-187dd5b58ddb
+2025-05-04 23:58:19,898 - src.utils.connection_manager - INFO - Client connected with session ID: 1cfcfb04-5e41-4e3b-a092-099b21f28f3e
+2025-05-04 23:58:20,904 - src.mcp_server.server - INFO - Client disconnected: 1cfcfb04-5e41-4e3b-a092-099b21f28f3e
+2025-05-04 23:58:20,904 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 1cfcfb04-5e41-4e3b-a092-099b21f28f3e
+2025-05-04 23:58:20,907 - src.utils.connection_manager - INFO - Client connected with session ID: 5bb9cba5-fd37-4819-af3c-abf5899416d1
+2025-05-04 23:58:21,914 - src.mcp_server.server - INFO - Client disconnected: 5bb9cba5-fd37-4819-af3c-abf5899416d1
+2025-05-04 23:58:21,914 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 5bb9cba5-fd37-4819-af3c-abf5899416d1
+2025-05-04 23:58:21,917 - src.utils.connection_manager - INFO - Client connected with session ID: f905b622-0bb1-4755-99cb-fb983377ec06
+2025-05-04 23:58:22,919 - src.mcp_server.server - INFO - Client disconnected: f905b622-0bb1-4755-99cb-fb983377ec06
+2025-05-04 23:58:22,925 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: f905b622-0bb1-4755-99cb-fb983377ec06
+2025-05-04 23:58:22,928 - src.utils.connection_manager - INFO - Client connected with session ID: 90d4e3ad-7768-49a2-b1c1-5774341445a1
+2025-05-04 23:58:23,935 - src.mcp_server.server - INFO - Client disconnected: 90d4e3ad-7768-49a2-b1c1-5774341445a1
+2025-05-04 23:58:23,935 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 90d4e3ad-7768-49a2-b1c1-5774341445a1
+2025-05-04 23:58:23,940 - src.utils.connection_manager - INFO - Client connected with session ID: 409d74ed-ed28-4f10-9e82-847384212411
+2025-05-04 23:58:24,944 - src.mcp_server.server - INFO - Client disconnected: 409d74ed-ed28-4f10-9e82-847384212411
+2025-05-04 23:58:24,945 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 409d74ed-ed28-4f10-9e82-847384212411
+2025-05-04 23:58:24,947 - src.utils.connection_manager - INFO - Client connected with session ID: 384268de-56b1-494d-a38d-1cad289f430c
+2025-05-04 23:58:25,953 - src.mcp_server.server - INFO - Client disconnected: 384268de-56b1-494d-a38d-1cad289f430c
+2025-05-04 23:58:25,953 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 384268de-56b1-494d-a38d-1cad289f430c
+2025-05-04 23:58:25,955 - src.utils.connection_manager - INFO - Client connected with session ID: 9784b91e-5b8f-4e2c-87b5-54ea854d695d
+2025-05-04 23:58:26,964 - src.mcp_server.server - INFO - Client disconnected: 9784b91e-5b8f-4e2c-87b5-54ea854d695d
+2025-05-04 23:58:26,964 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 9784b91e-5b8f-4e2c-87b5-54ea854d695d
+2025-05-04 23:58:26,967 - src.utils.connection_manager - INFO - Client connected with session ID: 159bad12-c31d-4f04-a54b-c730a7cb83d7
+2025-05-04 23:58:27,971 - src.mcp_server.server - INFO - Client disconnected: 159bad12-c31d-4f04-a54b-c730a7cb83d7
+2025-05-04 23:58:27,972 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 159bad12-c31d-4f04-a54b-c730a7cb83d7
+2025-05-04 23:58:27,974 - src.utils.connection_manager - INFO - Client connected with session ID: b14c445b-7869-4c30-ab7e-39bbb6ff7538
+2025-05-04 23:58:28,977 - src.mcp_server.server - INFO - Client disconnected: b14c445b-7869-4c30-ab7e-39bbb6ff7538
+2025-05-04 23:58:28,978 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: b14c445b-7869-4c30-ab7e-39bbb6ff7538
+2025-05-04 23:58:28,979 - src.utils.connection_manager - INFO - Client connected with session ID: 88bd9490-f37c-40ca-8de5-c7a8ae0fa00d
+2025-05-04 23:58:29,983 - src.mcp_server.server - INFO - Client disconnected: 88bd9490-f37c-40ca-8de5-c7a8ae0fa00d
+2025-05-04 23:58:29,984 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 88bd9490-f37c-40ca-8de5-c7a8ae0fa00d
+2025-05-04 23:58:29,999 - src.utils.connection_manager - INFO - Client connected with session ID: c0c10680-616c-4b9e-b0be-15b9761edd55
+2025-05-04 23:58:30,993 - src.mcp_server.server - INFO - Client disconnected: c0c10680-616c-4b9e-b0be-15b9761edd55
+2025-05-04 23:58:30,994 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: c0c10680-616c-4b9e-b0be-15b9761edd55
+2025-05-04 23:58:30,997 - src.utils.connection_manager - INFO - Client connected with session ID: fbcee5b5-dc3b-4e4e-ae89-0e768a71cfc5
+2025-05-04 23:58:32,001 - src.mcp_server.server - INFO - Client disconnected: fbcee5b5-dc3b-4e4e-ae89-0e768a71cfc5
+2025-05-04 23:58:32,002 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: fbcee5b5-dc3b-4e4e-ae89-0e768a71cfc5
+2025-05-04 23:58:32,005 - src.utils.connection_manager - INFO - Client connected with session ID: 3feda42a-5af1-4f43-80c8-f06174b7af9d
+2025-05-04 23:58:33,016 - src.mcp_server.server - INFO - Client disconnected: 3feda42a-5af1-4f43-80c8-f06174b7af9d
+2025-05-04 23:58:33,017 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 3feda42a-5af1-4f43-80c8-f06174b7af9d
+2025-05-04 23:58:33,019 - src.utils.connection_manager - INFO - Client connected with session ID: 07ad737b-6f0c-4c5d-8dbd-f279abfeaca5
+2025-05-04 23:58:34,022 - src.mcp_server.server - INFO - Client disconnected: 07ad737b-6f0c-4c5d-8dbd-f279abfeaca5
+2025-05-04 23:58:34,023 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 07ad737b-6f0c-4c5d-8dbd-f279abfeaca5
+2025-05-04 23:58:34,023 - src.utils.connection_manager - INFO - Client connected with session ID: e16e8cfa-de27-4c5f-a43e-c463499eeb07
+2025-05-04 23:58:35,029 - src.mcp_server.server - INFO - Client disconnected: e16e8cfa-de27-4c5f-a43e-c463499eeb07
+2025-05-04 23:58:35,030 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: e16e8cfa-de27-4c5f-a43e-c463499eeb07
+2025-05-04 23:58:35,033 - src.utils.connection_manager - INFO - Client connected with session ID: 62a071ba-b0a6-4b5f-ba0b-59e70f3bd2ef
+2025-05-04 23:58:36,038 - src.mcp_server.server - INFO - Client disconnected: 62a071ba-b0a6-4b5f-ba0b-59e70f3bd2ef
+2025-05-04 23:58:36,038 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 62a071ba-b0a6-4b5f-ba0b-59e70f3bd2ef
+2025-05-04 23:58:36,041 - src.utils.connection_manager - INFO - Client connected with session ID: 33a7bb27-5300-4758-bad3-91f1857ad472
+2025-05-04 23:58:37,047 - src.mcp_server.server - INFO - Client disconnected: 33a7bb27-5300-4758-bad3-91f1857ad472
+2025-05-04 23:58:37,047 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 33a7bb27-5300-4758-bad3-91f1857ad472
+2025-05-04 23:58:37,050 - src.utils.connection_manager - INFO - Client connected with session ID: 165ba6e8-4a77-48c1-b7c1-644f790e92d0
+2025-05-04 23:58:38,057 - src.mcp_server.server - INFO - Client disconnected: 165ba6e8-4a77-48c1-b7c1-644f790e92d0
+2025-05-04 23:58:38,058 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 165ba6e8-4a77-48c1-b7c1-644f790e92d0
+2025-05-04 23:58:38,061 - src.utils.connection_manager - INFO - Client connected with session ID: c477c1ad-36da-4e85-9901-03e7f1c4da4e
+2025-05-04 23:58:39,063 - src.mcp_server.server - INFO - Client disconnected: c477c1ad-36da-4e85-9901-03e7f1c4da4e
+2025-05-04 23:58:39,063 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: c477c1ad-36da-4e85-9901-03e7f1c4da4e
+2025-05-04 23:58:39,066 - src.utils.connection_manager - INFO - Client connected with session ID: ecd567ad-ee9b-406b-a1c0-ce8b7dbe0016
+2025-05-04 23:58:40,073 - src.mcp_server.server - INFO - Client disconnected: ecd567ad-ee9b-406b-a1c0-ce8b7dbe0016
+2025-05-04 23:58:40,073 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: ecd567ad-ee9b-406b-a1c0-ce8b7dbe0016
+2025-05-04 23:58:40,075 - src.utils.connection_manager - INFO - Client connected with session ID: 0d4844fd-fb14-4e84-83fc-772c9588ad2c
+2025-05-04 23:58:41,082 - src.mcp_server.server - INFO - Client disconnected: 0d4844fd-fb14-4e84-83fc-772c9588ad2c
+2025-05-04 23:58:41,082 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 0d4844fd-fb14-4e84-83fc-772c9588ad2c
+2025-05-04 23:58:41,085 - src.utils.connection_manager - INFO - Client connected with session ID: ef441b36-617b-427a-85fc-72f2110d81df
+2025-05-04 23:58:42,090 - src.mcp_server.server - INFO - Client disconnected: ef441b36-617b-427a-85fc-72f2110d81df
+2025-05-04 23:58:42,091 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: ef441b36-617b-427a-85fc-72f2110d81df
+2025-05-04 23:58:42,093 - src.utils.connection_manager - INFO - Client connected with session ID: b7bc541e-c73e-45dd-ac67-5fea721a2453
+2025-05-04 23:58:43,128 - src.utils.connection_manager - INFO - Client connected with session ID: 974c6ffd-211a-4df0-9000-2954296cc25e
+2025-05-04 23:58:43,186 - src.mcp_server.server - INFO - Client disconnected: b7bc541e-c73e-45dd-ac67-5fea721a2453
+2025-05-04 23:58:43,200 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: b7bc541e-c73e-45dd-ac67-5fea721a2453
+2025-05-04 23:58:44,123 - src.mcp_server.server - INFO - Client disconnected: 974c6ffd-211a-4df0-9000-2954296cc25e
+2025-05-04 23:58:44,126 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 974c6ffd-211a-4df0-9000-2954296cc25e
+2025-05-04 23:58:44,157 - src.utils.connection_manager - INFO - Client connected with session ID: ef9f3742-94d0-435b-8b06-a8261e995bdb
+2025-05-04 23:58:45,216 - src.mcp_server.server - INFO - Client disconnected: ef9f3742-94d0-435b-8b06-a8261e995bdb
+2025-05-04 23:58:45,220 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: ef9f3742-94d0-435b-8b06-a8261e995bdb
+2025-05-04 23:58:45,229 - src.utils.connection_manager - INFO - Client connected with session ID: 2c179263-fc48-4754-bd27-0dc723ed6be7
+2025-05-04 23:58:47,222 - src.utils.connection_manager - INFO - Client connected with session ID: 05bdd5f0-6a96-4dc0-ac65-164e08595988
+2025-05-04 23:58:47,229 - src.mcp_server.server - INFO - Client disconnected: 2c179263-fc48-4754-bd27-0dc723ed6be7
+2025-05-04 23:58:47,230 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2c179263-fc48-4754-bd27-0dc723ed6be7
+2025-05-04 23:58:49,219 - src.mcp_server.server - INFO - Client disconnected: 05bdd5f0-6a96-4dc0-ac65-164e08595988
+2025-05-04 23:58:49,221 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 05bdd5f0-6a96-4dc0-ac65-164e08595988
+2025-05-04 23:58:49,223 - src.utils.connection_manager - INFO - Client connected with session ID: 7ee55157-8741-4e4a-b5ab-5fb65509efb3
+2025-05-04 23:58:51,221 - src.mcp_server.server - INFO - Client disconnected: 7ee55157-8741-4e4a-b5ab-5fb65509efb3
+2025-05-04 23:58:51,222 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 7ee55157-8741-4e4a-b5ab-5fb65509efb3
+2025-05-04 23:58:51,223 - src.utils.connection_manager - INFO - Client connected with session ID: f5d1876a-e092-436d-9faa-b1f8a2a95c89
+2025-05-04 23:58:53,214 - src.mcp_server.server - INFO - Client disconnected: f5d1876a-e092-436d-9faa-b1f8a2a95c89
+2025-05-04 23:58:53,215 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: f5d1876a-e092-436d-9faa-b1f8a2a95c89
+2025-05-04 23:58:53,221 - src.utils.connection_manager - INFO - Client connected with session ID: 16ebd9b2-3363-4e51-8688-98b358affa17
+2025-05-04 23:58:55,219 - src.mcp_server.server - INFO - Client disconnected: 16ebd9b2-3363-4e51-8688-98b358affa17
+2025-05-04 23:58:55,219 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 16ebd9b2-3363-4e51-8688-98b358affa17
+2025-05-04 23:58:55,222 - src.utils.connection_manager - INFO - Client connected with session ID: beb01b50-98e6-4f67-92ba-b4ecc6a1a727
+2025-05-04 23:58:57,225 - src.utils.connection_manager - INFO - Client connected with session ID: 0d662e18-1fc7-4a5a-a169-4c38af95a992
+2025-05-04 23:58:57,226 - src.mcp_server.server - INFO - Client disconnected: beb01b50-98e6-4f67-92ba-b4ecc6a1a727
+2025-05-04 23:58:57,227 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: beb01b50-98e6-4f67-92ba-b4ecc6a1a727
+2025-05-04 23:58:59,217 - src.mcp_server.server - INFO - Client disconnected: 0d662e18-1fc7-4a5a-a169-4c38af95a992
+2025-05-04 23:58:59,218 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 0d662e18-1fc7-4a5a-a169-4c38af95a992
+2025-05-04 23:58:59,221 - src.utils.connection_manager - INFO - Client connected with session ID: 2d0fa03b-a5ab-4087-b458-ff6950ae71f2
+2025-05-04 23:59:01,217 - src.mcp_server.server - INFO - Client disconnected: 2d0fa03b-a5ab-4087-b458-ff6950ae71f2
+2025-05-04 23:59:01,217 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 2d0fa03b-a5ab-4087-b458-ff6950ae71f2
+2025-05-04 23:59:01,218 - src.utils.connection_manager - INFO - Client connected with session ID: dc807668-3118-40e2-b948-c76d559dcac5
+2025-05-04 23:59:03,220 - src.mcp_server.server - INFO - Client disconnected: dc807668-3118-40e2-b948-c76d559dcac5
+2025-05-04 23:59:03,221 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: dc807668-3118-40e2-b948-c76d559dcac5
+2025-05-04 23:59:03,222 - src.utils.connection_manager - INFO - Client connected with session ID: d79c82a9-34ff-45f6-9e59-b7540c919f53
+2025-05-04 23:59:05,223 - src.utils.connection_manager - INFO - Client connected with session ID: 4b575bf1-c721-41ec-b9f4-72787c1ee928
+2025-05-04 23:59:05,224 - src.mcp_server.server - INFO - Client disconnected: d79c82a9-34ff-45f6-9e59-b7540c919f53
+2025-05-04 23:59:05,224 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: d79c82a9-34ff-45f6-9e59-b7540c919f53
+2025-05-04 23:59:07,217 - src.mcp_server.server - INFO - Client disconnected: 4b575bf1-c721-41ec-b9f4-72787c1ee928
+2025-05-04 23:59:07,218 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 4b575bf1-c721-41ec-b9f4-72787c1ee928
+2025-05-04 23:59:07,220 - src.utils.connection_manager - INFO - Client connected with session ID: 1ff907a3-b3b9-456a-8eae-3a87e3dc85ae
+2025-05-04 23:59:09,217 - src.mcp_server.server - INFO - Client disconnected: 1ff907a3-b3b9-456a-8eae-3a87e3dc85ae
+2025-05-04 23:59:09,217 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 1ff907a3-b3b9-456a-8eae-3a87e3dc85ae
+2025-05-04 23:59:09,221 - src.utils.connection_manager - INFO - Client connected with session ID: a1b66c07-62b5-4022-8c94-11819b4cfb1e
+2025-05-04 23:59:11,214 - src.mcp_server.server - INFO - Client disconnected: a1b66c07-62b5-4022-8c94-11819b4cfb1e
+2025-05-04 23:59:11,215 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: a1b66c07-62b5-4022-8c94-11819b4cfb1e
+2025-05-04 23:59:11,227 - src.utils.connection_manager - INFO - Client connected with session ID: 6b32305a-fe9d-462f-a2c3-ff62dba78fd0
+2025-05-04 23:59:13,217 - src.mcp_server.server - INFO - Client disconnected: 6b32305a-fe9d-462f-a2c3-ff62dba78fd0
+2025-05-04 23:59:13,217 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 6b32305a-fe9d-462f-a2c3-ff62dba78fd0
+2025-05-04 23:59:13,220 - src.utils.connection_manager - INFO - Client connected with session ID: cd6f4a8b-799c-4f94-aa45-c8eccd32b4dc
+2025-05-04 23:59:15,336 - src.utils.connection_manager - INFO - Client connected with session ID: 6882025f-e7d9-401d-b923-55520d3512fb
+2025-05-04 23:59:15,373 - src.mcp_server.server - INFO - Client disconnected: cd6f4a8b-799c-4f94-aa45-c8eccd32b4dc
+2025-05-04 23:59:15,373 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: cd6f4a8b-799c-4f94-aa45-c8eccd32b4dc
+2025-05-04 23:59:17,216 - src.mcp_server.server - INFO - Client disconnected: 6882025f-e7d9-401d-b923-55520d3512fb
+2025-05-04 23:59:17,216 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 6882025f-e7d9-401d-b923-55520d3512fb
+2025-05-04 23:59:17,226 - src.utils.connection_manager - INFO - Client connected with session ID: 14e3af89-77e9-4086-9ef3-0d7f36315b13
+2025-05-04 23:59:19,219 - src.mcp_server.server - INFO - Client disconnected: 14e3af89-77e9-4086-9ef3-0d7f36315b13
+2025-05-04 23:59:19,219 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 14e3af89-77e9-4086-9ef3-0d7f36315b13
+2025-05-04 23:59:19,221 - src.utils.connection_manager - INFO - Client connected with session ID: dbb11007-7a74-494d-8610-52c86ed471c6
+2025-05-04 23:59:21,214 - src.mcp_server.server - INFO - Client disconnected: dbb11007-7a74-494d-8610-52c86ed471c6
+2025-05-04 23:59:21,214 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: dbb11007-7a74-494d-8610-52c86ed471c6
+2025-05-04 23:59:21,216 - src.utils.connection_manager - INFO - Client connected with session ID: e6d48a84-dea2-4736-8744-bc059eecd791
+2025-05-04 23:59:23,230 - src.utils.connection_manager - INFO - Client connected with session ID: 8790bbd9-22e8-43a1-9425-67734dc2efcc
+2025-05-04 23:59:23,231 - src.mcp_server.server - INFO - Client disconnected: e6d48a84-dea2-4736-8744-bc059eecd791
+2025-05-04 23:59:23,231 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: e6d48a84-dea2-4736-8744-bc059eecd791
+2025-05-04 23:59:25,009 - src.mcp_server.server - INFO - Client disconnected: 8790bbd9-22e8-43a1-9425-67734dc2efcc
+2025-05-04 23:59:25,009 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: 8790bbd9-22e8-43a1-9425-67734dc2efcc
+2025-05-04 23:59:25,114 - __main__ - INFO - Received signal 2, shutting down gracefully
+2025-05-04 23:59:25,114 - __main__ - INFO - Allowing running tasks to complete
+2025-05-04 23:59:25,117 - __main__ - INFO - Cleaning up resources...
+2025-05-04 23:59:25,120 - __main__ - INFO - Temporary files cleaned up
+2025-05-04 23:59:25,120 - __main__ - INFO - Resource cleanup completed
+2025-05-04 23:59:25,122 - root - CRITICAL - Unhandled exception: Event loop stopped before Future completed.
+2025-05-04 23:59:25,138 - root - CRITICAL - Traceback (most recent call last):
+  File "/Users/khalil/Documents/Github/GeoGemma/GIS_Agent/src/main.py", line 225, in main
+    asyncio.run(async_main(args))
+  File "/Users/khalil/.pyenv/versions/3.10.13/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/Users/khalil/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 647, in run_until_complete
+    raise RuntimeError('Event loop stopped before Future completed.')
+RuntimeError: Event loop stopped before Future completed.
+
+2025-05-04 23:59:26,736 - __main__ - INFO - Received signal 2, shutting down gracefully
+2025-05-04 23:59:26,737 - __main__ - INFO - Allowing running tasks to complete
+2025-05-05 00:04:43,845 - root - INFO - GIS AI Agent starting in production mode
+2025-05-05 00:04:43,846 - src.mcp_server.server - INFO - Added climate analysis tool: analyze_climate_trends
+2025-05-05 00:04:43,846 - src.mcp_server.server - INFO - Added climate analysis tool: track_emissions
+2025-05-05 00:04:43,846 - src.mcp_server.server - INFO - Added climate analysis tool: project_climate_scenarios
+2025-05-05 00:04:43,846 - src.mcp_server.server - INFO - Added climate analysis tool: analyze_renewable_energy_potential
+2025-05-05 00:04:43,846 - src.mcp_server.server - INFO - Added resilience planning tool: assess_disaster_risk
+2025-05-05 00:04:43,846 - src.mcp_server.server - INFO - Added resilience planning tool: evaluate_infrastructure_vulnerability
+2025-05-05 00:04:43,846 - src.mcp_server.server - INFO - Added resilience planning tool: design_adaptation_measures
+2025-05-05 00:04:43,846 - src.mcp_server.server - INFO - Added resilience planning tool: assess_community_resilience
+2025-05-05 00:04:43,846 - src.utils.cache - INFO - Cache initialized with directory: /Users/khalil/Documents/Github/GeoGemma/GIS_Agent/data/cache
+2025-05-05 00:04:43,846 - src.utils.tool_executor - INFO - ToolExecutor initialized with 25 tools
+2025-05-05 00:04:43,915 - src.utils.firebase_storage - INFO - Initialized encryption with derived key
+2025-05-05 00:04:43,915 - src.utils.firebase_storage - INFO - Firebase storage initialized with database URL: https://geogemma-f32a4-default-rtdb.firebaseio.com
+2025-05-05 00:04:43,916 - src.utils.cache - INFO - Cache maintenance scheduled with interval: 3600 seconds
+2025-05-05 00:04:43,916 - src.mcp_server.server - INFO - MCP Server 'assess_community_resilience' initialized with 25 tools
+2025-05-05 00:04:43,916 - src.utils.cache - INFO - Cache maintenance scheduled with interval: 3600 seconds
+2025-05-05 00:04:43,916 - __main__ - INFO - Starting GIS AI Agent server at 0.0.0.0:8080
+2025-05-05 00:04:43,916 - src.utils.connection_manager - INFO - Session monitoring started
+2025-05-05 00:04:44,580 - src.utils.connection_manager - INFO - Client connected with session ID: bc41a657-3f5a-4d3d-9421-43c615a3f0e1
+2025-05-05 00:04:46,592 - src.mcp_server.server - INFO - Using chat history for session new_session with 2 messages
+2025-05-05 00:04:48,552 - src.utils.firebase_storage - ERROR - Firebase put error: 404 - {
+  "error" : "404 Not Found"
+}
+
+2025-05-05 00:04:48,553 - src.utils.firebase_storage - WARNING - Firebase database does not exist - disabling write operations
+2025-05-05 00:05:19,278 - src.mcp_server.server - INFO - Using chat history for session bc41a657-3f5a-4d3d-9421-43c615a3f0e1 with 2 messages
+2025-05-05 00:05:19,901 - src.mcp_server.server - INFO - LLM requested tool call: get_current_weather with args: {'location': 'Islamabad'}
+2025-05-05 00:05:20,583 - src.utils.tool_executor - INFO - Tool get_current_weather executed in 0.68s
+2025-05-05 00:05:20,585 - src.mcp_server.server - INFO - Tool get_current_weather executed successfully.
+2025-05-05 00:05:20,585 - src.mcp_server.server - INFO - Requesting analysis of get_current_weather results from Gemini
+2025-05-05 00:05:24,834 - src.mcp_server.server - INFO - Generated analysis for get_current_weather results
+2025-05-05 00:05:42,354 - src.mcp_server.server - INFO - Client disconnected: bc41a657-3f5a-4d3d-9421-43c615a3f0e1
+2025-05-05 00:05:42,355 - src.utils.connection_manager - INFO - Client disconnected, session hibernated: bc41a657-3f5a-4d3d-9421-43c615a3f0e1
+2025-05-05 00:05:42,456 - __main__ - INFO - Received signal 2, shutting down gracefully
+2025-05-05 00:05:42,456 - __main__ - INFO - Allowing running tasks to complete
+2025-05-05 00:05:42,456 - __main__ - INFO - Cleaning up resources...
+2025-05-05 00:05:42,457 - __main__ - INFO - Temporary files cleaned up
+2025-05-05 00:05:42,457 - __main__ - INFO - Resource cleanup completed
+2025-05-05 00:05:42,458 - root - CRITICAL - Unhandled exception: Event loop stopped before Future completed.
+2025-05-05 00:05:42,463 - root - CRITICAL - Traceback (most recent call last):
+  File "/Users/khalil/Documents/Github/GeoGemma/GIS_Agent/src/main.py", line 225, in main
+    asyncio.run(async_main(args))
+  File "/Users/khalil/.pyenv/versions/3.10.13/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/Users/khalil/.pyenv/versions/3.10.13/lib/python3.10/asyncio/base_events.py", line 647, in run_until_complete
+    raise RuntimeError('Event loop stopped before Future completed.')
+RuntimeError: Event loop stopped before Future completed.
+
+2025-05-05 00:05:44,750 - __main__ - INFO - Received signal 2, shutting down gracefully
+2025-05-05 00:05:44,750 - __main__ - INFO - Allowing running tasks to complete

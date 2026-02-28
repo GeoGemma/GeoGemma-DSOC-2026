@@ -1,0 +1,44 @@
+# requirements.txt
+
+# Core web framework
+Flask
+
+# Google Earth Engine API
+# Note: 'earthengine-api' might pull in 'blessings'.
+# 'windows-curses' is needed for 'blessings'/'curses' on Windows.
+earthengine-api # Changed from 'earthengine-api' to the correct PyPI name
+windows-curses; sys_platform == 'win32' # ADDED: For curses/blessings compatibility on Windows
+
+# Geospatial Data Standards (often used with GEE)
+pystac # ADDED: Required for unpickling datasets containing STAC objects
+
+# Numerical processing and data analysis
+numpy
+pandas
+
+# LlamaIndex and related dependencies
+llama-index
+llama-index-embeddings-huggingface
+llama-index-llms-huggingface
+transformers
+torch
+sentence-transformers
+
+# Faiss for vector similarity search
+faiss-cpu
+
+# Pickle handling for dataset storage
+# This line correctly handles pickle5 only for older Python versions
+pickle5==0.0.12; python_version < '3.8' # KEPT AS IS: Correct conditional requirement
+
+# Other utilities
+python-dotenv
+Pillow
+requests
+
+# Logging and monitoring
+loguru
+
+# Development tools
+pytest
+pytest-flask

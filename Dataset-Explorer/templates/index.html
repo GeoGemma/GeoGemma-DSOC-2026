@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GeoGemma | GEE Dataset Explorer</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../static/images/geoshort.png" type="image/x-icon">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <!-- App CSS -->
+  <link rel="icon" href="../static/assets/geoshort.png">
+  <link href="https://fonts.googleapis.com/css2?family=Product+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/map.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/panels.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/controls.css') }}" />
+  <style>
+    /* Apply Google Sans globally */
+    body, button, input, select, h1, h2, h3, h4, h5, h6, p, a, span, div, 
+    .leaflet-container, .leaflet-control, .leaflet-popup-content {
+      font-family: 'Product Sans', 'Google Sans', 'Roboto', sans-serif !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Map container -->
+  <div id="map"></div>
+  
+  <!-- Rectangular Logo Container with Buttons -->
+  <div class="rectangular-logo-container">
+    <div class="logo-section">
+      <img src="../static/images/geoshort.png" alt="GEE Dataset Explorer Logo" class="header-logo">
+      <span class="logo-text">GEE Dataset Explorer</span>
+    </div>
+    <div class="header-buttons">
+      <a href="#" id="aboutButton" class="header-btn">About</a>
+      <a href="#" id="helpButton" class="header-btn">Help</a>
+    </div>
+  </div>
+  
+<!-- Modern Prompt Bar -->
+<div class="modern-prompt-bar">
+  <div class="prompt-bar-header">
+    <div class="prompt-bar-title">Try searching for:</div>
+    <button class="prompt-collapse-btn" aria-label="Collapse suggestions">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+  </div>
+  <div class="prompt-examples-container">
+    <div class="prompt-example" data-query="Climate Datasets" tabindex="0">
+      <div class="prompt-icon">🍃</div>
+      <div class="prompt-text">Climate Datasets</div>
+    </div>
+    <div class="prompt-example" data-query="Temperature Datasets" tabindex="0">
+      <div class="prompt-icon">🌡️</div>
+      <div class="prompt-text">Temperature Datasets</div>
+    </div>
+    <div class="prompt-example" data-query="Forest Datasets" tabindex="0">
+      <div class="prompt-icon">🌲</div>
+      <div class="prompt-text">Forest Datasets</div>
+    </div>
+    <div class="prompt-example" data-query="Urban Datasets" tabindex="0">
+      <div class="prompt-icon">🏙️</div>
+      <div class="prompt-text">Urban Datasets</div>
+    </div>
+    <div class="prompt-example" data-query="Emissions Datasets" tabindex="0">
+      <div class="prompt-icon">🎐</div>
+      <div class="prompt-text">Emissions Datasets</div>
+    </div>
+  </div>
+</div>
+  
+  <!-- Loading indicator -->
+  <div id="loadingIndicator" class="loading-indicator">
+    <h3>Loading Dataset</h3>
+    <p>Please wait while we retrieve and process the data...</p>
+  </div>
+  
+ <!-- Query input box -->
+<div class="query-box">
+  <input type="text" id="queryInput" placeholder="Enter your dataset query..." autocomplete="off" autocorrect="off" autocapitalize="off" aria-label="Search query"/>
+  <button id="searchButton">Search</button>
+  <button class="prompt-expand-btn" title="Show suggestions" aria-label="Show search suggestions">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </button>
+</div>
+  
+  <!-- Panel for search results (right side) -->
+  <div id="resultsPanel"></div>
+  
+  <!-- Panel for available bands (left side) -->
+  <div id="leftPanel">
+    <h4>Available Bands</h4>
+    <p>Select a dataset to see band details.</p>
+  </div>
+  
+  <!-- Map Controls -->
+  <div class="map-controls">
+    <button id="darkMapBtn" class="active">Dark Map</button>
+    <button id="lightMapBtn">Light Map</button>
+    <button id="satelliteBtn">Satellite</button>
+  </div>
+  
+  <!-- About Modal -->
+  <div id="aboutModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-header">
+        <img src="../static/images/geoshort.png" alt="GEE Dataset Explorer Logo" class="modal-logo">
+        <h2>About GEE Dataset Explorer</h2>
+      </div>
+      <div class="modal-body">
+        <p>GEE Dataset Explorer is a web application designed to help you discover and visualize datasets available in Google Earth Engine.</p>
+        <p>Version: Prototype</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Wiki Help Modal -->
+  <div id="wikiHelpModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>About Wikipedia Links</h2>
+      <p>This application automatically identifies technical terms related to Earth observation, remote sensing, and geospatial science in dataset descriptions.</p>
+      
+      <p>Terms like <span class="example-link">Landsat</span>, <span class="example-link">NDVI</span>, <span class="example-link">NASA</span>, and many others are linked directly to their Wikipedia articles, allowing you to learn more about these concepts without leaving the application.</p>
+      
+      <h3>How It Works</h3>
+      <ul>
+        <li>Terms related to satellite missions, organizations, remote sensing concepts, and Earth science are automatically detected</li>
+        <li>Click on any highlighted term to open its Wikipedia page in a new tab</li>
+        <li>Hover over a term to see a tooltip indicating it's a Wikipedia link</li>
+      </ul>
+      
+      <h3>Why We Added This</h3>
+      <p>Earth observation and remote sensing datasets often contain specialized terminology that may be unfamiliar to new users. By providing easy access to explanations, we aim to make these datasets more accessible to non-experts and students.</p>
+      
+      <div class="wiki-help-footer">
+        <button id="closeWikiHelp" class="help-btn">Got it</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+  <!-- App JS -->
+  <script src="{{ url_for('static', filename='js/utils.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/search.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/wiki-link-utility.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/wiki-modal.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/dataset.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/ui.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/prompt-bar.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

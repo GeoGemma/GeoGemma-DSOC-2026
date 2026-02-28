@@ -1,0 +1,349 @@
+/* src/styles/promptForm.css - Enhanced with better microphone button styling */
+.prompt-container {
+  position: fixed; /* Change from absolute to fixed */
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  width: 450px;
+  max-width: 80%;
+  z-index: 100;
+}
+
+.prompt-container.focused {
+  bottom: 28px;
+  transform: translateX(-50%) scale(1.01);
+}
+
+.prompt-form {
+  display: flex;
+  align-items: center;
+  background-color: #181818;
+  border-radius: 24px;
+  padding: 4px 8px 4px 16px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+  border: 1px solid rgba(138, 180, 248, 0.2);
+}
+
+.prompt-container.focused .prompt-form {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  border-color: rgba(138, 180, 248, 0.3);
+}
+
+.prompt-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  color: #9aa0a6;
+}
+
+.prompt-input {
+  flex: 1;
+  padding: 10px 6px; /* Slightly reduced padding */
+  font-size: 14px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e8eaed;
+  font-family: 'Roboto', sans-serif;
+}
+
+.prompt-input::placeholder {
+  color: #9aa0a6;
+}
+
+.prompt-clear {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(154, 160, 166, 0.1);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #9aa0a6;
+  transition: all 0.2s ease;
+  margin-right: 4px;
+}
+
+.prompt-clear:hover {
+  background-color: rgba(154, 160, 166, 0.2);
+  color: #e8eaed;
+}
+
+/* Enhanced voice button styling */
+.prompt-voice {
+  width: 36px; /* Reduced from 40px */
+  height: 36px; /* Reduced from 40px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #8ab4f8;
+  transition: all 0.2s ease;
+  position: relative; /* Added for pulse animation */
+  outline: none;
+}
+
+.prompt-voice:hover {
+  background-color: rgba(138, 180, 248, 0.1);
+}
+
+.prompt-voice:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(138, 180, 248, 0.3);
+}
+
+/* Active listening state - improved with Google red color */
+.prompt-voice.listening {
+  color: #f28b82; /* Google red color when active */
+  background-color: rgba(242, 139, 130, 0.1);
+}
+
+/* Pulse animation for active listening */
+.prompt-voice.listening::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  animation: mic-pulse 1.5s ease-out infinite;
+  border: 2px solid transparent;
+}
+
+@keyframes mic-pulse {
+  0% {
+    transform: scale(0.95);
+    border-color: rgba(242, 139, 130, 0);
+  }
+  50% {
+    transform: scale(1.1);
+    border-color: rgba(242, 139, 130, 0.5);
+  }
+  100% {
+    transform: scale(0.95);
+    border-color: rgba(242, 139, 130, 0);
+  }
+}
+
+/* Add ripple effect for visual feedback when clicking microphone */
+.prompt-voice::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(138, 180, 248, 0.2);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.prompt-voice:active::before {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0s ease;
+}
+
+.prompt-submit {
+  width: 36px; /* Reduced from 40px */
+  height: 36px; /* Reduced from 40px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #8ab4f8;
+  color: #202124;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 4px;
+  transition: all 0.2s ease;
+}
+
+.prompt-submit:hover {
+  background: #aecbfa;
+}
+
+.prompt-submit:active {
+  transform: scale(0.95);
+}
+
+/* Updated suggestions styles */
+.prompt-suggestions {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-bottom: 8px;
+  background: #181818;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 101;
+  border: 1px solid rgba(138, 180, 248, 0.2);
+  max-height: 320px; /* Slightly reduced */
+  overflow-y: auto;
+}
+
+.suggestion-section {
+  padding: 8px 12px;
+}
+
+.suggestion-section:not(:last-child) {
+  border-bottom: 1px solid rgba(138, 180, 248, 0.1);
+}
+
+.suggestion-header {
+  padding: 4px 4px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #9aa0a6;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+/* Grid layout for suggestions */
+.grid-suggestions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.suggestion-item {
+  padding: 8px 10px;
+  font-size: 13px;
+  color: #e8eaed;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.suggestion-item:hover {
+  background-color: rgba(138, 180, 248, 0.1);
+}
+
+.suggestion-icon {
+  color: #8ab4f8;
+  opacity: 0.8;
+  flex-shrink: 0;
+}
+
+.suggestion-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Animation */
+.scale-in {
+  animation: scaleIn 0.2s ease forwards;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Voice indicator tooltip */
+.voice-tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(24, 24, 24, 0.9);
+  color: #e8eaed;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.prompt-voice.listening .voice-tooltip {
+  opacity: 1;
+}
+
+/* Improved responsive adjustments */
+@media (max-width: 768px) {
+  .prompt-container {
+    width: 400px; /* Fixed width for medium devices */
+    max-width: 70%; /* Reduced percentage */
+    left: 50%; /* Center it properly */
+    bottom: 20px;
+  }
+  
+  .prompt-input {
+    font-size: 14px;
+    padding: 10px 6px;
+  }
+  
+  .prompt-suggestions {
+    max-height: 260px;
+  }
+  
+  .grid-suggestions {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .prompt-container {
+    width: 320px; /* Further reduced for mobile */
+    max-width: 85%; /* Allow some space on sides */
+    bottom: 16px;
+  }
+  
+  .prompt-icon {
+    padding: 0 4px;
+  }
+  
+  .prompt-input {
+    padding: 8px 4px;
+    font-size: 13px;
+  }
+  
+  .prompt-voice, .prompt-submit {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .prompt-clear {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Extra small devices - KEEP MIC BUTTON VISIBLE */
+@media (max-width: 375px) {
+  .prompt-container {
+    width: 280px;
+    max-width: 90%;
+  }
+  
+  /* Keep mic button visible but make it smaller on very small screens */
+  .prompt-voice {
+    width: 28px;
+    height: 28px;
+  }
+}

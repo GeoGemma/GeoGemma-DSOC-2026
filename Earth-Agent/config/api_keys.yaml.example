@@ -1,0 +1,40 @@
+# Example API Keys Configuration
+# -------------------------
+# This is an example configuration file for the GIS AI Agent.
+# Copy this file to api_keys.yaml and replace placeholder values with your actual API keys.
+# NEVER commit your actual API keys file to version control.
+
+# Google API Keys
+# --------------
+google_earth_engine:
+  # Required for Earth Engine access - see https://developers.google.com/earth-engine/guides/service_account
+  service_account: "your-service-account@your-project.iam.gserviceaccount.com"
+  private_key_file: "/path/to/your-private-key.json"
+  project_id: "your-gcp-project-id"
+
+# Google Gemini AI
+# ---------------
+gemini:
+  # Required for AI model access - see https://ai.google.dev/
+  api_key: "YOUR_GEMINI_API_KEY"
+  project_id: "your-gemini-project-id"  # Optional
+  
+# OpenWeatherMap
+# -------------
+openweathermap:
+  # Required for weather data - see https://openweathermap.org/api
+  api_key: "YOUR_OPENWEATHERMAP_API_KEY"
+
+# Firebase
+# --------
+firebase:
+  # Required for data storage - see https://firebase.google.com/docs/admin/setup
+  database_url: "https://your-project-id.firebaseio.com"
+  api_key: "YOUR_FIREBASE_API_KEY"
+  encryption_key: "YOUR_ENCRYPTION_KEY"  # Used for sensitive data encryption
+  project_id: "your-firebase-project-id"
+  service_account_file: "/path/to/firebase-service-account.json"
+
+# Other API Keys
+# -------------
+# Add any additional API keys required by your application here 

@@ -1,0 +1,19 @@
+/* src/styles/topbar.css */
+.main-content {
+    height: calc(100vh - 3rem); /* 3rem is the height of the top bar (h-12) */
+    margin-top: 3rem;
+  }
+  
+  /* Adjust sidebars to respect the top bar */
+  .sidebar-with-topbar {
+    top: 3rem !important;
+    height: calc(100vh - 3rem) !important;
+  }
+  
+  /* Adjust prompt form position */
+  .prompt-with-topbar {
+    bottom: 1.25rem !important;
+  }
+
+
+  

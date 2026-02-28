@@ -1,0 +1,40 @@
+# FastAPI and web
+fastapi
+uvicorn
+jinja2
+starlette
+python-multipart
+
+# Google services
+earthengine-api
+google-auth
+google-cloud-firestore
+google.genai
+
+# Earth Engine dependencies
+geopy
+
+# Security
+python-dotenv
+itsdangerous
+
+# Utilities
+pydantic
+typing-extensions
+requests
+
+# Database
+pymongo
+motor
+beanie
+
+# Testing (new)
+pytest
+pytest-asyncio
+httpx
+pytest-cov
+
+# Documentation (new)
+mkdocs
+mkdocs-material
+mkdocstrings

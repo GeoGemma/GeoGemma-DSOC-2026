@@ -1,0 +1,57 @@
+# Core dependencies
+fastapi
+uvicorn[standard]
+gunicorn
+pydantic
+pydantic-settings
+python-dotenv
+starlette
+httpx
+httpx-sse
+sse-starlette
+asyncio
+aiohttp
+
+# Security and authentication
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+
+# Database and storage
+firebase-admin
+redis
+cachetools
+jsonschema
+
+# GIS libraries
+earthengine-api
+geopandas
+pandas
+geopy
+
+# Visualization tools
+matplotlib
+seaborn
+plotly
+branca
+numpy
+
+# AI/ML tools
+google-generativeai
+
+# API clients
+requests
+urllib3
+
+# Utility
+PyYAML
+tqdm
+typing-extensions
+
+# Production tools
+prometheus-client
+datadog
+
+# Testing
+pytest
+pytest-asyncio

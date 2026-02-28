@@ -1,0 +1,34 @@
+/* Search box at the bottom center */
+.query-box {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.query-box input {
+  width: 300px;
+  padding: 5px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.query-box button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.query-box button:hover {
+  background-color: #45a049;
+}

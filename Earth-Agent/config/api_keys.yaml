@@ -1,0 +1,33 @@
+
+gemini:
+  api_key: "AIzaSyAX-rWEp9TxxuZON2OXmyXgtHvDP_Oz7Ho"
+
+# Google Earth Engine API credentials
+google_earth_engine:
+  service_account: "khalilzaryani007@gmail.com"
+  private_key_file: "earth-engine.json"
+  project_id: "ee-khalilzaryani007"  
+
+nasa_eosdis:
+  username: "Geogemma"
+  password: "Bcd@1077Bcd@1077"
+
+
+usgs:
+  username: "geogemma"
+  password: "Bcd@1077Bcd@1077"
+
+
+copernicus:
+  username: "khalilzaryani007@gmail.com"
+  password: "-%HEEP*a6SeePu~"
+
+openweathermap:
+  api_key: "529feac1c5e9dcc09009cc35592e9d7b"
+
+
+firebase:
+  database_url: "https://geogemma-f32a4-default-rtdb.firebaseio.com"
+  api_key: "AIzaSyCUTiYrlcIbsXgB2N0zIVT41-NxQuvLRyA"
+  encryption_key: "GeogemmaSecureEncryptionKey2024!"  # This will be converted to a Fernet key
+  project_id: "geogemma-f32a4"  # Extracted from database URL to help with database creation

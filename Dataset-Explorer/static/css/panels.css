@@ -1,0 +1,586 @@
+/* Band information display */
+.bands-container {
+  max-height: 150px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.bands-container ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.bands-container li {
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.band-item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Opacity slider without text labels */
+.value-display {
+  display: none;
+}
+
+/* Temporal availability styling */
+.dataset-temporal {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.dataset-temporal p {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #444;
+  font-size: 12px; /* Decreased font size for years */
+}
+
+/* Left panel for displaying available bands */
+#leftPanel {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 300px;
+  max-height: calc(90vh - 180px); /* Increased bottom margin to prevent overlap */
+  overflow-y: auto;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  padding: 10px;
+  display: none; /* Initially hidden */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#leftPanel h3 {
+  margin-top: 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#leftPanel h4 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Dataset description styling */
+.dataset-description {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.dataset-description p {
+  margin-top: 8px;
+  line-height: 1.4;
+  color: #444;
+  font-size: 14px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Dataset links styling */
+.dataset-links {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.dataset-links ul {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.dataset-links li {
+  margin-bottom: 6px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.dataset-links a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.dataset-links a:hover {
+  text-decoration: underline;
+}
+
+/* Band selection controls */
+.band-selection-controls {
+  margin: 15px 0;
+  margin-bottom: 100px; /* Extra space at bottom to prevent overlap with map controls */
+  padding: 12px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.band-selection-controls h4 {
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+  color: #333;
+}
+
+/* Temporal selection controls with side-by-side layout */
+.temporal-selection-controls {
+  margin: 15px 0;
+  padding: 12px;
+  background-color: #f0f8ff; /* Light blue background to differentiate */
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border-left: 4px solid #4285F4; /* Blue accent border */
+}
+
+.temporal-selection-controls h4 {
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+  color: #333;
+}
+
+.temporal-description {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* New row layout for side-by-side controls */
+.temporal-control-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.month-select, .year-select {
+  flex: 1;
+  margin-bottom: 0 !important; /* Override existing margin */
+}
+
+/* Additional info about available temporal range */
+.temporal-range-info {
+  font-size: 11px;
+  color: #666;
+  margin-top: 10px;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Maintain existing control styles */
+.control-group {
+  margin-bottom: 12px;
+}
+
+.control-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #555;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.select-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.action-button {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  transition: background-color 0.2s;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Colormap visual selection */
+.colormap-select-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.colormap-option {
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.colormap-option:hover {
+  border-color: #a0a0a0;
+}
+
+.colormap-option.selected {
+  border-color: #4285F4;
+  background-color: rgba(66, 133, 244, 0.1);
+}
+
+.colormap-preview {
+  height: 15px;
+  width: 100%;
+  border-radius: 2px;
+  margin-bottom: 4px;
+}
+
+.colormap-name {
+  font-size: 12px;
+  text-align: center;
+  color: #555;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Min/Max range controls */
+.range-control {
+  margin-top: 15px;
+}
+
+.range-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.range-input {
+  flex: 1;
+}
+
+.range-input label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #666;
+}
+
+.number-input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Larger colormap preview */
+.preview-container {
+  margin: 15px 0;
+}
+
+.colormap-preview-large {
+  height: 20px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #666;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.action-button {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  transition: background-color 0.2s;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.action-button:hover {
+  background-color: #3367d6;
+}
+
+/* Visualization confirmation message */
+.visualization-confirmation {
+  margin-bottom: 15px;
+}
+
+.notification {
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  animation: fadeIn 0.3s ease-in-out;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.notification.success {
+  background-color: #e6f4ea;
+  border-left: 4px solid #34a853;
+  color: #1e8e3e;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Results panel on the right */
+#resultsPanel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 320px;
+  max-height: 90vh;
+  overflow-y: auto;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  padding: 10px;
+  display: none; /* Initially hidden */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.result-item {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.result-item:hover {
+  background: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.result-item img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+/* Add these styles to panels.css */
+/* Palette visualization styling */
+.palette-container {
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+.palette-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* New style for palette description */
+.palette-description {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  font-style: italic;
+  border-left: 3px solid #4285F4;
+  padding-left: 8px;
+  background-color: #f0f8ff;
+  padding: 6px 8px;
+  border-radius: 0 3px 3px 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.palette-display {
+  display: flex;
+  height: 20px;
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.palette-color {
+  flex: 1;
+  height: 100%;
+}
+
+.palette-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Class description table styling */
+.palette-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.palette-container table td {
+  padding: 4px;
+  border-bottom: 1px solid #eee;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.palette-container table td:first-child {
+  width: 24px;
+  border-radius: 3px;
+}
+
+/* Enhanced styling for the left panel to better display palette information */
+#leftPanel {
+  overflow-y: auto;
+  padding-bottom: 30px; /* Add more padding at the bottom to ensure content is visible */
+}
+
+/* Make sure h4 elements are clearly visible */
+#leftPanel h4 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Wikipedia Link Styles - Add to panels.css */
+
+/* Style for Wikipedia links in dataset descriptions */
+.wiki-link {
+  color: #1a73e8;
+  text-decoration: none;
+  border-bottom: 1px dotted #1a73e8;
+  font-weight: normal;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.wiki-link:hover {
+  color: #0d5bdd;
+  border-bottom: 1px solid #0d5bdd;
+  background-color: rgba(26, 115, 232, 0.05);
+}
+
+/* Add a small Wikipedia icon */
+.wiki-link:after {
+  content: " ";
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%231a73e8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 3px;
+  opacity: 0.7;
+}
+
+.wiki-link:hover:after {
+  opacity: 1;
+}
+
+/* Note about the Wikipedia links */
+.wiki-note {
+  font-size: 11px;
+  color: #666;
+  font-style: italic;
+  margin-top: 10px;
+  padding-top: 5px;
+  border-top: 1px dotted #ddd;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Make description scrollable if too long */
+.dataset-description p {
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 8px;
+  line-height: 1.5;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style scrollbar for better visibility */
+.dataset-description p::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dataset-description p::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.dataset-description p::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.dataset-description p::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Default temporal filter styling */
+.default-temporal-filter {
+  margin: 15px 0;
+  padding: 10px 12px;
+  background-color: #f0f8ff;
+  border-left: 3px solid #4285F4;
+  border-radius: 0 4px 4px 0;
+}
+
+.default-temporal-filter h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.default-temporal-filter p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.4;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.temporal-source {
+  font-style: italic;
+  color: #666;
+  font-size: 12px;
+  margin-top: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,1 @@
+web: gunicorn "src.main:init_app()" --worker-class uvicorn.workers.UvicornWorker --timeout 120 --workers 4 --bind 0.0.0.0:$PORT 
